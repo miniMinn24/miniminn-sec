@@ -1,0 +1,69 @@
+filters:
+  and:
+    - file.ext == "md"
+formulas:
+  "": ""
+views:
+  - type: cards
+    name: 💻 CTF Write-ups
+    filters:
+      or:
+        - category.contains("writeup")
+    order:
+      - file.name
+      - tags
+      - category
+      - author
+      - date
+    sort:
+      - property: file.ctime
+        direction: DESC
+    cardSize: 400
+    imageAspectRatio: 0.25
+  - type: cards
+    name: 🪶 Blogs
+    filters:
+      and:
+        - category.contains("blog")
+    order:
+      - file.name
+      - tags
+      - category
+      - author
+      - date
+    sort:
+      - property: file.ctime
+        direction: DESC
+    cardSize: 400
+    imageAspectRatio: 1
+  - type: cards
+    name: 🎓 Course Notes
+    filters:
+      and:
+        - category.contains("note")
+    order:
+      - file.name
+      - tags
+      - category
+      - author
+      - date
+    sort:
+      - property: file.ctime
+        direction: DESC
+    cardSize: 400
+  - type: cards
+    name: 📓 Playbook
+    filters:
+      and:
+        - category.contains("playbook")
+    order:
+      - file.name
+      - tags
+      - category
+      - author
+      - date
+    sort:
+      - property: file.ctime
+        direction: DESC
+    cardSize: 400
+    imageAspectRatio: 0.25

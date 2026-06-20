@@ -1,3 +1,428 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+html {
+  color-scheme: dark !important;
+}
+
+// CODE-BLOCK CUSTOMIZATION
+// [saved-theme="dark"] code[data-theme*=" "] {
+//    --shiki-dark-bg: #1a1d21 !important;    /* Force background color */
+// }
+// /* Force Light Mode to use Dark Mode colors */
+// [saved-theme="light"] code[data-theme*=" "] {
+//   --shiki-light: var(--shiki-dark) !important;       /* Match text color */
+//   --shiki-light-bg: var(--shiki-dark-bg) !important; /* Match background color */
+// }
+
+// /* Ensure spans inside light mode code blocks also match */
+// [saved-theme="light"] code[data-theme*=" "] span {
+//   color: var(--shiki-dark) !important; 
+// }
+
+
+// EXPLORER PLUGIN - MULTI-LINE BREAKING FIX
+.explorer-content a {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+
+// SIDEBAR - CUSTOM colors
+// /* Light Mode Sidebar Background */
+// [saved-theme="light"] .sidebar.left {
+//   background-color: #f2f3f5 !important; /* Your light mode color */
+// }
+//
+// /* Dark Mode Sidebar Background */
+// [saved-theme="dark"] .sidebar.left {
+//   background-color: #1c1f24 !important; /* Your dark mode color */
+// }
+//
+.left.sidebar {
+  font-size: 0.9rem;
+  background-color: #181a1f;
+  margin-right: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+// side bar to remove padding when in mobile
+@media (max-width: 800px){
+  .left.sidebar {
+    padding: 5px 10px;
+  }
+  .toc {
+    display: none;
+  }
+}
+.explorer.nav-files-container {
+  font-size: 0.85rem;
+  font-family: "JetBrains Mono";
+  color: #ebebec;
+}
+.folder-title {
+  font-size: 0.85rem;
+  font-family: "JetBrains Mono";
+  color: #ebebec;
+}
+
+.toc {
+  background: #161c24;
+  border: 1px solid #1e2a38;
+  border-radius: 0.4rem;
+  padding: 1rem;
+}
+
+.toc {
+  color: #636874;
+}
+
+.toc .toc-header h3 {
+  text-transform: uppercase;
+  font-family: Inter;
+  color: #589df6;
+}
+
+.toc-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #1e2a38;
+}
+
+.toc a {
+  font-size: 0.9rem;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+
+// PAGE title
+.page-title {
+  font-family: 'JetBrains Mono', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  // background-color: #0d1117;
+  //background: linear-gradient(93deg,rgba(22, 55, 105, 1) 0%, rgba(24, 26, 31, 1) 100%);
+  padding: 0.2rem 0.5rem;
+  border-left: 2px solid #94979a;
+  text-align: left;
+}
+
+.page-title a {
+  color: #94979a;
+}
+
+// @media (max-width: 600px) {
+//   .page-title {
+//     display: none;
+//   }
+// }
+
+// SEARCH BUTTON
+.search-button {
+  background-color: #222428;
+}
+
+// @media (max-width: 850px) { // Search button in mobile view is awkward so...
+//   .search-button {
+//       margin: 0px 16px 16px 0px;
+//   }
+// }
+// ENCRYPTED PAGE - CUSTOMIZATION
+.encrypted-page-form {
+  border: 1px solid #1e2a38;
+  background-color: #111820;
+  box-shadow: 0 0 80px 30px rgba(30, 50, 77, 0.1);
+  border-radius: 0.4rem;
+  padding: 1.5rem;
+}
+
+.encrypted-page-form svg {
+  border: 1px solid #1e2a38;
+  box-shadow: 0 0 40px 10px rgba(88, 157, 246, 0.2);
+  border-radius: 0.6rem;
+  padding: 1rem;
+}
+
+.encrypted-page-form p {
+  color: #8c8c8c;
+}
+
+.encrypted-page-form b {
+  color: #d4d4d4;
+}
+
+.encrypted-page-label.encrypted-page-label-secondary {
+  background-color: #101D1B;
+  border: 1px dashed #3FB950;
+  border-style: dashed;
+  color: #3FB950;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+}
+
+.encrypted-page-label.encrypted-page-label-status {
+  background-color: #182029;
+  border: 1px solid #1e2a38;
+  border-style: solid;
+  color: #589df6;
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.8rem;
+}
+
+
+.encrypted-page-form h3 {
+  border-left: 4px solid #589df6;
+  padding: 0.4rem 0.8rem; 
+  margin: 0.2rem;
+}
+// /* REPLACE '.your-existing-class' WITH THE ACTUAL CLASS ON YOUR SITE */
+// .explorer-page-form {
+//   position: relative; /* Essential for positioning the waves */
+//   overflow: visible;  /* Ensure waves can expand outside the element */
+//   z-index: 1;
+// }
+//
+// /* Create the wave layers */
+// .encrypted-page-form::before,
+// .encrypted-page-form::after {
+//   content: '';
+//   position: absolute;
+//   top: 95%;
+//   left: 50%;
+//   width: 60%;      /* Large enough to cover expansion */
+//   height: 60%;
+//   background-color: rgba(88, 157, 246, 0.4);
+//   border-radius: 0.4rem;
+//   transform: translate(-50%, -50%) scale(0);
+//   opacity: 0;
+//   z-index: -1;      /* Place behind the main element */
+//   pointer-events: none;
+// }
+//
+// /* Animate the first wave */
+// .encrypted-page-form::before {
+//   animation: radio-wave 6s infinite linear;
+// }
+//
+// /* Animate the second wave with a delay */
+// .encrypted-page-form::after {
+//   animation: radio-wave 6s infinite linear 3s; /* 50% delay for stagger */
+// }
+//
+// /* Define the animation keyframes */
+// @keyframes radio-wave {
+//   0% {
+//     transform: translate(-50%, -50%) scale(0);
+//     opacity: 1;
+//     border-width: 3px;
+//   }
+//   100% {
+//     transform: translate(-50%, -50%) scale(1);
+//     opacity: 0;
+//     border-width: 0px;
+//   }
+// }
+
+// DEFAULT QUARTZ MARKDOWN
+// Recent Note
+.internal .internal-link .tag-link a {
+  background-color: #ffffff;
+  border-radius: 1000px;
+}
+
+// MARKDOWN FIX
+
+// blockquote p {  // Disabled because the background is also applied to other Callouts too.
+//   background-color: #13171f;
+// }
+
+.recent-notes .recent-ul .recent-li .section .desc h3 {
+  border-left: 4px solid #589df6;
+  padding-left: 0.8rem;
+}
+
+.recent-notes .recent-ul .recent-li .section .desc a {
+  color: #d4d4d4;
+}
+
+// MARKDOWN - HR
+hr {
+  border: none;            /* Remove default border */
+  border-top: 2px dashed #2d3845; /* Add dashed line */
+  height: 0;               /* Ensure no extra height */
+}   
+
+
+// MARKDOWN - h1 border
+.markdown-preview-view.markdown-rendered h1 {
+  border-left: 4px solid #3fb99a;
+  padding: 0.3rem 0 0.3rem 0.7rem;
+}
+
+// MARKDOWN - In-line code | Disabled to use in tags instead
+.markdown-preview-view.markdown-rendered p > code {
+  // color: #589df6;
+  background-color: #1c242f;
+  // border: 1px solid #589df6;
+  // border-radius: 0.6 rem;
+  // padding: 0.1rem 0.4rem;
+}
+.markdown-preview-view.markdown-rendered li > code {
+  // color: #589df6;
+  background-color: #1c242f;
+  // border: 1px solid #589df6;
+  // border-radius: 0.6 rem;
+  // padding: 0.1rem 0.4rem;
+}
+
+// MARKDOWN - TAGs
+.internal.internal-link.tag-link {
+  color: #589df6;
+  background-color: #0D1F36;
+  // border: 1px solid #589df6;
+  border-radius: 1000px;
+  text-decoration: none;
+  padding: 0.1rem 0.4rem;
+  margin: 0.4rem;
+}
+
+.internal.tag-link {
+  color: #589df6;
+  background-color: #0D1F36;
+  // border: 1px solid #589df6;
+  border-radius: 1000px;
+  padding: 0.1rem 0.4rem;
+  text-decoration: none;
+  margin: 0.4rem;
+}
+
+// .internal.internal-link.alias,
+// .internal.internal-link {
+//   background: transparent;
+//   text-decoration: underline;
+// }
+
+.internal.internal-link.alias:hover,
+.internal.internal-link:hover {
+  color: #589df6;
+}
+
+// MARKDOWN - FOOTER Links boxes
+footer > ul > li > a {
+  color: #636874;
+  border: 1px solid #2d3845;
+  border-radius: 0.4rem;
+  padding: 0.1rem 0.4rem;
+  text-decoration: none;
+}
+footer > ul > li > a:hover {
+  color: #589df6;
+  border: 1px solid #589df6;
+  border-radius: 0.4rem;
+  padding: 0.1rem 0.4rem;
+  text-decoration: none;
+}
+
+// DATABASE CUSTOMIZATION
+.bases-page.bases-inline button {
+  font-family: JetBrains Mono;
+  color: #636874;
+  border: 1px solid #2d3845;
+  border-radius: 0.4rem;
+  padding: 0.4rem 0.6rem;
+  text-decoration: none;
+}
+
+.bases-page.bases-inline .bases-view-tabs .is-active {
+  color: #589df6 !important;
+  background: #0D1F36;
+  border: 1px solid #589df6;
+  border-radius: 0.4rem;
+}
+
+.internal.internal-link.bases-card {
+  background: transparent;
+  transition: 0.3s linear, 0.2s linear; 
+}
+.bases-card-body .bases-card-title {
+  border-left: 4px solid #58bff6;
+  padding-left: 0.6rem;
+}
+.internal.internal-link.bases-card:hover {
+  border: 1px solid #589df6;
+  background: #0D1F36;
+}
+// MARKDOWN - MULTI COLUMN CUSTOM
+/* quartz/styles/custom.scss */
+// .two-column-layout {
+//     column-count: 2;
+//     column-gap: 2rem;
+//   }
+  
+//   /* Reset columns for mobile if needed */
+//   @media (max-width: 800px) {
+//     .two-column-layout {
+//       column-count: 1;
+//     }
+//   }
+/* Target the wrapper class used in your HTML */
+// .two-col {
+//   display: flex;
+//   gap: 2rem;
+//   flex-wrap: wrap; /* Allows stacking on mobile */
+  
+//   .col-left, .col-right {
+//     flex: 1 1 45%; /* Grow, shrink, basis */
+//     min-width: 250px; /* Prevents squishing */
+//   }
+//   .col-left {
+//     width: 20%;
+//   }
+// }
+
+/* quartz/styles/custom.scss */
+.two-col {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  .col-left {
+    flex: 0 0 20%; /* Fixed width: 1/3 */
+    max-width: 20%; /* Enforce max width */
+    padding-top: 1rem;
+  }
+
+  .col-right {
+    flex: 0 0 66.66%; /* Fixed width: 2/3 */
+    max-width: 66.66%; /* Enforce max width */
+  }
+
+  /* Mobile Responsiveness: Stack columns on small screens */
+  // @media (max-width: 500px) {
+  //   .col-left {
+  //     display: none;
+  //   }
+  // }
+  // @media (max-width: 768px) {
+  //   .col-left, .col-right {
+  //     flex: 0 0 100%;
+  //     max-width: 100%;
+  //   }
+  // }
+}   
+
+/* Optional: Target the whole page if using cssclasses frontmatter */
+// body.two-col-page {
+//   .page-content {
+//     /* Styles applied to the entire article */
+//   }
+// }   
+
