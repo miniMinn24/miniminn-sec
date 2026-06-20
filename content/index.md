@@ -1,5 +1,5 @@
 ---
-title: About Me | မိတ်ဆက်
+title: Greetings, NPCs | မိတ်ဆက်
 date: 2026-01-21
 ---
 <div class="two-col">
