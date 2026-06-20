@@ -37,21 +37,6 @@ views:
     cardSize: 400
     imageAspectRatio: 1
   - type: cards
-    name: 🎓 Course Notes
-    filters:
-      and:
-        - category.contains("note")
-    order:
-      - file.name
-      - tags
-      - category
-      - author
-      - date
-    sort:
-      - property: file.ctime
-        direction: DESC
-    cardSize: 400
-  - type: cards
     name: 📓 Playbook
     filters:
       and:
@@ -67,3 +52,18 @@ views:
         direction: DESC
     cardSize: 400
     imageAspectRatio: 0.25
+  - type: cards
+    name: 🎓 Course Notes
+    filters:
+      and:
+        - category.contains("note")
+    order:
+      - file.name
+      - tags
+      - category
+      - author
+      - date
+    sort:
+      - property: file.ctime
+        direction: DESC
+    cardSize: 400

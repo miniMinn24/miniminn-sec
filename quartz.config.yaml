@@ -234,10 +234,15 @@ plugins:
       priority: 5
       condition: not-index
   - source: github:quartz-community/comments
-    enabled: false
+    enabled: true
     options:
       provider: giscus
-      options: {}
+      options:
+        repo: miniMinn24/miniminn-sec
+        repoId: R_kgDOS_-MKg
+        category: General
+        categoryId: DIC_kwDOS_-MKs4C_ipa
+        lang: en
     layout:
       position: afterBody
       priority: 10
