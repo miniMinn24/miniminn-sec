@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: '> Analyse With Me.'
+  pageTitle: '> Analyse With Me'
   pageTitleSuffix: 'miniMinn-Sec'
   enableSPA: true
   enablePopovers: true
@@ -16,9 +16,9 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: false
     typography:
-      header: Fira Code
-      body: Fira Code
-      code: Fira Code
+      header: Inter
+      body: JetBrains Mono
+      code: JetBrains Mono
     colors:
       # lightMode:
       #   light: "#faf8f8"
@@ -169,7 +169,7 @@ plugins:
       position: left
       priority: 50
   - source: github:quartz-community/graph
-    enabled: false 
+    enabled: false
     layout:
       position: right
       priority: 11
@@ -186,9 +186,9 @@ plugins:
     order: 50
     options:
       maxDepth: 2
-      minEntries: 1
+      minEntries: 0
     layout:
-      position: left
+      position: right
       priority: 1000
   - source: github:quartz-community/backlinks
     enabled: false 
@@ -258,8 +258,8 @@ plugins:
       showTags: true
       limit: 6
     layout:
-      position: right
-      priority: 10
+      position: left
+      priority: 500
   - source: github:quartz-community/spacer
     enabled: true
     options: {}
