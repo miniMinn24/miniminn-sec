@@ -3,6 +3,9 @@ date: 2025-07-23
 tags:
   - course
   - itsupport
+  - Linux
+  - windows
+  - networking
 category:
   - note
 author: miniMinn

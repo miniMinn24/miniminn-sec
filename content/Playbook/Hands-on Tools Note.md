@@ -2,7 +2,8 @@
 date: 2026-06-14
 tags:
   - cybersecurity
-  - ctf
+  - offensive
+  - nmap
 category:
   - playbook
 author: miniMinn

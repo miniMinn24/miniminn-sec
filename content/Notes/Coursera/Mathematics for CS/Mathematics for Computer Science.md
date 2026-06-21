@@ -2,6 +2,7 @@
 tags:
   - math
   - course
+  - algorithm
 date: 2025-03-18
 category:
   - note
