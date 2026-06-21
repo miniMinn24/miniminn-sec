@@ -1105,7 +1105,7 @@ Update firewall rules and ACLs if an exposure was discovered in the course of th
 ---
 **Courses of Google IT Support Professional**
 
-- [[Course 1 -  IT Support Fundamentals]]
+- [[Google IT Support Professional - Walkthrough]]
 - [[Course 2 - The Bits and Bytes of Computer Networking]]
 - [[Course 3 - Operating Systems and You - Becoming a Power User]]
 - [[Course 4 - System Administration and IT Infrastructure Services]]
