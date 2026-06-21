@@ -5,8 +5,6 @@ tags:
   - cybersecurity
   - labs
 author: miniMinn
-category:
-  - note
 ---
 # From [[Course 3 - Networks and Network Security]]
 

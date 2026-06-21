@@ -10,7 +10,7 @@ author: miniMinn
 category:
   - note
 ---
-> **View all the lab walkthroughs here:** [[Activities & Labs]]
+> **View all the Google Cybersecurity labs and walkthroughs here:** [[Activities & Labs]]
 
 # Course 1 - Foundations of Security
 
