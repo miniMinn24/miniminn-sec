@@ -10,27 +10,18 @@ category:
 author: miniMinn
 ---
 
-**Table of Contents**
-
-- [Module 1 - Navigating the System](#module-1---navigating-the-system)
-- [Module 2 - Users and Permissions](#module-2---users-and-permissions)
-- [Module 3 - Package and Software Management](#module-3---package-and-software-management)
-- [Module 4 - Filesystems](#module-4---filesystems)
-- [Module 5 - Process Management](#module-5---process-management)
-- [Module 6 - Operating Systems in Practice](#module-6---operating-systems-in-practice)
-
 ---
 
-# Module 1 - Navigating the System
+## Module 1 - Navigating the System
 
 Command-line interpreter in **Linux** - **shell**
 Language interact with - **Bash**
 
 ```powershell
-# Manual entry for commands
+## Manual entry for commands
 Get-Help ls -Full
 
-# Shows system and hidden files
+## Shows system and hidden files
 ls -Force C:\
 ```
 
@@ -38,9 +29,9 @@ ls -Force C:\
 **Relative path**: The path from your current directory. `cd ..`
 
 ```powershell
-mkdir my` cool` folder # mkdir "my cool folder"
+mkdir my` cool` folder ## mkdir "my cool folder"
 
-# Bash
+## Bash
 mkdir my\ cool\ folder
 ```
 
@@ -61,15 +52,15 @@ rm important_text.txt -Recurse
 `cat` - concatenate
 
 ```powershell
-# Stops showing contents once the terminal screen is full | scrollable
+## Stops showing contents once the terminal screen is full | scrollable
 more large_text.txt
 
-cat lists.txt -Head 10 # first ten lines
-cat lists.txt -Tail 10 # last ten lines
+cat lists.txt -Head 10 ## first ten lines
+cat lists.txt -Tail 10 ## last ten lines
 ```
 
 ```bash
-$ less large_text.txt # similar to `more` on Windows
+$ less large_text.txt ## similar to `more` on Windows
 ```
 
 Hotkeys: `g` - beginning of content, `G` end of content
@@ -96,7 +87,7 @@ Select-Strings New *.txt
 Searching within directories
 
 ```powershell
-ls ./ -Recurse -Filter *.exe # search only for .exe in current directory
+ls ./ -Recurse -Filter *.exe ## search only for .exe in current directory
 ```
 
 ```bash
@@ -108,7 +99,7 @@ IO, and pipline
 ```powershell
 echo new_word > text.txt
 
-# Pipeline
+## Pipeline
 cat words.txt | sls ht
 ```
 
@@ -118,7 +109,7 @@ cat words.txt | sls ht
 `2: stderr` - the error `2>`
 
 ```powershell
-# Redirect error message
+## Redirect error message
 rm secured.txt 2> errors.txt
 
 rm secrued.txt 2> $null
@@ -128,36 +119,35 @@ rm secrued.txt 2> $null
 $ ls /fake/dir 2>/dev/null
 ```
 
----
 
-# Module 2 - Users and Permissions
+## Module 2 - Users and Permissions
 
 **Windows Domain** - A network of computers, users, files, ... that are added to a central database.
 **User Account Control (UAC)** - A feature in Windows that prevents unauthorized changes to a system.
 
 ```powershell
-# Get users list info
+## Get users list info
 Get-LocalUser
 
-# Get groups info
+## Get groups info
 Get-LocalGroup
 
-# Get memebers info
+## Get memebers info
 Get-LocalGroupMember <Group_Name>
 ```
 
-## Linux | Bash
+##### Linux | Bash
 
 **su** in bash means "substitute user" or "switch user" to temporarily become another user. Default is **root**.
 
 ```bash
-$ sudo su - # Change full environment/path | login shell switch
-$ sudo su   # Retains current environment/path
+$ sudo su - ## Change full environment/path | login shell switch
+$ sudo su   ## Retains current environment/path
 
-# View groups info
+## View groups info
 $ cat /etc/group
 
-# View users info
+## View users info
 $ cat /etc/passwd
 ```
 
@@ -170,28 +160,28 @@ Groups info viewing:
 Change user password Bash, it's securely scrambled, then stored in a special privileged file - `/etc/shadow`
 
 ```bash
-$ passwd <user_name> # Stored in /etc/shadow
+$ passwd <user_name> ## Stored in /etc/shadow
 ```
 
 Forcing user password to change on next logon:
 
 ```bash
-# Immediately expire a user's password
-# So it made them set a new password next time they login
+## Immediately expire a user's password
+## So it made them set a new password next time they login
 $ sudo passwd -e <user_name>
 ```
 
 Adding/Deleting user account:
 
 ```bash
-# Creating
+## Creating
 $ sudo useradd <user_name>
 
-# Deleting
+## Deleting
 $ sudo userdel <user_name>
 ```
 
-### File Permissions
+###### File Permissions
 
 ```bash
 drwxr-xr-x miniminn miniminn 4.0 KB Thur Sep 26 11:04:46 2025 My_Directory
@@ -201,20 +191,20 @@ drwxr-xr-x miniminn miniminn 4.0 KB Thur Sep 26 11:04:46 2025 My_Directory
 - `rwxr-x-r-x` - Permissions of Owner, Group, and Other
 - `miniminn miniminn` - User, Group
 
-### Modifying Permissions
+###### Modifying Permissions
 
 The owner - `u`
 The group the file belongs to - `g`
 Other users - `o`
 
 ```bash
-# Giving executable permission to the onwer
+## Giving executable permission to the onwer
 $ chmod u+x <file_path>
 
-# Removing permission
+## Removing permission
 $ chmod u-x <file_path>
 
-# Other permissions | execute, read, write
+## Other permissions | execute, read, write
 $ chmod u+rwx <file_path>
 ```
 
@@ -225,7 +215,7 @@ The numerical equivalent of **rwx**:
 - `1` for **execute**
 
 ```bash
-# 7 for Owner, 5 for our Group, and 4 for all other user
+## 7 for Owner, 5 for our Group, and 4 for all other user
 $ chmod 754 <file_path>
 ```
 
@@ -234,7 +224,7 @@ Changing the owner of the file:
 ```bash
 $ sudo chown <user_name> <file_path>
 
-# Verify
+## Verify
 $ ls -l <file_path>
 ```
 
@@ -243,20 +233,20 @@ Chaning the Group of file belongs to:
 ```bash
 $ sudo chgrp <group_name> <file_path>
 
-# Verify
+## Verify
 $ ls -l <file_path>
 ```
 
-### SetUID, SetGID, Sticky Bit
+###### SetUID, SetGID, Sticky Bit
 
 **SetUID** - Enable files to be run by the permissions of the **owner** of a file, that's why you can run `passwd` by **root permission** to change your password:
 
 ```bash
-# We can run `passwd` as regular user, but it's owned by root
+## We can run `passwd` as regular user, but it's owned by root
 $ ls -ld /etc/shadow
 -rw------- root root ... /etc/shadow
 
-# Verify
+## Verify
 $ ls -ld /bin/passwd
 -rwsr-xr-x root root ... /bin/passwd
 ```
@@ -266,7 +256,7 @@ In `-rwsr-xr-x`, `s` stands for **SetUID**
 > When `s` is substituted, it allows to run the file with the permissions of the owner of the file.
 
 ```bash
-# Which runs as TTY (group) as you see here
+## Which runs as TTY (group) as you see here
 $ ls -ld /usr/bin/wall
 .rwxr-sr-x root tty ... /usr/bin/wall
 ```
@@ -280,27 +270,27 @@ The numerical equivalent of **special permissions**:
 Enabling **SUID** - Run with owner's privileges:
 
 ```bash
-# -rwsr-xr-x
+## -rwsr-xr-x
 $ chmod 4755 <file_path>
 ```
 
 Enabling **GUID** - Run with group's privileges:
 
 ```bash
-# ... miniminn linux_lab ...
+## ... miniminn linux_lab ...
 $ chmod 2755 <file_path>
 ```
 
 Enabling **Sticky Bit** - Makes anyone can write, but can't delete anything:
 
 ```bash
-# -rwxr-xr-t
+## -rwxr-xr-t
 $ chmod 1
 $ ls /usr/bin/passwd -l
 .rwsr-xr-x root root ... /usr/bin/passwd
 ```
 
-## Windows | Powershell
+##### Windows | Powershell
 
 > **Net** - A legacy command-line utility in Windows used for managing network resources, users, groups, and services.
 
@@ -315,26 +305,26 @@ Add user:
 
 ```powershell
 net user <user_name> * /add
-# Type password
+## Type password
 
-# Confirm account created
+## Confirm account created
 Get-LocalUser
 
-# Asking to change password in next login
+## Asking to change password in next login
 net user <user_name> /logonpasswordchg:yes
 
-# Add new user | change password in next login
+## Add new user | change password in next login
 net user <user_name> "password" /add /logonpasswordchg:yes
 ```
 
 Deleting user:
 
 ```powershell
-net user <user_name> /del # Or
+net user <user_name> /del ## Or
 Remove-LocalUser <user_name>
 ```
 
-### File Permissions
+###### File Permissions
 
 File and directory permissions are assigned using **ACLs** (Access Control List). For now, **Discretionary ACL** or **DACLs**.
 Windows files and folders can also have **System ACLs** or **SACLs** assigned to them.
@@ -351,50 +341,49 @@ C:\Users\miniMinn\Desktop\ NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
 **NTFS** permissions can be inherited.
 ![[attachments/Pasted image 20251015145621.png| 500]]
 
-### Modifying Permissions
+###### Modifying Permissions
 
 Adding permissions or adding users to a file/folder through GUI: **Right click > Properties > Security > Add > ...**
 
 Through Powershell:
 
 ```powershell
-# Letting everyone see file
+## Letting everyone see file
 icacls <path_file> /grant "Everyone:(OI)(CI)(R)"
 
-# Letting only Authenticated User to see | Authenticated Group
+## Letting only Authenticated User to see | Authenticated Group
 icacls <path_file> /grant "Authenticated Users:(OI)(CI)(R)"
 
-# Removing
+## Removing
 icacls <path_file> /remove "Everyone"
 
-# Verify permissions
+## Verify permissions
 icacls <path_file>
 ```
 
-### Special Permissions
+###### Special Permissions
 
 `WD`: Create Files/Write Data
 `AD`: Create Folders/Append Data
 `S`: Synchronize
 
----
 
-# Module 3 - Package and Software Management
+## Module 3 - Package and Software Management
 
-## Linux | Bash
+##### Linux | Bash
 
 ```bash
-# Installing
+## Installing
 $ sudo dpkg -i program.deb
 
-# Uninstalling | Remove
+## Uninstalling | Remove
 $ sudo dpkg -r program
 
-# Verifying if program is installed
+## Verifying if program is installed
 $ dpkg -l | grep <name>
 ```
 
-### Archive | Tar, Gzip
+###### Archive | Tar, Gzip
 
 | **Flag** | **Meaning**                                                                         |
 | -------- | ----------------------------------------------------------------------------------- |
@@ -419,14 +408,14 @@ Extracting to a specific directory:
 $ tar -xvf my_archive.tar -C "/destination/path"
 ```
 
-### Package Manager | APT
+###### Package Manager | APT
 
 - The repository source file in Ubuntu - `/etc/apt/sources.list`
   - `sudo apt update` - updates the source lists for latest software.
   - `sudo apt upgrade` - installs the latest software from latest updated source.
 - Arch Linux - `/etc/pacman.d/mirrorlist`
 
-### Devices and Drivers
+###### Devices and Drivers
 
 - `/dev/sda` - First SCSI drive
 - `/dev/sr0` - First optical disk drive
@@ -443,14 +432,14 @@ Some of the Linux device categories include:
 - **Socket devices**: Similar to pipe devices. However, socket devices help multiple processes communicate with each other.
 
 ```bash
-# Verifying currnet version of OS
+## Verifying currnet version of OS
 $ uname -r
 
-# Full OS update | Debian
+## Full OS update | Debian
 $ sudo apt update && sudo apt full-upgrade
 ```
 
-## Windows | PowerShell
+##### Windows | PowerShell
 
 - **Executable file (.exe)** - Contain instructions for a computer to execute when they're run.
 - **Microsoft Install Packge (.msi)** - Guides a program called the **Windows Installer** in the installation, maintenance, and removal of programs on the Windows OS.
@@ -472,7 +461,7 @@ $ sudo apt update && sudo apt full-upgrade
 Compress-Archive -Path <file_path> <output_path>
 ```
 
-#### Dynamic Link Library (DLL)
+###### Dynamic Link Library (DLL)
 
 Contains reusable code - to help conserve disk space and use RAM efficiently. App only uses when it needs - eliminating the need to update the entire library. DLL updates are installed once for use by any number of apps.
 
@@ -482,25 +471,24 @@ Common DLLs used by Windows:
 - **.ocx files** - Active X controls provide controls (_like the program object for selecting a date from a calendar_).
 - **.cpl files** - Control panel files manage each of the functions found in the Windows Control Panel
 
-### Package Manager
+###### Package Manager
 
 ```powershell
-# Finding package
+## Finding package
 Find-Package sysinternals -IncludeDependencies
 
-# Installing package
+## Installing package
 Install-Package -Name sysinternals
 
-# Verifying if it is installed
+## Verifying if it is installed
 Get-Package -name sysinternals
 
-# Uninstalling package
+## Uninstalling package
 Uninstall-Package -name sysinternals
 ```
 
----
 
-# Module 4 - Filesystems
+## Module 4 - Filesystems
 
 Two main partition table schemes:
 
@@ -512,31 +500,31 @@ Two main partition table schemes:
   - One type of partition
   - Unlimited partitions
 
-## Linux | Bash
+##### Linux | Bash
 
 `parted` - supports GPT and MBR:
 
 ```bash
-# List connected disks
+## List connected disks
 $ sudo parted -l
 
-# Manage specific disk
-$ sudo parted /dev/sdb  # e.g. USB flash drive
+## Manage specific disk
+$ sudo parted /dev/sdb  ## e.g. USB flash drive
 
-# See disk again
+## See disk again
 $ (parted) print
 
-# Making the label GPT
+## Making the label GPT
 $ (parted) mklabel gpt
 
-# Partition
+## Partition
 $ (parted) mkpart primary ext4 1MiB 5GiB
 
-# Format partition
+## Format partition
 $ sudo mkfs -t ext4 /dev/sdb1
 ```
 
-### Mounting and Unmounting a Filesystem in Linux
+###### Mounting and Unmounting a Filesystem in Linux
 
 File System Table **fstab**: A Linux configuration table to simplify **mounting** and **unmounting** file systems in Linux.
 
@@ -563,40 +551,40 @@ zram0  253:0    0   3.8G  0 disk [SWAP]
 - **Type** - `disk` hard drive, `part` disk partition
 - **MOUNTPOINT** - location where the device is mounted. Blank entry means not mounted.
 
-### Swap
+###### Swap
 
 ```bash
 $ sudo parted /dev/sdb
 $ (parted) mkpart primary linux-swap 5GiB 100%
 $ (parted) print
 
-# Activiation
-$ sudo mkswap /dev/sdb2 # Enter path here
+## Activiation
+$ sudo mkswap /dev/sdb2 ## Enter path here
 $ sudo swapon /dev/sdb2
 ```
 
-### Files
+###### Files
 
 ![[attachments/Pasted image 20251023122128.png| 400]]
 
 ```bash
-# Third files indicates the amount of hard links the file has - 0 means the file is completely removed from the computer
+## Third files indicates the amount of hard links the file has - 0 means the file is completely removed from the computer
 $ ls -l file
 -rw-rw-r-- 1 miniminn cindy 0 Oct 5 16:40 file
 
-# Creating softlink
+## Creating softlink
 $ ln -s file file_softlink
 
-# Creating hardlink
+## Creating hardlink
 $ ln file file_hardlink
 ```
 
 ```bash
-# Shows how much free space left
+## Shows how much free space left
 $ df
 ```
 
-### Filesystem Repair
+###### Filesystem Repair
 
 `fsck` (Filesystem Check) - Auto repairing the disk
 
@@ -607,16 +595,16 @@ $ sudo fsck /dev/sdb
 Enabling **fsck** on boot:
 
 ```bash
-# Debian and Ubuntu
+## Debian and Ubuntu
 - Edit the rcS file: $ sudo vi /etc/default/rcS
 - FSCKFIX=yes
 
-# CentOS
+## CentOS
 - Create or edit a file: $ sudo vi /etc/sysconfig/autofsck
 - Add following line: AUTOFSCK_DEF_CHECK=yes
 ```
 
-## Windows | PowerShell
+##### Windows | PowerShell
 
 - **Cluster** (allocation unit size): The minimum amount of space a file can take up in a volume or drive.
 - **Volume**: A single accessible storage area with a single file system; this can be across a single disk or multiple.
@@ -626,36 +614,36 @@ Enabling **fsck** on boot:
 **\*Example**: If the cluster size is 4kb and the file you're trying to store is 4.1kb, that file will take up 2 clusters - losing 3.9 kb of space for use on a single file.\*
 
 ```powershell
-Diskpart # opens up new window
+Diskpart ## opens up new window
 
-# List current disks
+## List current disks
 DISKPART> list disk
 
-# Identify and select specific disk
+## Identify and select specific disk
 DISKPART> select disk <disk_number>
 
-# Wiping disk
+## Wiping disk
 DISKPART> clean
 
-# Creates blank partition
+## Creates blank partition
 DISKPART> create partition primary
 
-# Select freshly created partition | which is 1
+## Select freshly created partition | which is 1
 DISKPART> select partition 1
 
-# Making it active
+## Making it active
 DISKPART> active
 
-# Format in NTFS filesystem
+## Format in NTFS filesystem
 DISKPART> format FS=NTFS label=My-USB quick
 ```
 
-### Swap
+###### Swap
 
 **Virtual Memory** - works with paging mechinasm on hard drive.
 See paging details: _Control Panel > System > Advanced system settings > System properties > Advaced tab > Performance - Settings > Advaced tab_.
 
-### Files
+###### Files
 
 A component of **NTFS** is the Master File Table (**MFT**) - serves as the **central data structure** for storing metadata about all files and directories on the volume.
 
@@ -665,22 +653,22 @@ A component of **NTFS** is the Master File Table (**MFT**) - serves as the **cen
 Meaning the OSs treats symbolic link just like the original files:
 
 ```powershell
-# Created ~\Desktop\Links\file_1.txt and file_1_shortcut.lnk
+## Created ~\Desktop\Links\file_1.txt and file_1_shortcut.lnk
 
-notepad.exe file_1_shortcut.lnk # content outputs aren't readable
+notepad.exe file_1_shortcut.lnk ## content outputs aren't readable
 
-# Creating symbolic link
-mklink file_1_symlink file_1.txt # readable
+## Creating symbolic link
+mklink file_1_symlink file_1.txt ## readable
 ```
 
 **Hardlinks** points out the file record number and not the file name, so the original file name can be changed and the link will still works:
 
 ```
-# Creating hardlink
+## Creating hardlink
 mklink /H file_1_hardlink file_1.txt
 ```
 
-### Filesystem Repair
+###### Filesystem Repair
 
 **Data Buffer** - A region of RAM that's used to temporarily store data while it's being moved around. _(e.g. Essentail to eject the USB drives before unplugging)_. Else, causes **Data corruption**.
 
@@ -689,25 +677,24 @@ mklink /H file_1_hardlink file_1.txt
 ![[attachments/Pasted image 20251023125458.png| 200]]
 
 ```powershell
-# Checking disk to fix any problems with flag /F
-chkdsk /F <drive> # Run as administrator
+## Checking disk to fix any problems with flag /F
+chkdsk /F <drive> ## Run as administrator
 ```
 
----
 
-# Module 5 - Process Management
+## Module 5 - Process Management
 
-## Linux | Bash
+##### Linux | Bash
 
 ```bash
-# Listing current processes
+## Listing current processes
 $ tasklist
 ```
 
-### Reading Process Information
+###### Reading Process Information
 
 ```bash
-# Getting snapshot of current processes
+## Getting snapshot of current processes
 $ ps -x
     PID TTY      STAT   TIME COMMAND
     650 ?        Ss     0:07 /usr/lib/systemd/systemd --user
@@ -721,7 +708,7 @@ $ ps -x
 - **TIME** - Total CPU time the process has taken up.
 
 ```bash
-# Getting snapshot of current process -all processes -full details
+## Getting snapshot of current process -all processes -full details
 $ ps -ef
 UID          PID    PPID  C STIME TTY          TIME CMD
 root           1       0  0 11:17 ?        00:01:06 /sbin/init
@@ -735,10 +722,10 @@ root           2       0  0 11:17 ?        00:00:00 [kthreadd]
 Another way view current processes running:
 
 ```bash
-# Remember that everything is a file on Linux
+## Remember that everything is a file on Linux
 $ ls -l /proc
 
-# More detail
+## More detail
 $ cat /proc/<PID>/status
 Name:	gdbus
 Umask:	0022
@@ -749,43 +736,43 @@ Pid:	1101
 ...
 ```
 
-### Managing Processes
+###### Managing Processes
 
 ```bash
-# Hey there process, I don't need you complete so could you stop what you're doing? | cleanup | SIGTERM signal
+## Hey there process, I don't need you complete so could you stop what you're doing? | cleanup | SIGTERM signal
 kill <PID>
 
-# Hey, it's time to die mr. process! | no cleanup | SIGKILL signal
+## Hey, it's time to die mr. process! | no cleanup | SIGKILL signal
 kill -KILL <PID>
 
-# suspending | SIGSTP signal
+## suspending | SIGSTP signal
 kill -TSTP <PID>
 
-# resuming | SIGCONT signal
+## resuming | SIGCONT signal
 kill -CONT <PID>
 ```
 
-### Resource Monitoring
+###### Resource Monitoring
 
 ```bash
-# See top CPU used processes
+## See top CPU used processes
 $ top
 
-# Seeing OS's uptime | load average
+## Seeing OS's uptime | load average
 $ uptime
 16:02:24 up 1 day,  4:44,  1 user,  load average: 1.34, 1.36, 1.19
 
-# See current processes -all -userlist -root's
+## See current processes -all -userlist -root's
 $ ps -aux
 ```
 
-## Windows | Powershell
+##### Windows | Powershell
 
 ```powershell
-# Getting PID of specific process
+## Getting PID of specific process
 Get-Process
 
-# Getting top 3 most CPU used processes
+## Getting top 3 most CPU used processes
 Get-Process | Sort CPU -descending | Select -first 3 -Property ID,ProcessName,CPU
 Id ProcessName        CPU
 -- -----------        ---
@@ -802,13 +789,12 @@ taskkill /pid 5868 /pid 1241 /pid 1253
 
 **Process Explorer** - A utility Mircosoft created to let IT Support Specialists, system administrators and other users look at running processes.
 
----
 
-# Module 6 - Operating Systems in Practice
+## Module 6 - Operating Systems in Practice
 
-## Linux | Bash
+##### Linux | Bash
 
-### File Transfer
+###### File Transfer
 
 **Secure Copy Protocol (SCP)**: A utility for securely transferring files between a local host and a remote host, or between two remote hosts, uses SSH protocol for encryption and authentication.
 
@@ -816,7 +802,7 @@ taskkill /pid 5868 /pid 1241 /pid 1253
 $ scp /path/file hostname@ipaddress:/path/directory
 ```
 
-### Linux Logs
+###### Linux Logs
 
 All logs are stored at `/var/log`:
 
@@ -830,7 +816,7 @@ All logs are stored at `/var/log`:
 
 - `/etc/logrotate.conf` for global settings and `/etc/logrotate.d/` for application-specific configurations.
 
-### Working with Logs
+###### Working with Logs
 
 Find specific word or what word could relate to the problem:
 
@@ -846,18 +832,18 @@ $ tail -f /var/log/syslog
 
 In Arch Linux, the default logging system is systemd-journald, which stores logs in the `/var/log/journal/`.
 
-### OSs Deployment Methods
+###### OSs Deployment Methods
 
 `dd` - A powerful utility for low-level data copying and conversion, primarily used for tasks like <mark style="background: #BBFABBA6;">disk cloning, creating disk images, backing up partitions, and writing ISO files to USB drives</mark>.
 
 Searching for large files:
 
 ```bash
-# Search size of all, sort, top 5
+## Search size of all, sort, top 5
 $ sudo du -a ./path | sort -n -r | head -n 5
 ```
 
-## Windows | Powershell
+##### Windows | Powershell
 
 **Mirosoft Terminal Services** `mstsc.exe` - used to connect and create RDP connections to remote computers.
 
@@ -883,11 +869,11 @@ Giving full permissions everyone on the network to a folder `ShareMe` (requires 
 net share ShareMe=C:\Users\user_name\Desktop\ShareMe /grant:everyone,full
 ```
 
-### The Windows Event Viewer
+###### The Windows Event Viewer
 
 Execute the software with `eventvmr.msc`.
 
-### OS Deployment Methods
+###### OS Deployment Methods
 
 - **NinjaOne Backup** - Cloud-based cloning, backup, and data recovery service, for managed service providers (MSPs) and remote workplaces.
 - **Acronis Cyber Protect Home Office** - Desktop and mobile device cloning, works with Windows, Apple, and Android.
@@ -895,18 +881,8 @@ Execute the software with `eventvmr.msc`.
 - **ManageEngine OS Deployer** - Software for replications, migrations, standardizing system configs, security, and more. Creates images of Windows, MacOS, and Linux OSs with all drivers, system configs, and user profiles.
 - **EaseUS Todo Backup** - Free Windows-compatible software for differential, incremental, and full backups, as well as disaster recovery, supports copying from NAS, RAID, and USB drives.
 
-### Windows Troubleshooting
+###### Windows Troubleshooting
 
 - Is the problem unique to one computer or all computers on the network?
 - Does the problem affect a single user or all users?
 - Is the problem related to a particular application? Is that application up-to-date?
-
----
-
-**Courses of Google IT Support Professional**
-
-- [[Google IT Support Professional - Walkthrough]]
-- [[Course 2 - The Bits and Bytes of Computer Networking]]
-- [[Course 3 - Operating Systems and You - Becoming a Power User]]
-- [[Course 4 - System Administration and IT Infrastructure Services]]
-- [[Course 5 - IT Security - Defense against the digital dark arts]]

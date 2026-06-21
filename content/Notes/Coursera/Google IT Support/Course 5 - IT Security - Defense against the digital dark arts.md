@@ -8,20 +8,9 @@ category:
   - note
 author: miniMinn
 ---
-**Table of Contents**
+## Module 1 - Understanding Security Threats
 
-- [Module 1 - Understanding Security Threats](#module-1---understanding-security-threats)
-- [Module 2 - Pelcgbybtl (Cryptology)](#module-2---pelcgbybtl-cryptology)
-- [Module 3 - The 3 A's of Cybersecurity: Authentication, Authorization, Accounting](#module-3---the-3-as-of-cybersecurity-authentication-authorization-accounting)
-- [Module 4 - Securing Your Networks](#module-4---securing-your-networks)
-- [Module 5 - Defense in Depth](#module-5---defense-in-depth)
-- [Module 6 - Creating a Company Culture for Security](#module-6---creating-a-company-culture-for-security)
-
----
-
-# Module 1 - Understanding Security Threats
-
-## The CIA Triad
+#### The CIA Triad
 
 A guiding model for designing information security policies.
 
@@ -29,7 +18,7 @@ A guiding model for designing information security policies.
 - **Integrity**: Keeping out data accurate and un-tampered with - _received data should remain the same throughout its entire journey._
 - **Availability**: The information we have is readily accessible to those people that should have it. _being prepared if your paper is lost or system shutdown._
 
-## Essential Security Terms
+#### Essential Security Terms
 
 - **Risk**: The possibility of suffering a loss in the event of an attack on the system.
 - **Vulnerability**: A flaw in a system that could be exploited to compromise the system.
@@ -39,7 +28,7 @@ A guiding model for designing information security policies.
 - **Hacker**: A hacker in the security world is someone who attempts to break into or exploit a system.
 - **Attack**: An actual attempt at causing harm to a system.
 
-## Malicious Software
+#### Malicious Software
 
 A type of malicious software that can be used to obtain your sensitive information, or delete or modify files.
 
@@ -58,11 +47,11 @@ Hacker can also steal computer' resources like CPU.
 - **Rootkit**: A collection of software or tools that an admin would use.
 - **Logic bomb**: A type of malware that's intentionally installed.
 
-## Anti-malware Protection, Malware Removal
+#### Anti-malware Protection, Malware Removal
 
 If a computer is performing poorly or acting strangely, it might be infected with malware. IT professionals need to know how to isolate, remove, and repair infected devices.
 
-### Gather and Verify
+##### Gather and Verify
 
 First gather information when the symptoms started and if the user has downloaded any unusual files.
 
@@ -72,17 +61,17 @@ First gather information when the symptoms started and if the user has downloade
 
 Use **resource manager** to identify any unusual program running and investigate it.
 
-### Quarantine Malware
+##### Quarantine Malware
 
 Distributed botnets can communicate with bad actors. Disconnect any network connections to separate or quarantine the infected device form the rest of the network. Automatic backups might restore the system with files infected by malware, so you should be careful of enabling or disabling backup system.
 
-### Remove Malware
+##### Remove Malware
 
 First, run offline malware scan while disconnected from local network. All anti-virus/anti-malware programs rely on threat definition files (do a complete update). Monitor the computer again to confirm no further issues.
 
 Make sure and reconfigure the computer to won't happen again. After all, manually create a safe restore point.
 
-### Malware Education
+##### Malware Education
 
 - Keep the computer and software updated
 - Use a non-administrator account whenever possible
@@ -92,7 +81,7 @@ Make sure and reconfigure the computer to won't happen again. After all, manuall
 - Limit your file-sharing
 - Use antivirus software
 
-## Network Attacks
+#### Network Attacks
 
 A **DNS Cache Poisoning attack** works by tricking a DNS server into accepting a fake DNS record that will point you to a compromised DNS server. It then feeds you fake DNS addresses when you try to access legitimate websites.
 
@@ -102,7 +91,7 @@ A **DNS Cache Poisoning attack** works by tricking a DNS server into accepting a
 **Rogue AP**: An access point that is installed on the network without the network administrator's knowledge.
 **Evil Twin** attack: Similar to Rogue AP, is for you to connect to a network that is identical to yours. Once we connect to it, they will be able to monitor our traffic.
 
-## Denial-of-Service
+#### Denial-of-Service
 
 An attack that tries to prevent access to a service for legitimate users by overwhelming the network or server.
 
@@ -111,12 +100,12 @@ An attack that tries to prevent access to a service for legitimate users by over
 
 **Distributed Denial-of-service** attack (DDoS): A DoS attack using multiple systems.
 
-## Client-Side Attacks
+#### Client-Side Attacks
 
 - **Cross-site scripting (XSS)** attack: A type of injection attack where the attacker can insert malicious code and target the user of the service. (targets user)
 - **SQL Injection** attack: Unlike XSS, it targets the entire website if it's using SQL database. Attackers can potentially run SQL commands that allow them to delete website data.
 
-## Password Attack
+#### Password Attack
 
 Utilize software like password-crackers that try and guess your password.
 
@@ -125,7 +114,7 @@ Utilize software like password-crackers that try and guess your password.
 
 A strong password with a mix of capitals, letters, numbers and special characters can prevent this attack.
 
-## Deceptive Attacks
+#### Deceptive Attacks
 
 - **Social Engineering**: An attack method that relies heavily on interactions with humans instead of computers (phishing | spear phishing attacks).
 - **Spoofing**: A source masquerading around as something else.
@@ -134,7 +123,7 @@ A strong password with a mix of capitals, letters, numbers and special character
 - **Whaling**: A whale target is typically someone in a position of power (wealthly, high-level government employee, etc.) that they have ability to pay high ransomware fees.
 - **Vishing**: Uses Voice over IP (VoIP) to make phone calls or leave voice messages pretending to be from reputable companies in order to trick victims into revealing personal information.
 
-### Targeted and in-person deceptive attacks
+##### Targeted and in-person deceptive attacks
 
 - **Shoulder surfing**: Shoulder surfing happens when a person looks over a victim’s shoulder to watch them enter login credentials, credit card numbers, or other sensitive information.
 - **Tailgating**: A form of social engineering in which an unauthorized party gains physical access to a restricted area by simply following a person or group of persons who have authorized access.
@@ -142,7 +131,7 @@ A strong password with a mix of capitals, letters, numbers and special character
 - **Dumpster Diving**: Involves the attacker literally digging through the trash of an individual or organization to hunt for confidential information.
 - **Evil twin**: Installing Wi-Fi routers that appear to belong to an organization's network. These Wi-Fi access points may not require a password and might appear to offer a stronger signal than the real Wi-Fi router.
 
-## Physical Security
+#### Physical Security
 
 1. **Guards** monitoring controlled access points.
 2. **Door locks** restrict access with key or security badge.
@@ -151,21 +140,21 @@ A strong password with a mix of capitals, letters, numbers and special character
 5. **Alarm systems** notify security by sounding and alarm.
 6. **Motion sensors** detect movement within a controlled area - triggers alarm systems.
 
-### Protecting the entry points of a building
+##### Protecting the entry points of a building
 
 - **Access Control vestibules**: Interlocking doors or gateways to prevent unauthorized individuals from following authorized individuals into controlled facilities.
 - **Badge readers**: They identify each user by the badge they present to the device.
 
-### Protecting the outside of a building
+##### Protecting the outside of a building
 
 - **Bollards** are sturdy, short, vertical posts placed to restrict access of vehicles to a controlled area.
 - **Fences** are physical barriers, with many different designs, that enclose controlled areas to establish a perimeter and keep out external threats.
 
 ---
 
-# Module 2 - Pelcgbybtl (Cryptology)
+## Module 2 - Pelcgbybtl (Cryptology)
 
-## Cryptography
+#### Cryptography
 
 Hiding messages from potential enemies. Overarching discipline that covers the practice of coding and hiding messages from third parties - referred to as cryptology. Works by a **Encryption algorithm** and a **key**.
 
@@ -178,7 +167,7 @@ Hiding messages from potential enemies. Overarching discipline that covers the p
 
 The system should remain secure even if your adversary knows exactly what kind of encryption systems you're employing, as long as your **keys remain secure**.
 
-## Future of Cryptanalysis
+#### Future of Cryptanalysis
 
 **Cryptanalysis** uses technology to improve the process of encrypting data and innovates new ways to defend companies from attacks that can access and decode their data.
 
@@ -190,7 +179,7 @@ Many modern encryption algorithms are based on large prime number factorization 
 - **Adaptive Chosen-Plaintext Attack (ACPA)** is similar to a chosen-plaintext attack. Unlike a CPA, it can use smaller lines of plaintext to receive its encrypted ciphertext and then crack the encryption code using the ciphertext.
 - **Meddler-in-the-Middle (MITM)** uses cryptanalysts to insert a meddler between two communication devices or applications to exchange their keys for secure communication. The meddler replies as the user and then performs a key exchange with each party. The users or systems think they communicate with each other, not the meddler.
 
-### Results from a cryptanalysis attack
+##### Results from a cryptanalysis attack
 
 - **Instance deduction** - discovers additional plain or cipher text. While the key isn’t found to break the code, the additional plaintext or ciphertext can be used to cause problems or continue attacks.
 - **Information deduction** - obtains some information about plain or cipher text not previously known. The additional information can lead to more information about the encryption key.
@@ -198,7 +187,7 @@ Many modern encryption algorithms are based on large prime number factorization 
 - **Global deduction** where the attacker finds an algorithm that is functionally equivalent to the one used in the key. This algorithm is then used to decrypt all information and messages.
 - **Total break** - gaining the entire key.
 
-## Symmetric Cryptography
+#### Symmetric Cryptography
 
 The algorithm that they use the same key to encrypt and decrypt messages.
 
@@ -209,7 +198,7 @@ The algorithm that they use the same key to encrypt and decrypt messages.
 Example, it can be seen when inspecting the 802.11 frame of a web encrypted wireless packet:
 ![[attachments/Pasted image 20260213131112.png]]
 
-## Symmetric Encryption Algorithms
+#### Symmetric Encryption Algorithms
 
 **Data Encryption Standard (DES)**: Designed in the 1970s by IBM, with some input from the US National Security Agency. Adopted as official **FIPS** (Federal Information Processing Standard for the US).
 
@@ -231,7 +220,7 @@ Because of the large key size, brute-force attacks on AES are only theoretical r
 
 **Seed value**: A secret value that is used to initialize a process that is generated by software using one or more values.
 
-## Asymmetric Cryptography (public key ciphers)
+#### Asymmetric Cryptography (public key ciphers)
 
 They uses different keys to encrypt and decrypt.
 
@@ -241,14 +230,14 @@ They uses different keys to encrypt and decrypt.
   ![[attachments/Pasted image 20260213135124.png]]
   Both shared their public keys, but private keys are kept secret. When Daryll sends message, it is encrypted by Suzanne's public key. When Suzanne receives the encrypted message, it is decrypted by her private key.
 
-## Asymmetric vs. Symmetric Cryptography
+#### Asymmetric vs. Symmetric Cryptography
 
 - **MAC**: A bit of information that allows authentication of a received message, ensuring that the message came from the alleged sender and not a third party masquerading as them.
 - **HMAC**: Keyed-hash message authentication code.
 - **CMACs**: Cipher-Based Message Authentication Codes.
 - **CBC-MAC**: Cipher block chaining message authentication codes.
 
-## Asymmetric Encryption Algorithms
+#### Asymmetric Encryption Algorithms
 
 ![[attachments/Pasted image 20260213161021.png]]
 
@@ -256,7 +245,7 @@ They uses different keys to encrypt and decrypt.
 
 Both Diffie-Hellmen and DSA have elliptic curve variants, referred to as ECDH and ECDSA, respectively.
 
-## Hashing
+#### Hashing
 
 (Or a hash function) A type of function or operation that takes in an arbitrary data input and maps it to an output of fixed size, called a hash or digest.
 ![[attachments/Pasted image 20260219000648.png]]
@@ -274,12 +263,12 @@ Hashing example, we can see that a small difference like changing to all lower c
 echo 'Hello Mom' | md5sum
 2b6fa33b32023e88dc3fd3f43982d8f2  -
 echo 'hello mom' | md5sum
-ea893bac2d5652173cedf7c86526acf5  - # Small change, different hash
+ea893bac2d5652173cedf7c86526acf5  - ## Small change, different hash
 echo 'Hello Mom' | md5sum
-2b6fa33b32023e88dc3fd3f43982d8f2  - # Same input, same hash
+2b6fa33b32023e88dc3fd3f43982d8f2  - ## Same input, same hash
 ```
 
-## Hashing Algorithms
+#### Hashing Algorithms
 
 MD5 hash function had design flaws by hash collisions (2010) - replaced by SHA1.
 
@@ -319,7 +308,7 @@ $$
 
 Clearly, it raises the bar high enough that a rainbow table attack wouldn't be possible in any realistic time-frame.
 
-## Public Key Infrastructure
+#### Public Key Infrastructure
 
 **PKI** is a system that defines the creation, storage and distribution of digital certificates (a file that proves that an entity owns a certain public key):
 
@@ -336,7 +325,7 @@ A central repository is needed to securely store and index keys, and a certifica
 With their own internal CA issues and manages client certificates for their service.  
 There're also **code signing certificates**: Allowing users of these signed applications to verify the signatures and ensure that the application was not tampered with.
 
-## Certificates
+#### Certificates
 
 The X.509 standard is what defines the format of digital certificates.
 
@@ -355,7 +344,7 @@ The X.509 standard is what defines the format of digital certificates.
 A web of trust is where individuals, instead of certificate authorities, sign other individuals public keys:
 ![[attachments/Pasted image 20260219235706.png| 400]]
 
-## Cryptography in Action
+#### Cryptography in Action
 
 **HTTPS** can also be called HTTP over **SSL/TLS** - since encapsulating the HTTP traffic over an encrypted secured channel utilizing SSL or TLS.
 
@@ -371,7 +360,7 @@ The **session key** is the shared symmetric encryption key used in TLS sessions 
 - **Secure Shell (SSH)**: A secure network protocol that uses encryption to allow access to a network service over unsecured networks (a secure replacement for **telnet, rlogin or rexec**).
 - **Pretty good privacy (PGP)**: An encryption application that allows authentication of data, along with privacy from third parties, relying upon asymmetric encryption to achieve this.
 
-## Securing Network Traffic
+#### Securing Network Traffic
 
 **Virtual Private Network (VPN)**: A mechanism that allows you to remotely connect a host or network to an internal, private network, passing the data over a public channel, like the internet.  
 ![[attachments/Pasted image 20260221221714.png]]
@@ -389,7 +378,7 @@ The **secure channel**, on other hand, is provided by IPsec, which provides conf
 
 OpenVPN can operate over either TCP or UDP, typically over port 1194. Supports up to 256 bit encryption through the OpenSSL library.
 
-## Cryptographic Hardware
+#### Cryptographic Hardware
 
 ![[attachments/Pasted image 20260221230359.png]]
 
@@ -415,9 +404,9 @@ Options for implementing FDE:
 
 ![[attachments/Pasted image 20260224211516.png]]
 
-## Lab Summary: OpenSSL
+#### Lab Summary: OpenSSL
 
-### Generating Keys
+##### Generating Keys
 
 Generating a 2048-bit RSA private key:
 
@@ -431,15 +420,15 @@ Generating a public key:
 openssl rsa -in private_key.pem -outform PEM -pubout -out public_key.pem
 ```
 
-### Encrypting and Decrypting
+##### Encrypting and Decrypting
 
 Encrypting a text file:
 
 ```bash
-# Create a file
+## Create a file
 echo 'Hello mom, this is a secret text.' > secret.txt
 
-# Encryption with public key
+## Encryption with public key
 openssl rsautl -encrypt -pubin -inkey public_key.pem -in secret.txt -out secret.enc
 ```
 
@@ -449,7 +438,7 @@ Decryption with private key:
 openssl rsautl -decrypt -inkey private_key.pem -in secret.enc
 ```
 
-### Creating a hash digest
+##### Creating a hash digest
 
 A hash digest of a message:
 
@@ -462,30 +451,30 @@ Performing a verification:
 ```bash
 openssl dgst -sha256 -verify public_key.pem -signature secret.txt.sha256 secret.txt
 
-# OUTPUT
-# If successful and file hasn't been modified
+## OUTPUT
+## If successful and file hasn't been modified
 Verified OK
 ```
 
-## Lab Summary: Hands-on with hashing
+#### Lab Summary: Hands-on with hashing
 
-### MD5
+##### MD5
 
 Verifying a valid file:
 
 ```bash
-# Test file
+## Test file
 echo 'Hello mom!' > file.txt
 
-# Generating a hashed file
+## Generating a hashed file
 md5sum file.txt > file.txt.md5
 
-# Take a look at the hash
+## Take a look at the hash
 cat file.txt.md5
 
 7514140760aa7da676090b97bd41ee8a  file.txt
 
-# Verifying hash
+## Verifying hash
 md5sum -c file.txt.md5
 
 file.txt: OK
@@ -494,61 +483,61 @@ file.txt: OK
 Verifying an invalid file:
 
 ```bash
-# Duplicate to test invalidity
+## Duplicate to test invalidity
 cp file.txt badfile.txt
 
-# Generate hash
+## Generate hash
 md5sum badfile.txt > badfile.txt.md5
 
-# Read hash: Both files currently have the same hash
+## Read hash: Both files currently have the same hash
 cat badfile.txt.md5
 cat file.txt.md5
 
-# Modify bad file
-vim badfile.txt # add an extra space
+## Modify bad file
+vim badfile.txt ## add an extra space
 
-# Verify hash: a tiny modification results huge effect in hashing
+## Verify hash: a tiny modification results huge effect in hashing
 md5sum -c badfile.txt.md5
 
 badfile.txt: FAILED
 md5sum: WARNING: 1 computed checksum did NOT match
 
-# See how different the hash of the edited file is
+## See how different the hash of the edited file is
 md5sum badfile.txt > new.badfile.txt.md5
 cat new.badfile.txt.md5
 ```
 
-### SHA1
+##### SHA1
 
 ```bash
-# Test files
+## Test files
 shasum file.txt > file.txt.sha1
 
-# Read hash
+## Read hash
 cat file.txt.sha1
 
-# Verifying hash
+## Verifying hash
 shasum -c file.txt.sha1
 ```
 
-### SHA256
+##### SHA256
 
 ```bash
-# Test files
+## Test files
 shasum -a 256 file.txt > file.txt.sha256
 
-# Read hash
+## Read hash
 cat file.txt.sha256
 
-# Verifying hash
+## Verifying hash
 shasum -c file.txt.sha256
 ```
 
 ---
 
-# Module 3 - The 3 A's of Cybersecurity: Authentication, Authorization, Accounting
+## Module 3 - The 3 A's of Cybersecurity: Authentication, Authorization, Accounting
 
-## Best Practices for Authentication
+#### Best Practices for Authentication
 
 They're different:
 
@@ -561,7 +550,7 @@ Incorporating **good password policies** into an organization is key to ensuring
 - Character complexity
 - Dictionary words
 
-## Multifactor Authentication
+#### Multifactor Authentication
 
 A system where users are authenticated by presenting multiple peeces of information or objects.
 
@@ -575,7 +564,7 @@ An example RSA SecureID token:
 Counter-based, incremented every time:
 ![[attachments/Pasted image 20260226151637.png]]
 
-## Multifactor Authentication Options
+#### Multifactor Authentication Options
 
 **Biometric Authentication**: The process of using unique physiological characteristics of an individual to identify them.
 
@@ -583,29 +572,29 @@ Counter-based, incremented every time:
 
 ![[attachments/Pasted image 20260226153035.png| 400]]
 
-## Certificates, Part Two
+#### Certificates, Part Two
 
 In order to issue client certificates, an organization must setup and maintain CA infrastructure to issue and sign certificates.
 
 **Certificate Revocation List (CRL)**: A signed list published by the CA which defines certificates that have been explicitly revoked.
 
-## RADIUS
+#### RADIUS
 
 **Remote Authentication Dial-In User Service** - A protocol that provides AAA services for users on a network.
 
 ![[attachments/Pasted image 20260226155943.png]]
 
-## Kerberos
+#### Kerberos
 
 A network authentication protocol that uses "tickets" to allow entities to prove their identity over potentially insecure channels to provide mutual authentication.
 
 The authentication tickets let users authenticate to services without requiring username and password authentication for every service individually. A ticket will expire after some time, but it has provisions for automatic transparent renewal of the ticket.
 
-## TACACS+
+#### TACACS+
 
 **Terminal Access Controller Access-Control System Plus** is primarily used for device administration, authentication, authorization and accounting. Mainly used as an authentication for network infrastructure devices - tend to be high value for attackers.
 
-## Single Sign-on (SSO)
+#### Single Sign-on (SSO)
 
 An authentication concept that allows users to authenticate once to be granted access to a lot of different services and applications.
 
@@ -614,11 +603,11 @@ An authentication concept that allows users to authenticate once to be granted a
 An example of an SSO system is the OpenID decentralized authentication system:
 ![[attachments/Pasted image 20260227114146.png| 400]]
 
-## Authorization and Access Control Methods
+#### Authorization and Access Control Methods
 
 **Authorization** pertains to describing what the user account has access to, or doesn't have access to.
 
-## Mobile Security Methods
+#### Mobile Security Methods
 
 **Common mobile security threats and challenges**:
 
@@ -641,7 +630,7 @@ An example of an SSO system is the OpenID decentralized authentication system:
   - Antivirus/Antimalware
   - Firewalls
 
-## Access Control
+#### Access Control
 
 **OAuth** is an open standard that allows users to grant third-party websites and applications access to their information without sharing account credentials.
 
@@ -651,13 +640,13 @@ An example of an SSO system is the OpenID decentralized authentication system:
 
 ![[attachments/Pasted image 20260227123128.png]]
 
-## Access Control List (ACL)
+#### Access Control List (ACL)
 
 ![[attachments/Pasted image 20260227123423.png| 400]]
 
 Network ACLs can be defined for incoming and outgoing traffic. They can also be used to restrict external access to systems and limit outgoing traffic to enforce policies or to prevent unauthorized outbound data transfers.
 
-## Tracking Usage and Access
+#### Tracking Usage and Access
 
 **Accounting (The final of AAA)**: Keeping records of what resources and services your users accessed, or what they did when they were using your systems.
 
@@ -676,9 +665,9 @@ Radius accounting kicks off with the network access server sending an **accounti
 
 ---
 
-# Module 4 - Securing Your Networks
+## Module 4 - Securing Your Networks
 
-## Network Hardening Best Practices
+#### Network Hardening Best Practices
 
 The process of securing a network by reducing its potential vulnerabilities through configuration changes and taking specific steps.
 
@@ -702,7 +691,7 @@ Network separation or VLANs is also a good concept for security:
 
 ![[attachments/Pasted image 20260227143747.png| 400]]
 
-## Network Hardware Hardening
+#### Network Hardware Hardening
 
 ![[attachments/Pasted image 20260227144024.png| 400]]
 
@@ -722,27 +711,27 @@ DHCP snooping also makes you designate either a trusted DHCP server IP, if it's 
 
 ![[attachments/Pasted image 20260227153055.png]]
 
-## IEEE 802.1X
+#### IEEE 802.1X
 
-### Authentication
+##### Authentication
 
 - **Supplicant** - client making request to access LAN/WLAN
 - **Authenticator** takes packet from supplicant and sends it to authentication server until session is authenticated. Any other info sent before authentication occurs is dropped.
 - **Authentication server** provides a database of info required for authentication, and informs authenticator to deny or permit access.
 
-### Authentication Methods
+##### Authentication Methods
 
 - **Shared key system** - shared key or passphrase that is manually set on both device and AP.
 - **Open system** - when authentication server has a list of authorized clients to check against when a client requests access. List is usually in the form of MAC addresses but varies by network.
 
-#### Shared Key Authentication Methods
+##### Shared Key Authentication Methods
 
 - **Wired Equivalent Privacy (WEP)** - not recommended for secure WLAN. Hackers can capture encrypted form of an authentication response frame, using widely software and using info to crack WEP encryption.
 - **Wi-Fi Protected Access (WPA)** - complies with wireless security standard and increase data protection level. Enforcing IEE 802.1X authentication and key-exchange and only works with dynamic encryption keys.
 - **Wi-Fi Protected Access 2 (WPA2)** - security enhancement to WPA. Users must ensure mobile and AP are configured using the same WPA version and pre-shared key (PSK).
 - **Association** - allows AP to record each mobile device so that data is properly delivered - After authentication is complete.
 
-## Network Software Hardening
+#### Network Software Hardening
 
 VPNs are commonly used to provide **secure remote access**, and **link wo networks** securely.
 
@@ -752,14 +741,14 @@ Common reverse proxies:
 - nginx
 - Apache
 
-## WEP Encryption and Why You Shouldn't Use It
+#### WEP Encryption and Why You Shouldn't Use It
 
 ![[attachments/Pasted image 20260227160933.png]]
 
 **Open system** authentication:
 ![[attachments/Pasted image 20260227161212.png]]
 
-## Let's Get Rid of WEP!
+#### Let's Get Rid of WEP!
 
 **WPA**: Designed as a short-term replacement that would be compatible with older WEP-enabled hardware with a simple firmware update.
 
@@ -773,7 +762,7 @@ Common reverse proxies:
 
 Under WPA, the **pre-shared key** is the Wi-Fi password you share with people when they come over and want to use your wireless network.
 
-## WPA2
+#### WPA2
 
 **CCMP** (Counter Mode CBC-MAC Protocol)
 
@@ -788,7 +777,7 @@ Under WPA, the **pre-shared key** is the Wi-Fi password you share with people wh
 
 ![[attachments/Pasted image 20260227163327.png| 400]]
 
-## Wireless Hardening
+#### Wireless Hardening
 
 If 802.1X is too complicated for a company, the next best alternative would be WPA2 with AES/CCMP mode.
 
@@ -796,7 +785,7 @@ A long and complex passphrase that wouldn't be found n a dictionary would increa
 
 If your company values security over convenience, you should make sure that WPS isn't enabled on your APs.
 
-## Packet Sniffing (Packet Capture)
+#### Packet Sniffing (Packet Capture)
 
 The process of intercepting network packets in their entirety for analysis.
 
@@ -804,13 +793,13 @@ The process of intercepting network packets in their entirety for analysis.
 **Port Mirroring**: Allows the switch to take all packets from a specified port, port range, or entire VLAN and mirror the packets to a specified switch port.  
 **Monitor Mode**: Allows us to scan across channels to see all wireless traffic being sent by APs and clients.
 
-## Wireshark and TCPDump
+#### Wireshark and TCPDump
 
 **TCPDump** is a super popular, lightweight, command-line based utility that you can use to capture and analyze packets.
 
 **Wireshark** is a great tool for network traffic analysis that provides way more powerful complex filtering and easier navigation.
 
-## Intrusion Detection/Prevention Systems (IDS/IPS)
+#### Intrusion Detection/Prevention Systems (IDS/IPS)
 
 IDS or IPS systems operate by monitoring network traffic and analyzing it.
 
@@ -824,9 +813,9 @@ They might be specific sequences of packets, or packets with certain value encod
 
 ![[attachments/Pasted image 20260227192013.png| 400]]
 
-## Unified Threat Management (UTM)
+#### Unified Threat Management (UTM)
 
-### UTM options and configurations
+##### UTM options and configurations
 
 **UTM hardware and software options**:
 
@@ -847,31 +836,31 @@ They might be specific sequences of packets, or packets with certain value encod
 - Data leak/loss prevention (DLP)
 - Virtual Private Network (VPN)
 
-### Stream-based vs. proxy-based UTM inspections
+##### Stream-based vs. proxy-based UTM inspections
 
 - Stream-based inspection, also called flow-based inspection
 - Proxy-based inspection
 
-### Benefits of using UTM
+##### Benefits of using UTM
 
 - Cost-effective
 - Flexible and adaptable
 - Offers integrated and centralized management
 
-### Risks of using UTM
+##### Risks of using UTM
 
 - Can become a single point of failure in a network security attack
 - Might be a waste of resources for small businesses
 
 ---
 
-# Module 5 - Defense in Depth
+## Module 5 - Defense in Depth
 
-## Intro to Defense in Depth
+#### Intro to Defense in Depth
 
 The concept of having multiple, overlapping systems of defense to protect IT systems.
 
-## Disabling Unnecessary Components
+#### Disabling Unnecessary Components
 
 - **Attack Vector**: The method or mechanism by which an attacker or malware gains access to a network or system.
 - **Attack Surface**: The sum of all the different attack vectors in a given system.
@@ -880,7 +869,7 @@ The concept of having multiple, overlapping systems of defense to protect IT sys
 
 Telnet access for a managed switch has no business being enabled in a real-world environment.
 
-## Host-Based Firewall
+#### Host-Based Firewall
 
 Protect individual hosts from being compromised when they're used in untrusted, potentially malicious environments.
 
@@ -890,7 +879,7 @@ A **host-based firewall** plays a big part in reducing what's accessible to an o
 
 If the users of the system have administrator rights, then they have the ability to change **firewall rules and configurations**.
 
-## Logging and Auditing
+#### Logging and Auditing
 
 **SIEMS (Security Information and Event Management Systems)** - A centralized log server with some extra analysis features too.
 
@@ -905,9 +894,9 @@ Popular SIEM tools:
 - IBM Security Qradar
 - RSA Security Analytics
 
-## Windows Defender Guide
+#### Windows Defender Guide
 
-### Microsoft 365 Defender Services
+##### Microsoft 365 Defender Services
 
 - Defender for Endpoint
 - Defender Vulnerability Management
@@ -916,7 +905,7 @@ Popular SIEM tools:
 - Azure Active Directory Identity Protection
 - Defender for Cloud Apps
 
-### Using Microsoft 365 Defender
+##### Using Microsoft 365 Defender
 
 - Identities
 - Data
@@ -930,7 +919,7 @@ Popular SIEM tools:
 - Learning hub
 - Reports
 
-## Antimalware Protection
+#### Antimalware Protection
 
 Lots of unprotected systems would be compromised **in a matter of minutes** if directly connected to the internet without any safeguards or protections in place.
 
@@ -946,7 +935,7 @@ Software signing or coding signing:
 
 ![[attachments/Pasted image 20260228130229.png| 400]]
 
-## Disk Encryption
+#### Disk Encryption
 
 ![[attachments/Pasted image 20260228131349.png| 400]]
 
@@ -963,7 +952,7 @@ The public key corresponding to the private key used to sign the boot files - wr
 
 Home directory or file-based encryption only guarantees confidentiality and integrity of files protected by encryption.
 
-## Software Patch Management
+#### Software Patch Management
 
 As an IT Support Specialist, it's critical that you make sure that you install software updates and security patches in a timely way, in order to **defend your company's systems and networks.**
 
@@ -971,7 +960,7 @@ The best protection is to have a **good system and policy** in place for your co
 
 There's always the risk that a software update will introduce a new bug that might affect the functionality of the device.
 
-## Application Policies
+#### Application Policies
 
 A common recommendation, or even a requirement, is to only support or require the **lastest version** of a piece of software.
 
@@ -983,9 +972,9 @@ Browser Extensions that require full access to web sites visited can be risky, s
 
 ---
 
-# Module 6 - Creating a Company Culture for Security
+## Module 6 - Creating a Company Culture for Security
 
-## Security Goals
+#### Security Goals
 
 If your company handles credit card payments, then you have to follow the **PCI DSS**, or **Payment Card Industry Data Security Standard**.
 
@@ -998,7 +987,7 @@ If your company handles credit card payments, then you have to follow the **PCI 
 5. Regularly monitor and test networks.
 6. Maintain a information security policy.
 
-## Measuring and Assessing Risk
+#### Measuring and Assessing Risk
 
 Security is all about determining **risks** or exposure; understanding the likelihood of **attacks**; and designing **defenses** around these risks to **minimize** the impact of an attack.
 
@@ -1016,7 +1005,7 @@ Typically, any kind of user data is considered high value, especially if payment
 
 **Penetration Testing**: The practice of attempting to break into a system or a network to verify the systems in place.
 
-## Privacy Policy
+#### Privacy Policy
 
 It's about overseeing the access and use of sensitive data.  
 It's a good practice to apply the principle of **least privilege** here, by not allowing access to this type of data by default.
@@ -1026,7 +1015,7 @@ Any access that doesn't have a corresponding request should be flagged as a **hi
 **Data-handling policies** should cover the details of how different data is classified.  
 Once different data classes are defined, you should create **guidelines** around how to handle these different types of data.
 
-## User Habits
+#### User Habits
 
 You can build the world's best security systems, but they won't protect you if the users are going to be practicing **unsafe security**.
 
@@ -1034,15 +1023,15 @@ You should **never upload confidential information** onto a third-party service 
 
 A much greater risk in the workplace that users should be educated on is **credential theft** from phishing emails. If someone entered their password into a phishing site, or even suspects they did, it's important to **change their password** as soon as possible.
 
-## Third-Party Security
+#### Third-Party Security
 
 If they have subpar security, you're undermining your security defenses by potentially opening a new avenue of attack. If you can, ask for a third-party security assessment report.
 
-## Security Training
+#### Security Training
 
 Helping others keep security in mind will help decrease the security burdens you'll have as an IT support specialist.
 
-## Incident Reporting and Analysis
+#### Incident Reporting and Analysis
 
 The very first step of handling an incident is to **detect it** in the first place. The next step is to **analyze it** and **determine the effects** and scope of damage.
 
@@ -1056,7 +1045,7 @@ Once the scope of the incident is determined, the next step is **containment.**
 **Data exfiltration**: The unauthorized transfer of data from a computer.  
 **Recoverability**: How complicated and time-consuming the recovery effort will be.
 
-## Incident Response
+#### Incident Response
 
 **Regulated data**
 
@@ -1076,7 +1065,7 @@ Once the scope of the incident is determined, the next step is **containment.**
 
 **Chain of custody** - Tracks evidence movement through its collections, safeguarding and analysis life-cycle.
 
-## Incident Response and Recovery
+#### Incident Response and Recovery
 
 Update firewall rules and ACLs if an exposure was discovered in the course of the investigation. Create new definitions and rules for intrusion detection systems that can watch for the signs of the same attack again.
 
@@ -1092,7 +1081,7 @@ Update firewall rules and ACLs if an exposure was discovered in the course of th
 - Train employees on data security
 - Back up data regularly
 
-## Interview notes
+#### Interview notes
 
 - Network security: disable unnecessary services and consider what are needed
 - Know what are allowed and have control on them: whitelisting software
@@ -1101,12 +1090,3 @@ Update firewall rules and ACLs if an exposure was discovered in the course of th
 - WPA2 encryption: stronger encryption
 - Have employees change passwords and strong. Educate them
 - Two-factor authentication: having an additional verification more than password: bio-metric, chip or key.
-
----
-**Courses of Google IT Support Professional**
-
-- [[Google IT Support Professional - Walkthrough]]
-- [[Course 2 - The Bits and Bytes of Computer Networking]]
-- [[Course 3 - Operating Systems and You - Becoming a Power User]]
-- [[Course 4 - System Administration and IT Infrastructure Services]]
-- [[Course 5 - IT Security - Defense against the digital dark arts]]
