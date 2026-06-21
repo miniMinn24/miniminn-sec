@@ -5,7 +5,7 @@ formulas:
   "": ""
 views:
   - type: cards
-    name: 💻 CTF Write-ups
+    name: 💻 Write-ups
     filters:
       or:
         - category.contains("writeup")
@@ -53,7 +53,7 @@ views:
     cardSize: 400
     imageAspectRatio: 0.25
   - type: cards
-    name: 🎓 Course Notes
+    name: 🎓 Course Walkthroughs
     filters:
       and:
         - category.contains("note")
