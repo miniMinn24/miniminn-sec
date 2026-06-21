@@ -21,12 +21,11 @@ date: 2026-01-21
 
 > *Zen-Obsession-Humble is the key.*
 
-**As a part of my portfolio**, I'm self-hosting this as my own knowledge base to document my path from today to proficient in Cybersecurity. I publish security analysis/CTF labs writeups, professional course walkthroughs, how-to guides and open-source project setups.  
+**As a part of my portfolio**, I'm self-hosting this website as my own knowledge base to document my path from today to proficient in Cybersecurity. I publish security analysis/CTF labs writeups, professional course walkthroughs, how-to guides and open-source project setups.  
 
 ![[Database.base]]
 
 ---
-Have questions or feedbacks? Connect me via [GitHub](https://github.com/miniMinn24) or [LinkedIn](https://www.linkedin.com/in/min-maung-maung-03352028a/).
-
+You can reach me at miniminnmgmg24@gmail.com.
 
 
