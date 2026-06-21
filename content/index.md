@@ -21,6 +21,8 @@ date: 2026-01-21
 
 > *Zen-Obsession-Humble is the key.*
 
+---
+
 **As a part of my portfolio**, I'm self-hosting this website as my own knowledge base to document my path from today to proficient in Cybersecurity. I publish security analysis/CTF labs writeups, professional course walkthroughs, how-to guides and open-source project setups.  
 
 ![[Database.base]]
