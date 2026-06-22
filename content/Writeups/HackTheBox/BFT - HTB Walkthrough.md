@@ -9,8 +9,6 @@ category:
 author: miniMinn
 platform:
   - HackTheBox
-status:
-  - Writeup in progress...
 ---
 # 01.Overview
 BFT lab is a Sherlock challenge and rated as Very Easy level. It's about Master File Table (MFT) forensic within NTFS filesystem, where a user named Simon Stark was targeted by attackers on Feb 13, downloading a malicious ZIP via email by phishing attack.  
