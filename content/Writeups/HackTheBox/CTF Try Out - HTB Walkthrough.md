@@ -9,6 +9,8 @@ category:
 author: miniMinn
 platform:
   - HackTheBox
+status:
+  - Writeup in progress...
 ---
 
 **Table of Contents**

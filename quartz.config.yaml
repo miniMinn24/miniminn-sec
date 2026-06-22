@@ -291,6 +291,7 @@ plugins:
       includedProperties:
         - author
         - category
+        - status
         - aliases
       excludedProperties: []
       hidePropertiesView: false

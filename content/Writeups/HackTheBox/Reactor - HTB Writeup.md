@@ -10,6 +10,8 @@ author: miniMinn
 password: a9935790004b71ff7e8560c3687c587bdf6741c56da639110c00baaa6666e5839ab4ebb52487fdcfa592382d769df43f3c53d071517b33bd38e3e7929d9b9e87
 platform:
   - HackTheBox
+status:
+  - Machine Active • Writeup Temporarily Locked.
 ---
 # 01.Executive Summary
 

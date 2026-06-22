@@ -9,18 +9,18 @@ category:
 author: miniMinn
 platform:
   - HackTheBox
+status:
+  - Writeup in progress...
 ---
-# Overview
-BFT lab is a very easy level, Sherlock/defensive challenge and is about Master File Table (MFT) forensic within NTFS filesystem. A user named Simon Stark was targeted by attackers on Feb 13, downloading a malicious ZIP via email by phishing attack.  
+# 01.Overview
+BFT lab is a Sherlock challenge and rated as Very Easy level. It's about Master File Table (MFT) forensic within NTFS filesystem, where a user named Simon Stark was targeted by attackers on Feb 13, downloading a malicious ZIP via email by phishing attack.  
 
-We are tasked to analyze the MFT image file to trace sources, find out how malicious ZIP is nested and recover a stager file that executed a PowerShell payload connecting to C2 server.
-
-# Tools used
+### Tools used
 - [Eric Zimmerman's Tools](http://ericzimmerman.github.io/): a powerful Windows forensics utitlies. I used it to parse Master File Table ($MFT) and analyse logs in a timeline.
 - [ImHex](https://imhex.org/): to analyse memory using Hex editor.
 - [CyberChef](https://gchq.github.io/CyberChef/): to decode hex offsets.
 
-# Initial analysis
+# 02.Initial analysis
 
 > [!quote]- Sherlock Scenario
 > In this Sherlock, you will become acquainted with MFT (Master File Table) forensics. You will be introduced to well-known tools and methodologies for analyzing MFT artifacts to identify malicious activity. During our analysis, you will utilize the MFTECmd tool to parse the provided MFT file, TimeLine Explorer to open and analyze the results from the parsed MFT, and a Hex editor to recover file contents from the MFT.
@@ -34,7 +34,7 @@ We are tasked to analyze the MFT image file to trace sources, find out how malic
 > *Note: You will need to replace the file paths with your own.*
 > Next, open the CSV file in TimeLine Explorer to begin your analysis.
 
-## Zimmerman tools setup
+### Zimmerman tools setup
 
 > [!note] Note
 > Just a quick note that some zimmerman programs like **MFTECmd**, **EvtxECmd** and **RECmd** are cross-platform that can also run on Linux, but programs like **TimelineExplorer**, **RegistryExplorer** and **EventLogExplorer** are Windows-only programs. So, you might need to setup Windows VM or Windows environment.
@@ -63,9 +63,9 @@ Next, you can run any of these the programs using .NET 9 framework on any Linux 
 dotnet MFTECmd.dll -f "/path/to/$MFT" --csv "/output/path" --csvf "mft_results.csv"
 ```
 
-# Q&A
+# 03.Q&A
 
-## T-1. Simon Stark was targeted by attackers on February 13. He downloaded a ZIP file from a link received in an email. What was the name of the ZIP file he downloaded from the link?
+### T-1. Simon Stark was targeted by attackers on February 13. He downloaded a ZIP file from a link received in an email. What was the name of the ZIP file he downloaded from the link?
 
 First, I convert the $MFT (Master File Table) raw file into CSV file, so we'll be able to analyse the memory logs in human readable format. 
 

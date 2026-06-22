@@ -7,6 +7,8 @@ tags:
 category:
   - playbook
 author: miniMinn
+status:
+  - Continued.
 ---
 # Powerful handy commands
 
