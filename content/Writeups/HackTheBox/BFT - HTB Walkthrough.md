@@ -63,8 +63,7 @@ dotnet MFTECmd.dll -f "/path/to/$MFT" --csv "/output/path" --csvf "mft_results.c
 
 # 👨‍💻 Q&A
 
-## Task 1
-> *Simon Stark was targeted by attackers on February 13. He downloaded a ZIP file from a link received in an email. What was the name of the ZIP file he downloaded from the link?*
+## T-1. Simon Stark was targeted by attackers on February 13. He downloaded a ZIP file from a link received in an email. What was the name of the ZIP file he downloaded from the link?
 
 First, I convert the $MFT (Master File Table) raw file into CSV file, so we'll be able to analyse the memory logs in human readable format. 
 
@@ -94,8 +93,7 @@ The remaining three files, which all seems related to incident occurred in the s
 
 So, if we also carefully trace the downloaded time by the timeline, `Stage-20240213T093324Z-001.zip` is determined to be the initial download due to its parent path reference in `invoices.zip` ZIP file.  
 
-## Task 2
-> *Examine the Zone Identifier contents for the initially downloaded ZIP file. This field reveals the HostUrl from where the file was downloaded, serving as a valuable Indicator of Compromise (IOC) in our investigation/analysis. What is the full Host URL from where this ZIP file was downloaded?*
+## T-2. Examine the Zone Identifier contents for the initially downloaded ZIP file. This field reveals the HostUrl from where the file was downloaded, serving as a valuable Indicator of Compromise (IOC) in our investigation/analysis. What is the full Host URL from where this ZIP file was downloaded?
 
 When files are downloaded via a web browser, Windows leverages the NTFS file system feature known as **Alternate Data Streams (ADS)** to attach metadata, including the source URL, to the file without altering its visible content.  
 
@@ -107,8 +105,7 @@ By applying a search for `Stage-20240213T093324Z-001.zip` identifier reference f
 
 Now, we found that the initial ZIP file was downloaded from a Google drive.
 
-## Task 3
-> *What is the full path and name of the malicious file that executed malicious code and connected to a C2 server?*
+## T-3. What is the full path and name of the malicious file that executed malicious code and connected to a C2 server?
 
 If we look around the same time Stage file created, we can spot that there's a file named `Invoice.bat` extracted from `Stage-20240213T093324Z-001.zip`:
 
@@ -116,15 +113,13 @@ If we look around the same time Stage file created, we can spot that there's a f
 
 This is known as a batch file (.bat) that are often used by attackers to execute commands on Windows. We can look at its Parent Path to answer this task.  
 
-## Task 4
-> *Analyze the $Created0x30 timestamp for the previously identified file. When was this file created on disk?*
+## T-4. Analyze the $Created0x30 timestamp for the previously identified file. When was this file created on disk?
 
 This timestamps are essential for understanding the sequence of events leading up to and following the security incident. To find the timestamp of `invoice.bat` file, we can directly look at the `Created0x30` column (truth for the actual file origin time):  
 
 ![[Pasted image 20260622205125.png]]
 
-## Task 5
-> *Finding the hex offset of an MFT record is beneficial in many investigative scenarios. Find the hex offset of the stager file from Question 3.*
+## T-5. Finding the hex offset of an MFT record is beneficial in many investigative scenarios. Find the hex offset of the stager file from Question 3.
 
 To identify the offset of the stager file `invoices.bat`, we first need to look at the **Entry Number**:  
 
@@ -140,8 +135,7 @@ We get `23998464` as the offset in decimal value. If we're going to use it in to
 
 ![[Pasted image 20260622211338.png]]
 
-## Task 6
-> *Each MFT record is 1024 bytes in size. If a file on disk has smaller size than 1024 bytes, they can be stored directly on MFT File itself. These are called MFT Resident files. During Windows File system Investigation, its crucial to look for any malicious/suspicious files that may be resident in MFT. This way we can find contents of malicious files/scripts. Find the contents of The malicious stager identified in Question3 and answer with the C2 IP and port.*
+### T-7. Each MFT record is 1024 bytes in size. If a file on disk has smaller size than 1024 bytes, they can be stored directly on MFT File itself. These are called MFT Resident files. During Windows File system Investigation, its crucial to look for any malicious/suspicious files that may be resident in MFT. This way we can find contents of malicious files/scripts. Find the contents of The malicious stager identified in Question3 and answer with the C2 IP and port.
 
 There're **resident files** that can be contained within the MFT when a file size is smaller than 900 bytes. If we investigate `invoice.bat` about its file size, we can confirm that is a MFT Resident file:  
 

@@ -269,7 +269,6 @@ hr {
 
 // MARKDOWN - In-line code | Disabled to use in tags instead
 .markdown-preview-view.markdown-rendered p > code {
-  font-family: 'JetBrains Mono Thin';
   color: #589df6;
   background-color: #1c242f;
   // border: 1px solid #589df6;
@@ -277,7 +276,6 @@ hr {
   // padding: 0.1rem 0.4rem;
 }
 .markdown-preview-view.markdown-rendered li > code {
-  font-family: 'JetBrains Mono Thin';
   color: #589df6;
   background-color: #1c242f;
   // border: 1px solid #589df6;
