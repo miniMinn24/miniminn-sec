@@ -1,0 +1,57 @@
+filters:
+  and:
+    - file.ext == "md"
+formulas:
+  "": ""
+views:
+  - type: cards
+    name: 📘 BTLO
+    filters:
+      and:
+        - category.contains("writeup")
+        - platform.contains("Blue Team Labs Online")
+    order:
+      - file.name
+      - tags
+      - category
+      - author
+      - date
+    sort:
+      - property: file.ctime
+        direction: DESC
+    cardSize: 400
+    imageAspectRatio: 0.25
+  - type: cards
+    name: 📗 HTB
+    filters:
+      and:
+        - category.contains("writeup")
+        - platform.contains("HackTheBox")
+    order:
+      - file.name
+      - tags
+      - category
+      - author
+      - date
+    sort:
+      - property: file.ctime
+        direction: DESC
+    cardSize: 400
+    imageAspectRatio: 0.25
+  - type: cards
+    name: 📕 THM
+    filters:
+      and:
+        - category.contains("writeup")
+        - platform.contains("TryHackMe")
+    order:
+      - file.name
+      - tags
+      - category
+      - author
+      - date
+    sort:
+      - property: file.ctime
+        direction: DESC
+    cardSize: 400
+    imageAspectRatio: 0.25

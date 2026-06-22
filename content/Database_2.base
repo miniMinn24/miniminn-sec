@@ -5,22 +5,6 @@ formulas:
   "": ""
 views:
   - type: cards
-    name: 💻 Write-ups
-    filters:
-      or:
-        - category.contains("writeup")
-    order:
-      - file.name
-      - tags
-      - category
-      - author
-      - date
-    sort:
-      - property: file.ctime
-        direction: DESC
-    cardSize: 400
-    imageAspectRatio: 0.25
-  - type: cards
     name: 🪶 Blogs
     filters:
       and:

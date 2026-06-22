@@ -19,7 +19,3 @@ platform:
 
 # 02.Reconnaissance
 
->⏳ Write-up will be released after machine retirement
-
-
-

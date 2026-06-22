@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
   pageTitle: '> Analyse With Me'
-  pageTitleSuffix: 'miniMinn-Sec'
+  pageTitleSuffix: ''
   enableSPA: true
   enablePopovers: true
   analytics:
