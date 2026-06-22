@@ -289,10 +289,10 @@ plugins:
     options:
       includeAll: false
       includedProperties:
-        - author
-        - category
+        # - author
+        # - category
         - status
-        - aliases
+        # - aliases
       excludedProperties: []
       hidePropertiesView: false
       delimiters: ---

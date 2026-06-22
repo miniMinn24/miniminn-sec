@@ -1,5 +1,5 @@
 ---
-date: 2026-06-14
+date: 2026-05-01
 tags:
   - cybersecurity
   - offensive
@@ -8,7 +8,7 @@ category:
   - playbook
 author: miniMinn
 status:
-  - Continued.
+  - Continuous progress...
 ---
 # Powerful handy commands
 
