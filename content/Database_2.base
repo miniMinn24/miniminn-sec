@@ -19,7 +19,7 @@ views:
       - property: file.ctime
         direction: DESC
     cardSize: 400
-    imageAspectRatio: 1
+    imageAspectRatio: 0.5
   - type: cards
     name: 📓 Playbook
     filters:

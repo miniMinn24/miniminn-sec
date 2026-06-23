@@ -31,57 +31,57 @@ platform:
 
 1. Selecting a media > Proceed:
 
-![[Notebook/attachments/Pasted image 20260511231539.png]]
+![[attachments/Pasted image 20260511231539.png]]
 
 2. Select partition > Linux > Search:
 
-![[Notebook/attachments/Pasted image 20260511231703.png]]
+![[attachments/Pasted image 20260511231703.png]]
 
 3. Try selecting "ext2/ext3" to identify lost files:
 
-![[Notebook/attachments/Pasted image 20260511231802.png]]
+![[attachments/Pasted image 20260511231802.png]]
 
 4. Select "Whole" to extract files from whole parition:
 
-![[Notebook/attachments/Pasted image 20260511231922.png]]
+![[attachments/Pasted image 20260511231922.png]]
 
 5. Choose path to extract recovered files > type "C" to confirm path:
 
-![[Notebook/attachments/Pasted image 20260511232030.png]]
+![[attachments/Pasted image 20260511232030.png]]
 
 Extract လုပ်ပြီးတဲ့အခါ အောက်ပါအတိုင်း File တွေကိုတွေ့ရပါတယ်။ ဒီမေးခွန်းရဲ့အဖြေကိုအခု Recovered လုပ်လိုက်တဲ့ `.gif` ဖိုင်ပေါ်မှာရှာတွေ့နိုင်ပါတယ်။
 
-![[Notebook/attachments/Pasted image 20260511233015.png]]
+![[attachments/Pasted image 20260511233015.png]]
 
 ## Q-2. Submit Flag1
 
 Flag 1 ကို Recover လုပ်လိုက်တဲ့ `.png` ဖိုင်တစ်ခုမှာတစ်ခါတည်း ရှာတွေ့နိုင်ပါတယ်။
 
-![[Notebook/attachments/Pasted image 20260511233451.png]]
+![[attachments/Pasted image 20260511233451.png]]
 
 ## Q-3. Submit Flag2
 
 လက်ရှိအသုံးပြုနေကြတဲ့ Mircosoft Word 2007+ .docx ဖိုင်တွေအားလုံးက ZIP ဖိုင်တွေပါပဲ။ XML files တွေဖြစ်တဲ့ text, images, formatting, etc. တွေအားလုံးကို zip တစ်ခုအနေနဲ့ format ချတည်ဆောက်ထားတာဖြစ်ပါတယ်။
 
-![[Notebook/attachments/Pasted image 20260512230732.png]]
+![[attachments/Pasted image 20260512230732.png]]
 
 ဒါကြောင့် Flag 2 ကိုရှာဖို့ `.docx` ကို unzip ဖြည်ကြည့်လိုက်ပြီး XML contents တွေ မွှေနှောက်ကြည့်တဲ့အခါ  Encoded message တစ်ခုကို document.xml ဖိုင်ထဲမှာရှာတွေ့နိုင်ပါတယ်။
 
-![[Notebook/attachments/Pasted image 20260512232721.png]]
+![[attachments/Pasted image 20260512232721.png]]
 
 CyberChef မှာ Decode လုပ်လိုက်တဲ့အခါ သူက Base64 Encoded စာသားဖြစ်ပြီး အောက်ပါအတိုင်း Original Message ကိုပြန်ရနိုင်ပါတယ်။
 
-![[Notebook/attachments/Pasted image 20260512234105.png]]
+![[attachments/Pasted image 20260512234105.png]]
 
 ## Q-4. Submit Flag3
 
 Recover လုပ်လိုက်တဲ့ဖိုင်တွေထဲမှာ `.pdf` ဖိုင်တစ်ခုကို Metadata စစ်ကြည့်လိုက် Author name field မှာစာတစ်ခုရှာတွေ့ရပါလိမ့်မယ်။
 
-![[Notebook/attachments/Pasted image 20260512235143.png]]
+![[attachments/Pasted image 20260512235143.png]]
 
 Flag အပြည့်စုံမြင်ရဖို့ `%` နောက်က character 2 လုံးတို့က Hex အနေနဲ့ ASCII စာလုံးတွေကိုကိုယ်စားပြုထားတာဖြစ်ပါတယ်။ ကျွန်တော် ASCII table အသုံးပြုပြီး ရှာကြည့်လိုက်တဲ့အခါ အောက်ပါအတိုင်းစာအပြည့်အစုံကိုပြန်ရပါတယ်။
 
-![[Notebook/attachments/Pasted image 20260513000746.png]]
+![[attachments/Pasted image 20260513000746.png]]
 
 ```bash
 # 0x representes a hexadecimal value.

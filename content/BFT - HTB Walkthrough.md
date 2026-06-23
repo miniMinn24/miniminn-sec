@@ -73,17 +73,17 @@ MFTECmd.dll -f "/path/to/$MFT" --csv "/output/path" --csvf "mft_results.csv"
 
 When we get the CSV file, we can open it in TimelineExplorer.exe to start the analysis:  
 
-![[Notebook/attachments/Pasted image 20260613125730.png]]
+![[attachments/Pasted image 20260613125730.png]]
 
 The task mentioned that Simon downloaded a ZIP file on Feb 13. We can find it by filtering the file's **Created Time**: `Feb 13`, and **File Extension: `.zip`**.  
 
 Since we don't know the exact year for the downloaded time, we can search by using the date range:  
 
-![[Notebook/attachments/Pasted image 20260622141705.png]]
+![[attachments/Pasted image 20260622141705.png]]
 
 When the search filter is applied, we can see the results:
 
-![[Notebook/attachments/Pasted image 20260622142029.png]]
+![[attachments/Pasted image 20260622142029.png]]
 
 In these results, we can ignore the file `Archive.zip` as it's not related to the incident and from a different year (if we check its created time).  
 
@@ -101,7 +101,7 @@ ADS allows multiple data streams to coexist within a single file, traditionally 
 
 By applying a search for `Stage-20240213T093324Z-001.zip` identifier reference files, we can find the URL source:  
 
-![[Notebook/attachments/Pasted image 20260622161905.png]]
+![[attachments/Pasted image 20260622161905.png]]
 
 Now, we found that the initial ZIP file was downloaded from a Google drive.
 
@@ -109,7 +109,7 @@ Now, we found that the initial ZIP file was downloaded from a Google drive.
 
 If we look around the same time Stage file created, we can spot that there's a file named `Invoice.bat` extracted from `Stage-20240213T093324Z-001.zip`:
 
-![[Notebook/attachments/Pasted image 20260622164234.png]]
+![[attachments/Pasted image 20260622164234.png]]
 
 This is known as a batch file (.bat) that are often used by attackers to execute commands on Windows. We can look at its Parent Path to answer this task.  
 
@@ -117,13 +117,13 @@ This is known as a batch file (.bat) that are often used by attackers to execute
 
 This timestamps are essential for understanding the sequence of events leading up to and following the security incident. To find the timestamp of `invoice.bat` file, we can directly look at the `Created0x30` column (truth for the actual file origin time):  
 
-![[Notebook/attachments/Pasted image 20260622205125.png]]
+![[attachments/Pasted image 20260622205125.png]]
 
 ### T-5. Finding the hex offset of an MFT record is beneficial in many investigative scenarios. Find the hex offset of the stager file from Question 3.
 
 To identify the offset of the stager file `invoices.bat`, we first need to look at the **Entry Number**:  
 
-![[Notebook/attachments/Pasted image 20260622205555.png]]
+![[attachments/Pasted image 20260622205555.png]]
 
 It's `23436` and we'll need to multiply it by 1024 because MFT entry occupies 1024 bytes, then we convert that decimal numbers to hex.  
 
@@ -133,17 +133,17 @@ $$
 
 We get `23998464` as the offset in decimal value. If we're going to use it in tools like hex editor, the conversion to hex is needed.  
 
-![[Notebook/attachments/Pasted image 20260622211338.png]]
+![[attachments/Pasted image 20260622211338.png]]
 
 ### T-6. Each MFT record is 1024 bytes in size. If a file on disk has smaller size than 1024 bytes, they can be stored directly on MFT File itself. These are called MFT Resident files. During Windows File system Investigation, its crucial to look for any malicious/suspicious files that may be resident in MFT. This way we can find contents of malicious files/scripts. Find the contents of The malicious stager identified in Question3 and answer with the C2 IP and port.
 
 There're **resident files** that can be contained within the MFT when a file size is smaller than 900 bytes. If we investigate `invoice.bat` about its file size, we can confirm that is a MFT Resident file:  
 
-![[Notebook/attachments/Pasted image 20260622212457.png]]
+![[attachments/Pasted image 20260622212457.png]]
 
 It means that the content of the files are actually stored within MFT itself. We can start by looking the raw `$MFT` in a hex editor:  
 
-![[Notebook/attachments/Pasted image 20260622213216.png]]
+![[attachments/Pasted image 20260622213216.png]]
 
 Using **ImHex** editor tool and locating the address by `@ 0x16e000`, scroll bit to find malicious code around it, there's a malicious PowerShell script as a part of the malware:  
 

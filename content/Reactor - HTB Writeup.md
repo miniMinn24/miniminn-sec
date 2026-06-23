@@ -15,7 +15,7 @@ status:
 ---
 # 01.Executive Summary
 
-![[Notebook/attachments/Pasted image 20260615183605.png]]
+![[attachments/Pasted image 20260615183605.png]]
 
 > *This machine involved web enumeration, exploitation of a vulnerable web framework, credential discovery from a database, SSH access, and privilege escalation through a misconfigured Node.js debugging service.*
 

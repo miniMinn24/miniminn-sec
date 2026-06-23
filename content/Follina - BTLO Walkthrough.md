@@ -35,7 +35,7 @@ $ sha1sum ./sample.doc
 06727ffda60359236a8029e0b3e8a0fd11c23313  sample.doc
 ```
 
-![[Notebook/attachments/Pasted image 20260504121650.png]]
+![[attachments/Pasted image 20260504121650.png]]
 
 
 # Question 2
@@ -43,7 +43,7 @@ $ sha1sum ./sample.doc
 
 VirusTotal မှာ sample.doc ကိုစစ်ကြည့်လိုက်တာနဲ့တင် Info တော်တော်များများတွေ့ရပါတယ်။ CVE၊ Contacted IP address၊ Threat label တွေစသဖြင့်ပေါ့။ အခု Properties ကိုကြည့်လိုက်ရင် File Type ကိုရှာနိုင်ပါတယ်။
 
-![[Notebook/attachments/Pasted image 20260504122606.png]]
+![[attachments/Pasted image 20260504122606.png]]
 
 # Question 3
 > Extract the URL that is used within the sample and submit it (Format: https://x.domain.tld/path/to/something)
@@ -51,7 +51,7 @@ VirusTotal မှာ sample.doc ကိုစစ်ကြည့်လိုက်
 အပေါ်ကမေးခွန်နဲ့ပတ်သက်ပြီး စမ်းလို့ရတဲ့နည်းတွေရှိပါတယ်။ Sandbox တစ်ခုမှာ sample.doc ကိုဖွင့်ပြီး Malware Analysis လုပ်လည်းရပါတယ်။ ကျွန်တော်ကတော့ ရိုးရိုးရှင်းရှင်း VirusTotal မှာပဲအမြန်စစ်ကြည့်လိုက်ပါတယ်။  
 
 sample.doc ကို VirusTotal စစ်ကြည့်လိုက်တော့ `RDF842l.html` ဆိုတဲ့ဖိုင်တစ်ခုကိုညွှန်းနေတဲ့ URL နဲ့ ချိတ်ဆက်နေတာကိုတွေ့ရပါတယ်။
-![[Notebook/attachments/Pasted image 20260504155249.png]]
+![[attachments/Pasted image 20260504155249.png]]
 
 # Question 4
 > What is the name of the XML file that is storing the extracted URL? (Format: file.name.ext
@@ -87,7 +87,7 @@ $ grep -r -i "https://www.xmlformats.com/office/word/2022/wordprocessingDrawing/
 
 Output မှာ `document.xml.rels` ဆိုတဲ့ XML ဖိုင်က Malicious URL ကိုသိမ်းထားတာတွေ့ရပါတယ်။
 
-![[Notebook/attachments/Pasted image 20260504163307.png]]
+![[attachments/Pasted image 20260504163307.png]]
 
 # Question 5
 > The extracted URL accesses a HTML file that triggers the vulnerability to execute a malicious payload. According to the HTML processing functions, any files with fewer than `<Number>` bytes would not invoke the payload. Submit the `<Number>` (Format: Number of Bytes)
@@ -96,7 +96,7 @@ sample.doc မှာသုံးသွားတဲ့ command  တွေကိ�
 
 ပြောရမယ်ဆိုရင် Follina (CVE-2022-30190) မှာတုန်းက Microsoft ရဲ့ HTML Processing function ထဲမှာ **Hardcoded** buffer size ရှိခဲ့ပါတယ်။ ဘယ်ဖိုင်ပဲဖြစ်ဖြစ် 4096 bytes ထက်နည်းနေရင် payload ကအသက်ဝင်မနိုင်ကြောင်း ဒီ [Report](https://www.huntress.com/blog/microsoft-office-remote-code-execution-follina-msdt-bug?source=post_page-----13efe22e80e4---------------------------------------#:~:text=After%20some%20testing,the%20payload.)  မှာအတည်ပြုခဲ့ပါတယ်။
 
-![[Notebook/attachments/Pasted image 20260504170220.png]]
+![[attachments/Pasted image 20260504170220.png]]
 
 # Question 6
 > After execution, the sample will try to kill a process if it is already running. What is the name of this process? (Format: filename.ext)
@@ -126,21 +126,21 @@ Start-Process $cmd -windowstyle hidden -ArgumentList "/c cd C:\users\public\&&fo
 
 ကျွန်တော်တို့ Process info ကိုလေ့လာချင်ရင် ရှိပြီးသား Public CVE logs ကိုဒီ  [Any.Run analysis](https://app.any.run/tasks/713f05d2-fe78-4b9d-a744-f7c133e3fafb/) မှာတိုက်ရိုက်လေ့လာကြည့်နိုင်ပါတယ်။ ခုနက Report ထဲမှာလည်း Process Detection ကိုရေးသားထားပါတယ်။ Child process  က **msdt.exe**၊ Parent process က **winword.exe** ဆိုတာကိုတွေ့နိုင်ပါတယ်။
 
-![[Notebook/attachments/Pasted image 20260504192931.png]]
+![[attachments/Pasted image 20260504192931.png]]
 
 # Question 8
 > Submit the MITRE technique ID used by the sample for Execution `[Hint: Online sandbox platforms can help!]` (Format: TXXXX)
 
 အောက်မှာပုံပြထားတဲ့အတိုင်း ခုနက Public CVE logs ဖြစ်တဲ့ဒီ [Any.Run analysis](https://app.any.run/tasks/713f05d2-fe78-4b9d-a744-f7c133e3fafb/) မှာပဲ MITRE technique ကိုလိုက်လေ့လာကြည့်ခဲ့ပါတယ်။ 
 
-![[Notebook/attachments/Pasted image 20260504193258.png]]
+![[attachments/Pasted image 20260504193258.png]]
 
 Execution ရဲ့ Method က **T1059** ဆိုတာ ကျွန်တော်တို့တွေ့ရပါတယ်။ Attacker တစ်ယောက်က Windows Command Shell (CMD) ကိုအသုံးချပြီး Scripts/Payloads တွေကို Series အလိုက် Execute လုပ်တဲ့နည်းပါ။
 
-![[Notebook/attachments/Pasted image 20260504193757.png]]
+![[attachments/Pasted image 20260504193757.png]]
 
 # Question 9
 > Submit the CVE associated with the vulnerability that is being exploited (Format: CVE-XXXX-XXXXX)
 
  ကျွန်တော်တို့ CVE အချက်အလက်ကို VirusTotal မှာစစ်ခဲ့ပြီးသားဖြစ်ပါတယ်။
-![[Notebook/attachments/Pasted image 20260504194414.png]]
+![[attachments/Pasted image 20260504194414.png]]

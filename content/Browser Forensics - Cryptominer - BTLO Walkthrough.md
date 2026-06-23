@@ -28,11 +28,11 @@ If you're wondering what an .ad1 file is, it's a logical container create by **A
 
 Since [FTK Imager](https://www.exterro.com/digital-forensics-software/ftk-imager) is support only for Windows, I had to setup a Windows VM. Then, I opened the evidence file **browserdata.ad1** and explored a bunch of folders:
 
-![[Notebook/attachments/Pasted image 20260514212714.png]]
+![[attachments/Pasted image 20260514212714.png]]
 
  If you look inside the path /Google/Chrome/User Data/, we can see TWO user profiles: Profile 1 and System Profile, which is the answer for Q-1:
 
-![[Notebook/attachments/Pasted image 20260514213112.png]]
+![[attachments/Pasted image 20260514213112.png]]
 
 ## Q-2. What is the name of the browser theme installed on Google Chrome?
 
@@ -40,29 +40,29 @@ Like we download browser themes from the Chrome Web Store, the themes are treate
 
 After inspecting each folders, I noticed there're some theme-related contents in this extension folder `iiihlpikmpijdopbaegjibndhpgjmjfe`:
 
-![[Notebook/attachments/Pasted image 20260514214517.png]]
+![[attachments/Pasted image 20260514214517.png]]
 
 If we look at the manifest.json, we won't be able to see the original names:
 
-![[Notebook/attachments/Pasted image 20260514214942.png]]
+![[attachments/Pasted image 20260514214942.png]]
 
 It's because the extension uses internationalization (i18n) to support different languages, where user-visible strings are replaced with placeholders that reference the actual text stored in locale-specific files.  
 
 That's why, I looked at the path `_locale/en/` and there's messages.json that includes theme name:
 
-![[Notebook/attachments/Pasted image 20260514215408.png]]
+![[attachments/Pasted image 20260514215408.png]]
 
 ## Q-3. Identify the Extension ID and Extension Name of the cryptominer.
 
 Since we had already inspected each extension folders, we can tell  that the folder with this ID `egnfmleidkolminhjlkaomjefheafbbb` is where cryptominer is installed. Then, we can identify the extension name from manifest.json file:
 
-![[Notebook/attachments/Pasted image 20260514220116.png]]
+![[attachments/Pasted image 20260514220116.png]]
 
 ## Q-4. What is the description text of this extension?
 
 No efforts, we can already see the description in manifest.json file:
 
-![[Notebook/attachments/Pasted image 20260514220342.png]]
+![[attachments/Pasted image 20260514220342.png]]
 
 ## Q-5. What is the name of the specific javascript web miner used in the browser extension?
 
@@ -125,4 +125,4 @@ For this task, I spent hours searching through all the browser data folders so I
 
 So, I looked up the name on the web. The answer was `twitter.com/@CryptoLootMiner`:
 
-![[Notebook/attachments/Pasted image 20260514224717.png]]
+![[attachments/Pasted image 20260514224717.png]]

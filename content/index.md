@@ -27,11 +27,11 @@ date: 2026-01-21
 
 # 💻 Sec Write-ups
 
-![[Notebook/Database_1.base]]
+![[Database_1.base]]
 
 # ☕ Blogs & Notes
 
-![[Notebook/Database_2.base]]
+![[Database_2.base]]
 
 ---
 You can reach me at miniminnmgmg24@gmail.com.
