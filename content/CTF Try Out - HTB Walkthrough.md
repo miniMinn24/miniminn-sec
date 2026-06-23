@@ -69,22 +69,22 @@ nc 20.382.480.21 3000
 
 First, we should download the challenge files. These are **VHDL** (VHSIC Hardware Description Language) designed for a cryptographic processor used in environmental sensors communicating with a satellite.
 
-![[Pasted image 20260127145740.png]]
+![[Notebook/attachments/Pasted image 20260127145740.png]]
 
 First connect to the challenge and let's test it out how it encrypts my input binary data of length 16 bits:
-![[Pasted image 20260122172832.png]]
+![[Notebook/attachments/Pasted image 20260122172832.png]]
 
 If you look at the scenario file `key.vhdl`, it encrypts using **XOR logic** by the hardcoded key in `0110001111100001`:
-![[Pasted image 20260122173517.png]]
+![[Notebook/attachments/Pasted image 20260122173517.png]]
 
 > But, only the specific 16-bit binary input bypasses the encryption and will trigger the hidden backdoor.
 
 The **hardcoded backdoor pattern** is simply found in `backdoor.vhdl`, which means If `B = '1',` the output becomes the Key instead of the encrypted data:
-![[Pasted image 20260122175012.png]]
+![[Notebook/attachments/Pasted image 20260122175012.png]]
 
 In the service, enter the pattern we found to see if it triggers the backdoor:
 
-![[Pasted image 20260122180901.png]]
+![[Notebook/attachments/Pasted image 20260122180901.png]]
 
 > [!caution]- (SPOILER) Click to see the flag
 > **The Flag:** `HTB{4_7yp1c41_53cu23_TPM_ch1p}`
@@ -97,7 +97,7 @@ In the service, enter the pattern we found to see if it triggers the backdoor:
 
 We got a ZIP file containing **Gerber (GBR)** files, which are used to describe the physical layers of a **Printed Circuit Board (PCB)** used in drones flight.
 
-![[Pasted image 20260122191417.png]]
+![[Notebook/attachments/Pasted image 20260122191417.png]]
 In summary, these include:
 
 - **Copper**: Conductive traces connecting components.
@@ -108,15 +108,15 @@ In summary, these include:
 
 Since someone has sabotaged the design to make drones fail from flying, let's analyze those flight controller files with a **Gerber File Viewer** software:
 
-![[Pasted image 20260125115644.png]]
+![[Notebook/attachments/Pasted image 20260125115644.png]]
 
 Just on the first layer called **mechanical layer**, the **first half of the flag** is found: `HTB{533_7h3_1nn32_w02k1n95`
 
-![[Pasted image 20260122192513.png]]
+![[Notebook/attachments/Pasted image 20260122192513.png]]
 
 Meaning _`See the inner working`_, so we should keep analyzing the inner layers beneath it. In the left sidebar, I disabled layers by layers until I see the trace:
 
-![[Pasted image 20260122192905.png]]
+![[Notebook/attachments/Pasted image 20260122192905.png]]
 
 There we go, we see the second half of the flag.
 
@@ -131,11 +131,11 @@ There we go, we see the second half of the flag.
 
 For this challenge, we'll be doing **serial signal analysis** on **SALEAE** (.sal) file that contains recorded digital signals from a satellite dish's debugging interface:
 
-![[Pasted image 20260122194854.png]]
+![[Notebook/attachments/Pasted image 20260122194854.png]]
 
 To open those recorded signals, I'll be using **Saleae Logic 2** software, and view them in a single channel:
 
-![[Pasted image 20260122201704.png]]
+![[Notebook/attachments/Pasted image 20260122201704.png]]
 
 > _"Can you help to decode the signal and find the source of the interference?"_
 
@@ -143,11 +143,11 @@ As the challenge asked, we will need to decode this serial communication data wi
 
 - **Baud rate**: 115200 (a common rate for satellite and embedded devices).
 - **Leave the rest as default**: 8 data bits, 1 stop bit, no parity.
-  ![[Pasted image 20260122202249.png | 300]]
+  ![[Notebook/attachments/Pasted image 20260122202249.png| 300]]
 
 After applying analyzer, the output will reveal a **boot log sequence**. In the terminal output, scroll through and follow the traces:
 
-| ![[Pasted image 20260122213235.png \| 300]] | ![[Pasted image 20260122214032.png]] |
+| ![[Notebook/attachments/Pasted image 20260122213235.png\| 300]] | ![[Notebook/attachments/Pasted image 20260122214032.png]] |
 | ------------------------------------------- | ------------------------------------ |
 
 I copied all the terminal output and pasted in a text editor. Then, we see the flag.
@@ -170,17 +170,17 @@ According to the challenge:
 
 We are provided with a network traffic captured file:
 
-![[Pasted image 20260125121808.png]]
+![[Notebook/attachments/Pasted image 20260125121808.png]]
 
 `.pcapng` or **(PCAP Next Generation)** is a network traffic data containing raw network packets, usually headers and payloads, captured from a live network or simulated environment.
 
 So, we shall happily use **Wireshark** software to open these files:
 
-![[Pasted image 20260125123157.png]]
+![[Notebook/attachments/Pasted image 20260125123157.png]]
 
 Since the specific secret information is could be in one of these frames, let's first quickly filter a pattern by _"frame contains HTB{"_:
 
-![[Pasted image 20260125125214.png]]
+![[Notebook/attachments/Pasted image 20260125125214.png]]
 
 There it is! We found the flag in that specific frame.
 
@@ -201,11 +201,11 @@ We download the challenge files first, and got a pre-complied file that is execu
 
 So, I tried if there're anything useful info to see with `strings` and `file` commands, but nothing showed up.
 
-![[Pasted image 20260129123933.png]]
+![[Notebook/attachments/Pasted image 20260129123933.png]]
 
 Let's see the decompiled code of `casino` in **Ghidra** to see how it really works:
 
-![[Pasted image 20260127162658.png]]
+![[Notebook/attachments/Pasted image 20260127162658.png]]
 
 There're lots of codes to see, but let's break it down in summary.
 
@@ -246,11 +246,11 @@ The program expects random numbers contained in that `check` array. It bases on 
 What we can do now is we can find where random numbers are **located** in the `check` array. For each located random numbers, we will determine which input character -> used as seed -> then produces that random number value (which the program expects) by `rand()`.
 
 In Ghidra > Decompile window, I double-clicked on `check` function to see its array address:
-![[Pasted image 20260127214434.png]]
+![[Notebook/attachments/Pasted image 20260127214434.png]]
 
 So, I opened `./casino` the binary file with **GDB** tool and looked up the address where the `check` array is located. Starting from the memory address `0x4080`, I viewed 30 memory units to see if these random values relevant to `check`:
 
-![[Pasted image 20260127215304.png]]
+![[Notebook/attachments/Pasted image 20260127215304.png]]
 
 In total, **29** **integers** were only confirmed to be relevant, the last `0` wasn't a part of it.
 
@@ -306,7 +306,7 @@ This script basically brute-forces every possible ASCII characters to see which 
 
 We download the challenge files first, and as we should always do, we try basic reconnaissance on the target file:
 
-![[Pasted image 20260129130401.png]]
+![[Notebook/attachments/Pasted image 20260129130401.png]]
 
 What a coincidence, I didn't expect that the flag would be clearly visible. So before testing the program, I extracted that binary file to see if there're some human-readable strings using with `strings` command, which then the flag was actually found _in the stack of items_.
 
@@ -332,17 +332,17 @@ strings.exe rev_lootstash/stash | Select-String "HTB{"
 
 We download the challenge files and try basic reconnaissance as should we should always do:
 
-![[Pasted image 20260201204245.png]]
+![[Notebook/attachments/Pasted image 20260201204245.png]]
 
 We see nothing useful there. So, I explored the code with **Ghidra** and found a interesting function `src::check_flag`, seems it validates our input to the program using a loop to check characters one by one:
 
-![[Pasted image 20260201221405.png]]
+![[Notebook/attachments/Pasted image 20260201221405.png]]
 
 This looks interesting that we see the function is called 31 times, from `0` to `1e` (30 in decimal) and this could be the characters (the flag) we're looking for. As far I have researched, these functions are handled by Rust's `FnOnce::call_once` mechanism to check characters and to ensure they're called only once in a loop.
 
 So, I clicked on the first `FnOnce::call_once` to check what it really does:
 
-![[Pasted image 20260201221151.png]]
+![[Notebook/attachments/Pasted image 20260201221151.png]]
 
 In the first call function, we see that it performs `cmp` (compare) instruction to compare the expected value with the corresponding character (in this case: `0x48` or "H" in ASCII) in the user input.
 
@@ -350,10 +350,10 @@ Now, an idea came up to my mind is to check all of these 31 `FnOnce::call_once` 
 
 So, moving on the next functions, we will find another hex values that represent ASCII characters:
 
-![[Pasted image 20260201224647.png]]
+![[Notebook/attachments/Pasted image 20260201224647.png]]
 
 After collecting all of these hex values with [Ghex](https://wiki.gnome.org/Apps/Ghex), we finally get the flag.
-![[Pasted image 20260201225630.png]]
+![[Notebook/attachments/Pasted image 20260201225630.png]]
 
 > While this method can be simple but manual, other players just create their own Python script to automate the process with **Radare2** and **GDB**, but that would requires you to have essential knowledge of these tools.
 
@@ -369,15 +369,15 @@ After collecting all of these hex values with [Ghex](https://wiki.gnome.org/Apps
 **Objective**: Construct a response message by **XML** payload.
 
 I opened the given IP address on a browser:
-![[Pasted image 20260217160440.png]]
+![[Notebook/attachments/Pasted image 20260217160440.png]]
 
 I explored around the web and went through all options: STAT, INV, DATA, MAP, RADIO. At ROM, I found an XML document.
 
-![[Pasted image 20260217160926.png]]
+![[Notebook/attachments/Pasted image 20260217160926.png]]
 
 I tried submitting that update configuration to see what it does. When we look at the bottom, we can see that the app construct a response message by extracting a specific value `<Version>` from the XML input:
 
-![[Pasted image 20260217161715.png]]
+![[Notebook/attachments/Pasted image 20260217161715.png]]
 
 With this chance, I wrote a XML payload to read the flag and present it in `<Version>` tag:
 

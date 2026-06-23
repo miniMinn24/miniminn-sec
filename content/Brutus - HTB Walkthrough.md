@@ -28,7 +28,7 @@ Brutus is a sherlock challenge and rated as very easy level on HackTheBox. It fo
 
 In the scenario files, **auth.log** is the text file that dynamically records authentication events on Linux systems. I opened a text editor and started looking for the brute force attack patterns:  
 
-![[Pasted image 20260608191110.png]]
+![[Notebook/attachments/Pasted image 20260608191110.png]]
 
 Starting from the line 68 to 321, we can see that an IP address was entering passwords until it succeeded and those SSH sessions were closed after failing three times for each.  
 
@@ -36,7 +36,7 @@ Starting from the line 68 to 321, we can see that an IP address was entering pas
 
 Throughout the analysis, we can see that the attacker was able to logged in as root at line 322:  
 
-![[Pasted image 20260608193351.png]]
+![[Notebook/attachments/Pasted image 20260608193351.png]]
 
 ### T-3. Identify the UTC timestamp when the attacker logged in manually to the server and established a terminal session to carry out their objectives. The login time will be different than the authentication time, and can be found in the wtmp artifact.
 
@@ -83,19 +83,19 @@ $ utmpdump wtmp
 
 If we continue analyzing the logs afterward [[#T-2. The bruteforce attempts were successful and attacker gained access to an account on the server. What is the username of the account?|T-2]], there was a new session opened when the attacker was able to logged in as root:  
 
-![[Pasted image 20260608203654.png]]
+![[Notebook/attachments/Pasted image 20260608203654.png]]
 
 ### T-5. The attacker added a new user as part of their persistence strategy on the server and gave this new user account higher privileges. What is the name of this account?
 
 Starting from line 333, we can notice that the attacker created a new user account after gaining root privileges:  
 
-![[Pasted image 20260608204032.png]]
+![[Notebook/attachments/Pasted image 20260608204032.png]]
 
 ### T-6. What is the MITRE ATT&CK sub-technique ID used for persistence by creating a new account?
 
 I went to [MITRE ATT&CK](https://attack.mitre.org/) framework and looked up for anything related to this specific activity within **Persistent techniques**:  
 
-![[Pasted image 20260608204606.png]]
+![[Notebook/attachments/Pasted image 20260608204606.png]]
 
 According to logs, the attacker created a new account as local on the server, and this specifies that sub-technique ID.
 
@@ -103,13 +103,13 @@ According to logs, the attacker created a new account as local on the server, an
 
 In auth.log line 355, we can see that the attacker logged out from root session after creating a new persistent account (cyberjunk), then switched to it:  
 
-![[Pasted image 20260608205222.png]]
+![[Notebook/attachments/Pasted image 20260608205222.png]]
 
 ### T-8. The attacker logged into their backdoor account and utilized their higher privileges to download a script. What is the full command executed using sudo?
 
 In line 375, we can see the attacker used sudo privileges to download a malicious script:  
 
-![[Pasted image 20260608210140.png]]
+![[Notebook/attachments/Pasted image 20260608210140.png]]
 
 # 💭 Lessons learned
 

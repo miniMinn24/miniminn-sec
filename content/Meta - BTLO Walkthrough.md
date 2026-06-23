@@ -42,7 +42,7 @@ exiftool uploaded_1.JPG uploaded_2.png | grep -i -E "model|device"
 
 Now, we can see the camera model we're looking for.
 
-![[Pasted image 20260517131113.png]]
+![[Notebook/attachments/Pasted image 20260517131113.png]]
 
 ## Q-2. When was the picture taken? 
 
@@ -54,23 +54,23 @@ exiftool uploaded_1.JPG uploaded_2.png | grep -i -E "modifi*|creat*"
 
 And we found the information we're looking for:
 
-![[Pasted image 20260517133609.png]]
+![[Notebook/attachments/Pasted image 20260517133609.png]]
 
 ## Q-3. What does the comment on the first image says?
 
 To find the metadata related to **comment** on the first image, I did the same way to find the pattern:
 
-![[Pasted image 20260517133826.png]]
+![[Notebook/attachments/Pasted image 20260517133826.png]]
 
 ## Q-4. Where could the criminal be?
 
 I tried searching for the GPS location in the metadata, which it seems exists:
 
-![[Pasted image 20260517134204.png]]
+![[Notebook/attachments/Pasted image 20260517134204.png]]
 
 But when I try to search for its location on the web, the location doesn't really exist. This could only be malformed as the comment said. However, the [Google's Image Search](https://google.com) did the job instead of needing to decode GPS:
 
-![[Pasted image 20260517135159.png]]
+![[Notebook/attachments/Pasted image 20260517135159.png]]
 
 
 

@@ -10,7 +10,7 @@ author: miniMinn
 category:
   - note
 ---
-> **View all the Google Cybersecurity labs and walkthroughs here:** [[Activities & Labs]]
+> **View all the Google Cybersecurity labs and walkthroughs here:** [[Notebook/Activities & Labs]]
 
 # Course 1 - Foundations of Security
 
@@ -46,7 +46,7 @@ The **LoveLetter** attack was an example of social engineering. Social engineeri
 
 > [!quote] Equifax Breach
 > During the Equifax breach, over 143 million customer records were stolen, and the breach affected approximately 40% of all Americans.  
-> ![[attachments/Pasted image 20260422201315.png]]
+> ![[Notebook/attachments/Pasted image 20260422201315.png]]
 
 > [!INFO]- Identify: Methods of Attacks
 > - **Malware**: A software designed to harm devices or networks.  
@@ -66,7 +66,7 @@ The **LoveLetter** attack was an example of social engineering. Social engineeri
 > - **USB Baiting**: An attack in which a threat actor strategically leaves a malware USB stick for an employee to find and unknowingly infect a network.  
 
 #### Intro to the eight CISSP security domains
-![[attachments/Pasted image 20260423195514.png]]
+![[Notebook/attachments/Pasted image 20260423195514.png]]
 
 1. **Security and Risk Management**
 	Defines security goals and objectives, risk mitigation, compliance, business continuity, and the law.  
@@ -119,7 +119,7 @@ The **LoveLetter** attack was an example of social engineering. Social engineeri
 
 ##### Components of security frameworks
 
-![[attachments/Pasted image 20260429115523.png]]
+![[Notebook/attachments/Pasted image 20260429115523.png]]
 1. **Identifying and documenting security goals**
 > ​For example, an organization may have a goal to ​align with the E.U.'s General Data Protection Regulation, ​also known as GDPR (a data protection law established to ​grant European citizens more control ​over their personal data)
 2. **Setting guidelines to achieve security goals**
@@ -134,7 +134,7 @@ The **LoveLetter** attack was an example of social engineering. Social engineeri
 #### Secure design
 **CIA Triad**: A foundational model that helps inform how organizations consider risk when setting up systems and security policies.  
 
-![[attachments/Pasted image 20260429120737.png]]
+![[Notebook/attachments/Pasted image 20260429120737.png]]
 
 - **Confidentiality**: Only authorized users can access specific assets or data.
 > ​For example, strict access controls that ​define who should and should not have access to data, ​must be put in place to ensure ​confidential data remains safe.
@@ -238,7 +238,7 @@ The International Court of Justice (ICJ), which updates its guidance regularly, 
 #### CISSP security domains
 **Security posture**: An organization's ability to manage its defense of critical assets and data, and react to change.  
 
-![[attachments/Pasted image 20260430150833.png]]
+![[Notebook/attachments/Pasted image 20260430150833.png]]
 #### 1. Security and risk management
 Focused on defining security goals and objectives, risk mitigation, compliance, business continuity, and legal regulations.  
 > Reducing risks to critical assets (like PII) by defining security goals and objectives.
@@ -296,7 +296,7 @@ Anything that can impact the confidentiality, integrity, or availability of an a
 - **Legacy systems**: Old systems that might not be accounted for or updated, but can still impact assets, such as workstations or old mainframe systems. For example, an organization might have an old vending machine that takes credit card payments or a workstation that is still connected to the legacy accounting system.
 - **Multiparty risk**: Outsourcing work to third-party vendors can give them access to intellectual property, such as trade secrets, software designs, and inventions.
 - **Software compliance/licensing**: Software that is not updated or in compliance, or patches that are not installed in a timely manner
-![[attachments/Pasted image 20260430160742.png]]
+![[Notebook/attachments/Pasted image 20260430160742.png]]
 - **Low-risk asset**: Information that would not harm the organization's reputation or ongoing operations, and would not cause financial damage if compromised (e.g., <mark style="background: #BBFABBA6;">public research data</mark>).
 - **Medium-risk asset**: Information that's not available to the public and may cause some damage to the organization's finances, reputation, or ongoing operations (e.g., <mark style="background: #FFF3A3A6;">the early release of a company's quarterly earnings could impact the value of their stock</mark>).
 - **High-risk asset**: Information protected by regulations or laws, which if compromised would have a severe negative impact on an organization's finances, ongoing operations, or reputation (e.g., <mark style="background: #FF5582A6;">leaked assets with SPII, PII or intellectual property</mark>).
@@ -319,7 +319,7 @@ A weakness that can be exploited by a threat (e.g., outdated firewalls, software
 
 
 #### NIST's Risk Management Framework (RMF)
-![[attachments/Pasted image 20260430163014.png]]
+![[Notebook/attachments/Pasted image 20260430163014.png]]
 - Prepare
 - Categorize
 - Select
@@ -359,7 +359,7 @@ Be aware of how systems are operating.
 
 #### Manage common threats, risks, and vulnerabilities
 There are many resources, such as the NIST, that provide lists of [cybersecurity risks](https://www.nist.gov/itl/smallbusinesscyber/cybersecurity-basics/cybersecurity-risks). Additionally, the Open Web Application Security Project (OWASP) publishes a standard awareness document about the [top 10 most critical security risks](https://owasp.org/www-project-top-ten/) to web applications, which is updated regularly.  
-![[attachments/Pasted image 20260430210530.png]]
+![[Notebook/attachments/Pasted image 20260430210530.png]]
 
 #### Common Vulnerabilities
 - **ProxyLogon**: A pre-authenticated vulnerability that affects the Microsoft Exchange server. This means a treat actor can complete a user authentication process to deploy malicious code from a remote location.
@@ -406,7 +406,7 @@ A unified framework for protecting the security of information systems within th
 #### NIST Cybersecurity Framework (CSF)
 A voluntary framework that consists of standards, guidelines, and best practices to manage cybersecurity risk. 
 
-![[attachments/Pasted image 20260501125313.png]]
+![[Notebook/attachments/Pasted image 20260501125313.png]]
 
 #### 1. Identify
 The management of cybersecurity risk and its effect on an organization's people and assets.
@@ -420,7 +420,7 @@ The strategy used to protect an organization through the implementation of polic
 Identifying potential security incidents and improving monitoring capabilities to increase the speed and efficiency of detections.
 > You might be asked to review a new security tool's setup to make sure it's flagging low, medium, or high risk, and then alerting the security team about any potential threats or incidents.
 
-![[attachments/Pasted image 20260501130640.png]]
+![[Notebook/attachments/Pasted image 20260501130640.png]]
 
 #### 4. Respond
 Making sure that the proper procedures are used to contain, neutralize, and analyze security incidents, and implement improvements to the security process.  
@@ -475,7 +475,7 @@ Emphasizes the importance of strong cybersecurity governance across all levels o
 - Notes how quickly those risks need to be addressed
 - Identifies compliance regulations
 
-![[attachments/o6XzbUnYRK6pwAtl0ME25Q_3c91489225e04f408952ba8a8595e0f1_Control-categories.pdf]]
+![[Notebook/attachments/o6XzbUnYRK6pwAtl0ME25Q_3c91489225e04f408952ba8a8595e0f1_Control-categories.pdf]]
 
 
 ## Module 3: Introduction to Cybersecurity Tools
@@ -489,7 +489,7 @@ Emphasizes the importance of strong cybersecurity governance across all levels o
 
 **Security Information and Event Management (SIEM)**: A application that collects and analyzes log data to monitor critical activities in an organization. They helps to inform only customized important logs/events, which saves time for better efficiency.
 
-![[attachments/Pasted image 20260521162404.png|410]]
+![[Notebook/attachments/Pasted image 20260521162404.png|410]]
 
 #### SIEM Dashboards
 
@@ -553,7 +553,7 @@ Before incidents occur, mitigate potential impacts on the organization by docume
 #### 2. Detection and Analysis
 Detect and analyze events by implementing defined processes and appropriate technology.  
 
-![[attachments/Pasted image 20260522151004.png]]
+![[Notebook/attachments/Pasted image 20260522151004.png]]
 
 #### 3. Containment
 Prevent further damage and reduce immediate impact of incidents.
@@ -567,7 +567,7 @@ Document the incident, inform organizational leadership, and apply lessons learn
 #### 6. Coordination
 Report incidents and share information throughout the response process, based on established standards.  
 
-![[attachments/Pasted image 20260522150853.png]]
+![[Notebook/attachments/Pasted image 20260522150853.png]]
 
 > [!quote] Incident response and the value of playbooks.
 > "You can use playbooks for: Open attacks, Privacy incidents, Data leaks, DoS attacks, Service alerts and others."
@@ -588,7 +588,7 @@ Report incidents and share information throughout the response process, based on
 #### Interpreting output by a network analyzer
 **tcpdump** prints the output of the command as the sniffed packets in the command line, and optionally to a log file, after a command is executed. The output of a packet capture contains many pieces of important information about the network traffic. 
 
-![[attachments/Pasted image 20260524223620.png]]
+![[Notebook/attachments/Pasted image 20260524223620.png]]
 
 ---
 # Course 3 - Networks and Network Security
@@ -617,7 +617,7 @@ Report incidents and share information throughout the response process, based on
 
 **Data packet**: A basic unit of information that travels form one device to another within a network.  
 
-![[attachments/Pasted image 20260523162320.png|385]]
+![[Notebook/attachments/Pasted image 20260523162320.png|385]]
 
 **Bandwidth**: The amount of data a device receives every second.  
 **Speed**: The rate at which data packets are received or downloaded.  
@@ -636,7 +636,7 @@ Report incidents and share information throughout the response process, based on
 
 **TCP/IP model**: A framework used to visualize how data is organized and transmitted across the network.  
 
-![[attachments/Pasted image 20260523163749.png]]
+![[Notebook/attachments/Pasted image 20260523163749.png]]
 
 #### IP addresses and network communication
 
@@ -646,7 +646,7 @@ Report incidents and share information throughout the response process, based on
 
 **MAC address**: A unique alphanumeric identifier that is assigned to each physical device on a network.  
 
-![[attachments/Pasted image 20260524123321.png]]
+![[Notebook/attachments/Pasted image 20260524123321.png]]
 
 
 ## Module 2 - Network Operations
@@ -713,7 +713,7 @@ A segment of a network that protects the internal network from the internet.
 	- Internal network
 	- Restricted zone
 
-![[attachments/Pasted image 20260524151946.png]]
+![[Notebook/attachments/Pasted image 20260524151946.png]]
 **Subnetting** is the process of taking one large network and dividing it into several smaller, organized groups called subnets.  
 
 **Classless Inter-Domain Routing (CIDR)** is a method of assigning subnet masks to IP addresses to create a subnet, replaced Classful from limited IPs. 
@@ -721,7 +721,7 @@ A segment of a network that protects the internal network from the internet.
 #### Proxy servers
 A server that fulfills the requests of a client by forwarding them on to other servers.  
 
-![[attachments/Pasted image 20260524155913.png]]
+![[Notebook/attachments/Pasted image 20260524155913.png]]
 
 **Forward proxy server**: Regulates and restricts a person's access to the internet.  
 **Reverse proxy server**: Regulates and restricts the internet's access to an internal server.  
@@ -741,7 +741,7 @@ A network attack performed when an attacker changes the source IP of a data pack
 #### 1. On-path attack
 An attacker where a malicious actor places themselves in the middle of an authorized connection and intercepts or alters the data in transit.  
 
-![[attachments/Pasted image 20260525121534.png]]
+![[Notebook/attachments/Pasted image 20260525121534.png]]
 
 #### 2. Replay attack
 A network attack performed when a malicious actor intercepts a data packet in transit and delays it or repeats it at another time.  
@@ -755,7 +755,7 @@ A network attack performed when an attacker sniffs an authorized user's IP addre
 The practice of strengthening a system to reduce its vulnerability and attack surface.  
 **Attack surface**: All the potential vulnerabilities that a threat actor could exploit.  
 
-![[attachments/Pasted image 20260525151206.png]]
+![[Notebook/attachments/Pasted image 20260525151206.png]]
 
 **Penetration test**: A simulated attack that helps identify vulnerabilities in systems, networks, websites, applications, and processes.  
 
@@ -785,22 +785,22 @@ The practice of strengthening a system to reduce its vulnerability and attack su
 #### Firewall
 irewalls allow or block traffic based on a set of rules. As data packets enter a network, the packet header is inspected and allowed or denied based on its port number. NGFWs are also able to inspect packet payloads. Each system should have its own firewall, regardless of the network firewall.
 
-![[attachments/Pasted image 20260525214233.png]]
+![[Notebook/attachments/Pasted image 20260525214233.png]]
 
 #### Intrusion Detection System
 The IDS is configured to detect known attacks. IDS systems often sniff data packets as they move across the network and analyze them for the characteristics of known attacks. Some IDS systems review not only for signatures of known attacks, but also for anomalies that could be the sign of malicious activity. When the IDS discovers an anomaly, it sends an alert to the network administrator who can then investigate further.
 
-![[attachments/Pasted image 20260525214257.png]]
+![[Notebook/attachments/Pasted image 20260525214257.png]]
 
 ####  Intrusion Prevention System
 An IPS searches for signatures of known attacks and data anomalies. An IPS reports the anomaly to security analysts and blocks a specific sender or drops network packets that seem suspect. 
 
-![[attachments/Pasted image 20260525214326.png]]
+![[Notebook/attachments/Pasted image 20260525214326.png]]
 
 #### Security Information and Event Management (SIEM)
 An application that collects and analyzes log data to monitor critical activities in an organization. SIEM tools work in real time to report suspicious activity in a centralized dashboard. SIEM tools additionally analyze network log data sourced from IDSs, IPSs, firewalls, VPNs, proxies, and DNS logs.
 
-![[attachments/Pasted image 20260525214420.png]]
+![[Notebook/attachments/Pasted image 20260525214420.png]]
 
 > [!quote] Kelsey: Cloud security explained
 > "As more and more companies move into cloud. You may just be the person who can help one of those organizations finally make that leap because they have a professional on their team."
@@ -819,7 +819,7 @@ An application that collects and analyzes log data to monitor critical activitie
 
 ## Module 1: Introduction to operating systems
 
-![[attachments/Pasted image 20260531195633.png]]
+![[Notebook/attachments/Pasted image 20260531195633.png]]
 
 1. **User**: The user initiates the process by having something they want to accomplish on the computer.
 2. **Application**: The application is the software program that users interact with to complete a task.
@@ -872,7 +872,7 @@ YUM is a tool used with Red Hat-derived distributions. It is run from the comman
 ### Filesystem Hierarchy Standard (FHS)
 The component of Linux that organizes data. It defines how directories, directory contents, and other storage is organized in the operating system.  
 
-![[attachments/Pasted image 20260601122428.png]]
+![[Notebook/attachments/Pasted image 20260601122428.png]]
 
 ### Standard FHS directories
 - `/home`: Each user in the gets their own home directory.
@@ -975,11 +975,11 @@ WHERE NOT country = 'Canada' AND NOT country = 'USA';
 
 - **INNER JOIN**: Returns rows matching on a specified column that exists in more than one table.  
 
-![[attachments/Pasted image 20260602154017.png]]
+![[Notebook/attachments/Pasted image 20260602154017.png]]
 
 The first type of join that you might perform is an inner join. **INNER JOIN** returns rows matching on a specified column that exists in more than one table.  
 
-![[attachments/Pasted image 20260602155057.png]]
+![[Notebook/attachments/Pasted image 20260602155057.png]]
 
 ```sql
 SELECT *
@@ -990,11 +990,11 @@ INNER JOIN machines ON employees.device_id = machines.device_id;
 ### OUTER JOIN
 - **LEFT JOIN**: Returns all of the records of the first table, but only returns rows of the second table that match on a specified column.
 
-![[attachments/Pasted image 20260602154528.png]]
+![[Notebook/attachments/Pasted image 20260602154528.png]]
 
 When joining two tables, **LEFT JOIN** returns all the records of the first table, but only returns rows of the second table that match on a specified column.  
 
-![[attachments/Pasted image 20260602155300.png]]
+![[Notebook/attachments/Pasted image 20260602155300.png]]
 
 ```sql
 SELECT *
@@ -1006,11 +1006,11 @@ LEFT JOIN machines ON employees.device_id = machines.device_id;
 
 - **RIGHT JOIN**: Returns all of the records of the second table, but only returns rows from the first table that match on a specified column.
 
-![[attachments/Pasted image 20260602154637.png]]
+![[Notebook/attachments/Pasted image 20260602154637.png]]
 
 When joining two tables, **RIGHT JOIN** returns all of the records of the second table, but only returns rows from the first table that match on a specified column.  
 
-![[attachments/Pasted image 20260602155346.png]]
+![[Notebook/attachments/Pasted image 20260602155346.png]]
 
 ```sql
 SELECT *
@@ -1021,7 +1021,7 @@ RIGHT JOIN machines ON employees.device_id = machines.device_id;
 
 - **Full outer joins**: `FULL OUTER JOIN` returns all records from both tables. You can think of it as a way of completely merging two tables.
 
-![[attachments/Pasted image 20260602155452.png]]
+![[Notebook/attachments/Pasted image 20260602155452.png]]
 
 ```sql
 SELECT *
@@ -1085,7 +1085,7 @@ FROM customers;
 - **PHI**: Protected health information, information that relates to the past, present, or future physical or mental health or condition of an individual.
 - **SPII**: S for sensitive, a specific type of PII that falls under stricter handling guidelines.
 
-![[attachments/Pasted image 20260610153543.png]]
+![[Notebook/attachments/Pasted image 20260610153543.png]]
 
 - **Information privacy** refers to the protection from unauthorized access and distribution of data.
 - **Information security** (InfoSec) refers to the practice of keeping data in all states away from unauthorized users.
@@ -1113,7 +1113,7 @@ $ sha256 <filename>
 
 **Salting** is an additional safeguard that's used to strengthen hash functions. A salt is a random string of characters that's added to data before it's hashed. The additional characters produce a more unique hash value, making salted data resilient to rainbow table attacks.  
 
-![[attachments/Pasted image 20260611222601.png]]
+![[Notebook/attachments/Pasted image 20260611222601.png]]
 
 ### Access controls and authentication systems
 
@@ -1126,7 +1126,7 @@ $ sha256 <filename>
 
 **SSO** works by automating how trust is established between a user and a service provider. Rather than placing the responsibility on an employee or customer, SSO solutions use trusted third-parties to prove that a user is who they claim to be. This is done through the exchange of encrypted access tokens between the identity provider and the service provider.  
 
-![[attachments/Pasted image 20260611223907.png]]
+![[Notebook/attachments/Pasted image 20260611223907.png]]
 
 ### Why we audit user activity
 **Session**: A sequence of network HTTP basic auth requests and responses associated with the same user.  
@@ -1150,17 +1150,17 @@ $ sha256 <filename>
 - Discretionary access control (DAC)
 - Role-based access control (RBAC)
 
-![[attachments/Pasted image 20260612111500.png]]
+![[Notebook/attachments/Pasted image 20260612111500.png]]
 
 **MAC** is the strictest of the three frameworks. Authorization in this model is based on a strict need-to-know basis. Access to information must be granted manually by a central authority or system administrator.  
 - Commonly applied in law enforcement, military, and other government agencies where users must request access through a chain of command. MAC is also known as non-discretionary control because access isn’t given at the discretion of the data owner.
 
-![[attachments/Pasted image 20260612111615.png]]
+![[Notebook/attachments/Pasted image 20260612111615.png]]
 
 **DAC** is typically applied when a data owner decides appropriate levels of access.
 - One example of DAC is when the owner of a Google Drive folder shares editor, viewer, or commentor access with someone else.
 
-![[attachments/Pasted image 20260612111644.png]]
+![[Notebook/attachments/Pasted image 20260612111644.png]]
 
 **RBAC** is used when authorization is determined by a user's role within an organization.
 - For example, a user in the marketing department may have access to user analytics but not network administration.
@@ -1182,7 +1182,7 @@ $ sha256 <filename>
 
 **Continuous Deployment** (Fully automated releases) automates the entire release process. Changes that pass all automated checks are automatically deployed directly to the live production environment, with no manual approval. This is all about speed and efficiency.  
 
-![[attachments/Pasted image 20260612161106.png]]
+![[Notebook/attachments/Pasted image 20260612161106.png]]
 
 ### Defense in depth strategy
 1. **Perimeter layer**, like authentication systems that validate user access
@@ -1237,7 +1237,7 @@ Having a record of events like user login attempts is critical to finding and fi
 ### 10. Server-side request forgery
 Companies have public and private information stored on web servers. When you use a hyperlink or click a button on a website, a request is sent to a server that should validate who you are, fetch the appropriate data, and then return it to you.
 
-![[attachments/Pasted image 20260612181726.png]]
+![[Notebook/attachments/Pasted image 20260612181726.png]]
 
 ### OSINT Tools
 - VirusTotal is a service that allows anyone to analyze suspicious files, domains, URLs, and IP addresses for malicious content.

@@ -253,7 +253,7 @@ In secnarios -- <mark style="background: #D2B3FFA6;">get the pirorities right.</
 ## Module 1 - Introduction to Networking
 **Protocol** - Defined sets of standards for communication.  
 
-![[attachments/Pasted image 20250903185544.png| 500]]
+![[Notebook/attachments/Pasted image 20250903185544.png| 500]]
 
 ##### Physical Layer
 Physical devices that interconnect computers, about signal are sent between networks.
@@ -271,17 +271,17 @@ Mostly **TCP/UDP** responsible for ensuring data gets to right application runni
 ##### Application Layer
 The interface between end-user applications and the underlying network services. (e.g. Browser)
 
-![[attachments/25_08_30_22-37-17.png| 500]]
+![[Notebook/attachments/25_08_30_22-37-17.png| 500]]
 
 ### Cables
 Common forms of copper twisted-pair cables - **Cat5, Cat5e,** and **Cat6**.
 
-![[attachments/25_08_30_22-48-51.png]]
+![[Notebook/attachments/25_08_30_22-48-51.png]]
 
 **Crosstalk** - When an electrical pulse on one wire is accidentally detected on another wire. (Cat5 is replaced by Cat5e)
 **Fiber cables** - Contain individual optic fiber - tiny tubes made out of glass (width of human hair). Mostly seen in data centers and ensures quicker, no potential data loss - but expensive.
 
-![[attachments/25_08_30_23-05-40.png| 400]]
+![[Notebook/attachments/25_08_30_23-05-40.png| 400]]
 
 ### Hubs, Switches and Routers
 **Hub** - broadcasts them out to all other connected ports<mark style="background: #FFF3A3A6;"> without analyzing or processing</mark> the data. Forwards all incoming data to every other connected device. Nodes in the network of hub can only send data one at a time.
@@ -291,13 +291,13 @@ Common forms of copper twisted-pair cables - **Cat5, Cat5e,** and **Cat6**.
 **Router** - uses IP to transmit IP packets contains both the data and source & destination IP addresses. Directing traffic efficiently by <mark style="background: #FFF3A3A6;">examining packet headers and consulting its routing table </mark>to determine the best path for each packet - across different networks.
 - *Routers are Global Guides for getting traffic to the right places in a world of large complex internet. (e.g. between you and web server)*
 
-![[attachments/25_08_30_23-20-08.png| 500]]
+![[Notebook/attachments/25_08_30_23-20-08.png| 500]]
 
 **Border Gateway Protocol (BGP)** - Routers share data via BGB, letting them learn about the <mark style="background: #FFF3A3A6;">most optimal paths</mark> to forward traffic.
 
 ### Servers and Clients
 Each node is primarily an either Server or Client.
-![[attachments/25_09_02_13-09-17.png| 400]]
+![[Notebook/attachments/25_09_02_13-09-17.png| 400]]
 Even though **Mail server** acts as a server, it is a client of **DNS server**.
 
 ### Moving Bits Across the Wire
@@ -307,7 +307,7 @@ Even though **Mail server** acts as a server, it is a client of **DNS server**.
 ### Twisted Pair Cabling and Duplexing
 **Duplex** - The concept that information can flow in both directions.
 **Simplex** - unidirectional.
-![[attachments/25_09_02_13-17-57.png| 400]]
+![[Notebook/attachments/25_09_02_13-17-57.png| 400]]
 
 ### Ethernet Over Twisted Pair Technologies
 - **UTP** - The most common and least expensive - business and home networks. Basic protection against <mark style="background: #BBFABBA6;">electromagnetic interference (EMI), radio frequency interference (RFI), and crosstalk interference.</mark>
@@ -319,46 +319,46 @@ Even though **Mail server** acts as a server, it is a client of **DNS server**.
 ### Network Ports and Patch Panels
 **RJ45** - Registered Jack, used primarily for Ethernet networking to link devices.
 
-| ![[attachments/Pasted image 20250903142814.png\| 180]] | ![[attachments/Pasted image 20250903143147.png\| 250]] | ![[attachments/Pasted image 20250903143310.png\| 250]] |
+| ![[Notebook/attachments/Pasted image 20250903142814.png\| 180]] | ![[Notebook/attachments/Pasted image 20250903143147.png\| 250]] | ![[Notebook/attachments/Pasted image 20250903143310.png\| 250]] |
 | ------------------------------------------- | ------------------------------------------- | ------------------------------------------- |
 
 **Patch panel** - as a central point for organising and managing the <mark style="background: #BBFABBA6;">vast network of cables</mark>. Administrators can easily establish, modify, or terminate links between different network components.
 *Structured cabling is important in enterprise networking - clear where cables terminate.*
 
-![[attachments/2025-09-03-143537_hyprshot.png| 400]]
+![[Notebook/attachments/2025-09-03-143537_hyprshot.png| 400]]
 
 ### Cabling Tools
 
 | Picture                                     | Description                                                                                                                                                                                                                                             |
 | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![[attachments/Pasted image 20250903145257.png\| 200]] | **Crimper**<br>Securely attaching connectors, such as RJ45 connectors, to the ends of Ethernet cables without soldering - <mark style="background: #ABF7F7A6;">squeeze down or crimp wires</mark>.                                                      |
-| ![[attachments/Pasted image 20250903144844.png\| 200]] | **Cable Stripper**<br>To remove the <mark style="background: #ABF7F7A6;">protective rubber coating</mark> from Ethernet cables (UTP and STP) to expose the individual conductors for termination with connectors like RJ45 plugs or keystone jacks.<br> |
-| ![[attachments/Pasted image 20250903153340.png\| 200]] | **Wi-Fi Analyzer**<br>Visualizes the RF environment, identify sources of interference, and <mark style="background: #ABF7F7A6;">optimize wireless network performance</mark> in an area. Collects data about the WiFi and its circumstances.            |
-| ![[attachments/Pasted image 20250903153657.png\| 200]] | **Toner Probe**<br><mark style="background: #ABF7F7A6;">Finding Ethernet</mark> and other internet connectors (Cat 5, Cat 6, ...) through walls, ceilings, or within cable bundles where they are not physically accessible.                            |
-| ![[attachments/Pasted image 20250903154329.png\| 200]] | **Punch Down Tool**<br>Punching down wires into <mark style="background: #ABF7F7A6;">punch down panels or jacks</mark>. First the protective covering is taken off the wires, then the wires are punched into place.                                    |
-| ![[attachments/Pasted image 20250903155001.png\| 200]] | **Cable Tester**<br>To <mark style="background: #ABF7F7A6;">detect common wiring faults</mark> - open connections (breaks in a wire), shorts (where wires touch unintentionally), crossed pairs, reversed pairs, and incorrect wiring.                  |
-| ![[attachments/Pasted image 20250903160843.png\| 200]] | **Loopback Plug**<br>Hardware diagnostic tool used in networking to <mark style="background: #ABF7F7A6;">test the functionality</mark> of physical ports and interfaces                                                                                 |
-| ![[attachments/Pasted image 20250903161119.png\| 200]] | **Network Tap**<br><mark style="background: #ABF7F7A6;">Monitors and captures data</mark> flowing through a network, providing a non-intrusive, passive method for accessing network traffic.                                                           |
+| ![[Notebook/attachments/Pasted image 20250903145257.png\| 200]] | **Crimper**<br>Securely attaching connectors, such as RJ45 connectors, to the ends of Ethernet cables without soldering - <mark style="background: #ABF7F7A6;">squeeze down or crimp wires</mark>.                                                      |
+| ![[Notebook/attachments/Pasted image 20250903144844.png\| 200]] | **Cable Stripper**<br>To remove the <mark style="background: #ABF7F7A6;">protective rubber coating</mark> from Ethernet cables (UTP and STP) to expose the individual conductors for termination with connectors like RJ45 plugs or keystone jacks.<br> |
+| ![[Notebook/attachments/Pasted image 20250903153340.png\| 200]] | **Wi-Fi Analyzer**<br>Visualizes the RF environment, identify sources of interference, and <mark style="background: #ABF7F7A6;">optimize wireless network performance</mark> in an area. Collects data about the WiFi and its circumstances.            |
+| ![[Notebook/attachments/Pasted image 20250903153657.png\| 200]] | **Toner Probe**<br><mark style="background: #ABF7F7A6;">Finding Ethernet</mark> and other internet connectors (Cat 5, Cat 6, ...) through walls, ceilings, or within cable bundles where they are not physically accessible.                            |
+| ![[Notebook/attachments/Pasted image 20250903154329.png\| 200]] | **Punch Down Tool**<br>Punching down wires into <mark style="background: #ABF7F7A6;">punch down panels or jacks</mark>. First the protective covering is taken off the wires, then the wires are punched into place.                                    |
+| ![[Notebook/attachments/Pasted image 20250903155001.png\| 200]] | **Cable Tester**<br>To <mark style="background: #ABF7F7A6;">detect common wiring faults</mark> - open connections (breaks in a wire), shorts (where wires touch unintentionally), crossed pairs, reversed pairs, and incorrect wiring.                  |
+| ![[Notebook/attachments/Pasted image 20250903160843.png\| 200]] | **Loopback Plug**<br>Hardware diagnostic tool used in networking to <mark style="background: #ABF7F7A6;">test the functionality</mark> of physical ports and interfaces                                                                                 |
+| ![[Notebook/attachments/Pasted image 20250903161119.png\| 200]] | **Network Tap**<br><mark style="background: #ABF7F7A6;">Monitors and captures data</mark> flowing through a network, providing a non-intrusive, passive method for accessing network traffic.                                                           |
 
 ### Ethernet and MAC Addresses
 **MAC** - Media Access Control, a <mark style="background: #BBFABBA6;">globally unique identifier</mark> attached to network interface.
 - 48-bit, six groups of two hexadecimal numbers.
 - First **three** octets - Organizationally Unique Identifier (OUI)
-![[attachments/Pasted image 20250903191342.png| 500]]
+![[Notebook/attachments/Pasted image 20250903191342.png| 500]]
 
 ### Unicast, Multicast, and Broadcast
 
 | Name          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Unicast**   | <mark style="background: #ABF7F7A6;">One-to-one communication model.</mark><br><br>*e.g. `4A-30-10-21-10-1A`, the first octet is `4A` in hexadecimal - `01001010`. The least significant bit (the rightmost) is `0` - this is a **unicast address**.*<br><br>This frame will be sent to all devices on the collision domain, but only the device with the matching MAC address will receive and process it.<br><br>![[attachments/Pasted image 20250903223126.png\| 200]]                                                                                                                                                                   |
-| **Multicast** | <mark style="background: #FFB8EBA6;">One-to-many communication model.</mark><br><br>*e.g. `01:00:5E:00:01`, the first octet is `01` - `0000 0001` in binary. The least significant bit is `1` - it is a multicast address. This specific address falls within the range `01:00:5E:00:00` to `01:00:5E:7F:FF`, which is reserved for IPv4 multicast addresses.*<br><br>While the switch treats the frame as multicast and floods it to all ports, the receiving NICs decide whether to accept the frame based on whether they are subscribed to that specific multicast group.<br><br>![[attachments/Pasted image 20250903222851.png\| 200]] |
-| **Broadcast** | <mark style="background: #ADCCFFA6;">One-to-all communication model.</mark><br><br>On the data link (Layer 2), a broadcast is identified by a destination MAC address `FF:FF:FF:FF:FF`, which all devices on the network recognize as a broadcast intended for everyone.<br><br>The message is delivered to every device on the local network, although only the relevant device(s) will process it, while others will typically ignore it.<br><br>![[attachments/Pasted image 20250903223052.png\| 200]]                                                                                                                                   |
+| **Unicast**   | <mark style="background: #ABF7F7A6;">One-to-one communication model.</mark><br><br>*e.g. `4A-30-10-21-10-1A`, the first octet is `4A` in hexadecimal - `01001010`. The least significant bit (the rightmost) is `0` - this is a **unicast address**.*<br><br>This frame will be sent to all devices on the collision domain, but only the device with the matching MAC address will receive and process it.<br><br>![[Notebook/attachments/Pasted image 20250903223126.png\| 200]]                                                                                                                                                                   |
+| **Multicast** | <mark style="background: #FFB8EBA6;">One-to-many communication model.</mark><br><br>*e.g. `01:00:5E:00:01`, the first octet is `01` - `0000 0001` in binary. The least significant bit is `1` - it is a multicast address. This specific address falls within the range `01:00:5E:00:00` to `01:00:5E:7F:FF`, which is reserved for IPv4 multicast addresses.*<br><br>While the switch treats the frame as multicast and floods it to all ports, the receiving NICs decide whether to accept the frame based on whether they are subscribed to that specific multicast group.<br><br>![[Notebook/attachments/Pasted image 20250903222851.png\| 200]] |
+| **Broadcast** | <mark style="background: #ADCCFFA6;">One-to-all communication model.</mark><br><br>On the data link (Layer 2), a broadcast is identified by a destination MAC address `FF:FF:FF:FF:FF`, which all devices on the network recognize as a broadcast intended for everyone.<br><br>The message is delivered to every device on the local network, although only the relevant device(s) will process it, while others will typically ignore it.<br><br>![[Notebook/attachments/Pasted image 20250903223052.png\| 200]]                                                                                                                                   |
 
 ### Dissecting an Ethernet Frame
 **Data packet** - any single set of binary data being sent across.
 Data packets in Ethernet level, it is **Ethernet frame** - highly structured collection of information in specific order.
 
-![[attachments/Pasted image 20250903233048.png]]
+![[Notebook/attachments/Pasted image 20250903233048.png]]
 
 | Unit                            | Bytes      | Description                                                                                                                                                                                                                                                                                                                                                                                         |
 | ------------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -375,7 +375,7 @@ Data packets in Ethernet level, it is **Ethernet frame** - highly structured col
 ## Module 2: The Network Layer
 ### IPv4 Addresses
 
-| ![[attachments/Pasted image 20250904111523.png\| 300]]                                                             |
+| ![[Notebook/attachments/Pasted image 20250904111523.png\| 300]]                                                             |
 | ------------------------------------------------------------------------------------------------------- |
 | IP address represented in **32-bits** long and **4 octets** - (normally represented in decimal `0-255`) |
 
@@ -387,7 +387,7 @@ Data packets in Ethernet level, it is **Ethernet frame** - highly structured col
 ### IPv4 Datagram and Encapsulation
 **IP Datagram** - <mark style="background: #BBFABBA6;">structured series of fields</mark> that are strictly defined.
 
-![[attachments/2025-09-04-124455_hyprshot.png| 500]]
+![[Notebook/attachments/2025-09-04-124455_hyprshot.png| 500]]
 
 | Unit                       | Bits | Description                                                                                                                                                                                                                      |
 | -------------------------- | ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -395,10 +395,10 @@ Data packets in Ethernet level, it is **Ethernet frame** - highly structured col
 | **Header Length**          | `4`  | Declares how long the entire header is - almost always 20 bytes in dealing with IPv4                                                                                                                                             |
 | **Service Type**           | `16` | Specify details about quality of service (QoS).<br><mark style="background: #FFF3A3A6;">Routers</mark> can decide which IP datagram maybe more important <mark style="background: #FFF3A3A6;">based on the Service Type</mark>.  |
 | **Total length field**     | `16` | Indicates the total length of the IP datagram.                                                                                                                                                                                   |
-| **Identification**         | `16` | Groups messages together.<br>- The IP layer <mark style="background: #FFF3A3A6;">splits data into individual packets</mark> when amount of data is larger than a single datagram.<br>![[attachments/Pasted image 20250905170710.png\| 300]] |
+| **Identification**         | `16` | Groups messages together.<br>- The IP layer <mark style="background: #FFF3A3A6;">splits data into individual packets</mark> when amount of data is larger than a single datagram.<br>![[Notebook/attachments/Pasted image 20250905170710.png\| 300]] |
 | **Flags**                  | --   | Indicates if a datagram is allowed to be <mark style="background: #FFF3A3A6;">fragmented</mark> or has already been fragmented.                                                                                                  |
-| **Fragment Offset**        | --   | Indicates the starting position of the data in a fragment.<br>![[attachments/Pasted image 20250905171834.png\| 300]]                                                                                                                        |
-| **TTL** (Time to live)     | 8    | Indicates <mark style="background: #FFF3A3A6;">how many routers hops</mark> a datagram.<br>![[attachments/Pasted image 20250905172926.png\| 300]]                                                                                           |
+| **Fragment Offset**        | --   | Indicates the starting position of the data in a fragment.<br>![[Notebook/attachments/Pasted image 20250905171834.png\| 300]]                                                                                                                        |
+| **TTL** (Time to live)     | 8    | Indicates <mark style="background: #FFF3A3A6;">how many routers hops</mark> a datagram.<br>![[Notebook/attachments/Pasted image 20250905172926.png\| 300]]                                                                                           |
 | **Protocol**               | 8    | Contains data about what transport layer protocol is being used. (*e.g. TCP, UDP*)                                                                                                                                               |
 | **Header Checksum**        | 13   | Checksum of the contents of the entire IP datagram header.                                                                                                                                                                       |
 | **Source IP Address**      | 32   | Sender of the packet                                                                                                                                                                                                             |
@@ -406,11 +406,11 @@ Data packets in Ethernet level, it is **Ethernet frame** - highly structured col
 | **Options**                | --   | Used to set special characteristics for datagrams - testing purposes.                                                                                                                                                            |
 | **Padding**                | --   | A series of zeros used to ensure the header is the correct total size.                                                                                                                                                           |
 The entire concept of datagram is <mark style="background: #BBFABBA6;">encapsulated</mark> as the payload of Ethernet frame.
-![[attachments/Pasted image 20250905175940.png| 400]]
+![[Notebook/attachments/Pasted image 20250905175940.png| 400]]
 
 ### IPv4 Address Classes
 IP Addresses - **network ID** and **host ID**.
-![[attachments/Pasted image 20250905181633.png| 500]]
+![[Notebook/attachments/Pasted image 20250905181633.png| 500]]
 
 ### Address Resolution Protocol (ARP)
 **ARP** - A protocol used to <mark style="background: #BBFABBA6;">discover the hardware address</mark> of a node with a certain IP address.
@@ -418,21 +418,21 @@ IP Addresses - **network ID** and **host ID**.
 
 > ARP table entries generally expire after a short amount of time to ensure changes int he network are accounted for.
 
-| ![[attachments/Pasted image 20250905182408.png\| 400]] | ![[attachments/Pasted image 20250905184343.png\| 400]] |
+| ![[Notebook/attachments/Pasted image 20250905182408.png\| 400]] | ![[Notebook/attachments/Pasted image 20250905184343.png\| 400]] |
 | ------------------------------------------- | ------------------------------------------- |
 
 ### Subnetting
 Dividing a large network into **smaller**, more **manageable** networks.
 > Incorrect subnetting setups are common problem - IT support might run into.
 
-| ![[attachments/Pasted image 20250905212653.png\| 400]] | ![[attachments/Pasted image 20250905212721.png\| 200]] |
+| ![[Notebook/attachments/Pasted image 20250905212653.png\| 400]] | ![[Notebook/attachments/Pasted image 20250905212721.png\| 200]] |
 | ------------------------------------------- | ------------------------------------------- |
 
 ### Subnet Masks
 
-| ![[attachments/Pasted image 20250905213555.png\| 400]] |
+| ![[Notebook/attachments/Pasted image 20250905213555.png\| 400]] |
 |:-------------------------------------------:|
-| ![[attachments/Pasted image 20250905213628.png\| 300]] |
+| ![[Notebook/attachments/Pasted image 20250905213628.png\| 300]] |
 
 ### CIDR (Class-Inter Domain Routing)
 A method for allocating IP addresses and routing internet traffics.
@@ -440,13 +440,13 @@ A method for allocating IP addresses and routing internet traffics.
 
 ### Basic Routing Concepts
 
-| ![[attachments/Pasted image 20250905215812.png\| 400]] |
+| ![[Notebook/attachments/Pasted image 20250905215812.png\| 400]] |
 | ------------------------------------------- |
-| ![[attachments/Pasted image 20250905223258.png\| 400]] |
+| ![[Notebook/attachments/Pasted image 20250905223258.png\| 400]] |
 
 ### Routing Tables
 
-![[attachments/Pasted image 20250912202059.png| 500]]
+![[Notebook/attachments/Pasted image 20250912202059.png| 500]]
  
  **Destination Network** - Contain a row for each network that the routers knows about.
  **Next Hop** - The IP address of the next router that should receive data intended for the destination networking quesiton.
@@ -460,7 +460,7 @@ A method for allocating IP addresses and routing internet traffics.
 
 ### Exterior Gateways, Autonomous Systems, and the IANA
 
-![[attachments/Pasted image 20250912205653.png| 400]]
+![[Notebook/attachments/Pasted image 20250912205653.png| 400]]
 
 **IANA** - Internet Assigned Numbers Authority, non-profit organization that helps manage things like IP address allocation. Alongside, also responsible for **ASN**.
 **ASN** - Autonomous system number, numbers assigned to individual autonomous systems.
@@ -477,10 +477,10 @@ The ranges of Is set aside for use by anyone that cannot be routed to. Every dev
 **Demultiplexing** - Taking traffic and delivering it to the proper receiving service.
 
 Through ports, **ports** (16 bits) are used to direct traffic to specific services - running on a networked computers.
-![[attachments/Pasted image 20250913221557.png| 500]]
+![[Notebook/attachments/Pasted image 20250913221557.png| 500]]
 
 ### Dissection of a TCP Segment
-![[attachments/Pasted image 20250915144803.png| 400]]
+![[Notebook/attachments/Pasted image 20250915144803.png| 400]]
 - **Sequence number** - used to reassemble the message at the receiving end of the segments that are received out of order.
 - **Acknowledgement number** - an acknowledgement for the previous bytes being received successfully.
 - **Data offset field** - communicates how long the TCP header for this segment is.
@@ -497,7 +497,7 @@ Through ports, **ports** (16 bits) are used to direct traffic to specific servic
 - **SYN** (synchronize): Synchronize sequence numbers - used when first establishing and make sure the receiving end knows to examine the sequence number field.
 - **FIN** (finish): connection can be closed and terminate.
 
-![[attachments/Pasted image 20250915153511.png| 400]]
+![[Notebook/attachments/Pasted image 20250915153511.png| 400]]
 Once the three-way handshake is complete, the TCP connection is established:
 > A sends a TCP segment to B with a `SYN` flag sent.
 > A: "Let's establish a connection and look at my `sequence number` field, so we know where this conversation starts."
@@ -509,7 +509,7 @@ Once the three-way handshake is complete, the TCP connection is established:
 > A: "I acknowledge your acknowledgement. Let's start sending data."
 
 Since both sides have now send `SYN/ACK` pairs to each other, a TCP connection in this state is operation in **full duplex**.
-![[attachments/Pasted image 20250915155027.png| 300]]
+![[Notebook/attachments/Pasted image 20250915155027.png| 300]]
 
 **Handshake**  - ensure that they're speaking the same protocol, and able to understand each other.
 
@@ -550,7 +550,7 @@ Malicious actors might also use port scanning to search for open and unsecured p
 
 ### Firewalls
 Blocks traffic that meets **certian criteria** - independant network devices.
-![[attachments/Pasted image 20250927225642.png| 500]]
+![[Notebook/attachments/Pasted image 20250927225642.png| 500]]
 
 ### The Application Layer and the OSI Model
 - Has many standardized Protocols to work with - all need to be in same protocol in order to communicate.
@@ -559,13 +559,13 @@ OSI Model is often used in academic settings and various networking certificatio
 **Presentation layer** - responsible for making sure that the unencapsulated application layer data is able to be understood by the application in question - encryption and compression.
 
 ### All the Layers Working in Unison
-![[attachments/Pasted image 20250928123547.png| 700]]
+![[Notebook/attachments/Pasted image 20250928123547.png| 700]]
 
 
 ## Module 4: Networking Services
 **DNS** - A global and highly distributed network service that resolves strings of letters into IP addresses for you.
 **Domain Name** - The term we use for something that can be resolved by DNS.
-![[attachments/Pasted image 20250930163634.png| 400]]
+![[Notebook/attachments/Pasted image 20250930163634.png| 400]]
 ### The Many Steps of Name Resolution
 - IP address
 - Subnet mask
@@ -576,11 +576,11 @@ OSI Model is often used in academic settings and various networking certificatio
 
 #### Name Resolution
 - **Caching and Recursive name servers** - to store known doamin name lookups for a certain amount of time. Recursive name servers perfrom full DNS resolution requests.
-![[attachments/Pasted image 20250930170716.png| 500]]
+![[Notebook/attachments/Pasted image 20250930170716.png| 500]]
 
 ### DNS and UDP
 **DNS using UDP** - grand total of 8 packets, while TCP is 44 packets at minimum.
-![[attachments/Pasted image 20250930213510.png| 500]]
+![[Notebook/attachments/Pasted image 20250930213510.png| 500]]
 
 ### Resource Record Types
 **A** Record - Used to point a certain domain name at a certain IPv4 IP address. Uses Round Robin to balance multiple traffics.
@@ -604,7 +604,7 @@ Complete FQDN is limited to total 255 characters.
 
 ### DNS Zones
 Allowing for easier control over **multiple levels** of a domain.
-![[attachments/Pasted image 20251001223909.png| 500]]
+![[Notebook/attachments/Pasted image 20251001223909.png| 500]]
 *Each office has around 200 people with their own uniquely named desktops, this would be 600 **A Records** to keep track of in a single zone.
 Instead, split up into their own zone - each with their own DNS zone.*
 > A total of **4 Authoritative name servers** will be required - one for `largecompany.com` and one for each of the subdomains.
@@ -637,22 +637,22 @@ DHCP listens on **UDP port 67** - DHCP discovery message are always sent from **
 - This broadcast message is delivered to every node in LAN.
 - If DHCP is present, the request message will be recieved.
 
-![[attachments/Pasted image 20251004131219.png| 400]]
+![[Notebook/attachments/Pasted image 20251004131219.png| 400]]
 
 ##### 2. DHCP Offer
 Since DHCP offer is also broadcast, it reach every machine on the network. The original client would recognize that was intented for itself - *by inclusion of MAC address in broadcast message.*
 
-![[attachments/Pasted image 20251004132216.png| 400]]
+![[Notebook/attachments/Pasted image 20251004132216.png| 400]]
 
 ##### 3. DHCP Request
 "I'd like to have an IP that you offered to me." IP hasn't assigned yet, and again sent. DHCP server receives the DHCP request message - then DHCP ACK.
 
-![[attachments/Pasted image 20251004132729.png| 400]]
+![[Notebook/attachments/Pasted image 20251004132729.png| 400]]
 
 ##### 4. DHCP Acknowledgement
 Client use the configuration information and set up its own network layer configuration.
 
-![[attachments/Pasted image 20251004132848.png| 400]]
+![[Notebook/attachments/Pasted image 20251004132848.png| 400]]
 
 **DHCP Lease** - Certain amount of time availabe to client before it expires. Which then you can have another IP pool by DHCP.
 
@@ -665,11 +665,11 @@ Client use the configuration information and set up its own network layer config
 **Port Preservation** - A technique where the source port chosen by a client is the same port used by the router.
 > Outbound connections choose a source port at random from **Ephemeral ports** (49,152 through 65,535).
 
-![[attachments/Pasted image 20251004161102.png| 400]]
+![[Notebook/attachments/Pasted image 20251004161102.png| 400]]
 
 **Port Forwarding** (Transport layer) - A technique where specific destination ports can be configured to always be delivered to specific nodes. This allows for complete **IP Masquerading**.
 
-![[attachments/Pasted image 20251004163236.png| 400]]
+![[Notebook/attachments/Pasted image 20251004163236.png| 400]]
 
 ### IPv4 Exhaustion
 IANA assigns IP address blocks to the five **Regional Internet Registries (RIRs)**.
@@ -681,12 +681,12 @@ IANA assigns IP address blocks to the five **Regional Internet Registries (RIRs)
 > Your computer gets its IP address directly from an **RIR**, not the IANA.
 
 
-![[attachments/Pasted image 20251004170519.png| 400]]
+![[Notebook/attachments/Pasted image 20251004170519.png| 400]]
 
 ### Virtual Private Networks
 The **Tunnelling Procotols**. Works by using the payload session at the Transport layer.
 
-![[attachments/Pasted image 20251004171417.png| 400]]
+![[Notebook/attachments/Pasted image 20251004171417.png| 400]]
 
 ### Proxy Services
 A server that acts on behalf of a client in order to access another service. 
@@ -694,7 +694,7 @@ A server that acts on behalf of a client in order to access another service.
 **Reverse Proxy** - A service that might appear to be a single server to external 
 clients, but actually represents many servers living behind it. (*Like load balancing*)
 
-![[attachments/Pasted image 20251004184352.png| 400]]
+![[Notebook/attachments/Pasted image 20251004184352.png| 400]]
 
 > Proxies are any server that acts a intermediary between a client and another server.
 
@@ -703,7 +703,7 @@ clients, but actually represents many servers living behind it. (*Like load bala
 ### Dial-up and Modems
 A dial-up connection uses POTS (Plain Old Telephone Service - analog) for data transfer, and gets its name because the connection is established by actually dialing a phone number.
 
-![[attachments/Pasted image 20251004215204.png| 400]]
+![[Notebook/attachments/Pasted image 20251004215204.png| 400]]
 
 **Baud Rate** - A measurement of how many bits can be passed across a phone line in a second.
 **Modems** take data - interpret and turn into **audible wavelengths** that can be transmitted over POTS.
@@ -719,7 +719,7 @@ Invented by AT&T.
 ### Digital Subscriber Lines (DSL)
 For more faster internet - voice-to-voice call speeds
 
-![[attachments/Pasted image 20251004221311.png| 300]]
+![[Notebook/attachments/Pasted image 20251004221311.png| 300]]
 
 DSL the two common types were
 - **ADSL** - Asymmetric Digital Subscriber Line, different speed for outbound and incoming data - faster download speed and slower upload speed.
@@ -728,7 +728,7 @@ DSL the two common types were
 ### Cable Broadband
 **Cable Modem** - The device that sits at the edge of a consumer's network and connects it to the cable modem termination system, or CMTS.
 
-![[attachments/Pasted image 20251004222542.png| 500]]
+![[Notebook/attachments/Pasted image 20251004222542.png| 500]]
 
 ### Fiber Connections
 - **FTTX** - Fiber To The X, where X can be one of many things.
@@ -762,7 +762,7 @@ Two sub-protocols occur on Network Layer when the network decides what physical 
 - **Network Control Protocol (NCP)** used to negotiate optional configuration parameters and facilities for the Network Layer. There's NCP for each higher layer protocol used by the PPP.
 - **Link Control Protocol (LCP)** initiates and terminates connections automatically for hosts - configures the interfaces at each end like magic numbers and selecting for optional authentication.
 
-![[attachments/Pasted image 20251005194537.png| 500]]
+![[Notebook/attachments/Pasted image 20251005194537.png| 500]]
 
 - **Flag**: a single byte and lets the receiver know beginning of the frame. Depending on encapsulation - may or may not be a start or end flag.
 - **Address**: a single byte, contains broadcast address.
@@ -774,7 +774,7 @@ Two sub-protocols occur on Network Layer when the network decides what physical 
 ##### Encapsulation
 Prcoess which each layer takes data from previous layer and adds **headers and trailers** for the next layer to interpret.
 
-![[attachments/Pasted image 20251005231035.png| 500]]
+![[Notebook/attachments/Pasted image 20251005231035.png| 500]]
 
 Process is reversed in other endpoint - De-encapsulation.
 
@@ -790,14 +790,14 @@ A way of encapsulating PPP frames inside an ethernet frame. PPPoE is solution fo
 ### Wide Area Network Technologies (WAN)
 *You're as a sole IT support, you setup a router and configure it to perform NAT. Connect DNS and DHCP server to make network configuration easier. You sign a contract with a ISP (delivers link to internet). You configure VPN server accessiable via port forwarding. Can have employees to connect the office from anywhere.*
 
-![[attachments/Pasted image 20251006145028.png| 400]]
+![[Notebook/attachments/Pasted image 20251006145028.png| 400]]
 
 *Your CEO decides new office open - with WAN*
 
 **WAN** - Acts like a single network, but spans across multiple physical locations. Usually require to contract a link with ISP across the internet.
 
 
-| ![[attachments/Pasted image 20251006152622.png\| 400]]                                                                                                                                                                                                                    | ![[attachments/Pasted image 20251006152900.png\| 400]]                                                                                                                                    |
+| ![[Notebook/attachments/Pasted image 20251006152622.png\| 400]]                                                                                                                                                                                                                    | ![[Notebook/attachments/Pasted image 20251006152900.png\| 400]]                                                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | One network at one side and another network on the other.<br>Each of those networks ends at a **demarcation point** - where the ISPs network takes over<br>The area between each demarcation point and the ISP's actual core network is called **Local Loop**. Local loop would be like a **T carrier line or high speed optical connection** to the provider's local regional office. Connects to ISP's core network and internet at large. s  |
 
@@ -843,7 +843,7 @@ Most common: 2.4 GHz and 5 GHz. Specifications for how should wireless communica
 
 802.11 defining how we operate at both **Physical** and the **Data Link** layers.
 
-![[attachments/Pasted image 20251007140336.png| 500]]
+![[Notebook/attachments/Pasted image 20251007140336.png| 500]]
 
 - **Frame Control** - 16 bits, describes how should be processed *e.g version used.*
 - **Duration/ID** - how long total frame is, so reciever knows how long should to listen.
@@ -874,7 +874,7 @@ Most common: 2.4 GHz and 5 GHz. Specifications for how should wireless communica
 **5 GHz**
 - More channels, fewer interference, 2 Gbps speed. But, limited 50 feet (12 m) to 100 feet (30 m).
 
-![[attachments/Pasted image 20251007150710.png| 500]]
+![[Notebook/attachments/Pasted image 20251007150710.png| 500]]
 
 ### IoT Data Transfer Protocols
 - Request/Response Model, Publish/Subscribe Model (hosts|clients)
@@ -899,7 +899,7 @@ IoT collects physical location (*temp*), equipment data (*maintainance status*),
 For example, dealing with 802.11b network, channel 1 operates at 2.412 MHz. Since channel width is 22 MHz, signal really lives between 2.401 MHz and 2.423 MHz.
 Some channels overlap, but some are far to won't interfere with each other.
 
-![[attachments/Pasted image 20251007161453.png| 500]]
+![[Notebook/attachments/Pasted image 20251007161453.png| 500]]
 
 Some APs only perform this analysis when startup. Others dynamically change their channel as needed.
 You can still experience heavy channel congestion - in dense urban areas with lots of wireless networks.
@@ -933,7 +933,7 @@ For business networks with multiple users, able to addressed exploited weaknesse
 Like Wi-Fi cellular networking operates over **radio waves** - specifically reseverd for cellular transmissions.
 Travels long distances - usually over kilometers or miles. Built on cell concept, each cell is assigned a specifc frequency band for use. Neighboring cells are setup to use bands that don't overlap. (*WLAN with multiple APs*)
 
-| ![[attachments/Pasted image 20251007223017.png\| 300]] | ![[attachments/Pasted image 20251007222939.png\| 400]] |
+| ![[Notebook/attachments/Pasted image 20251007223017.png\| 300]] | ![[Notebook/attachments/Pasted image 20251007222939.png\| 400]] |
 | ------------------------------------------- | ------------------------------------------- |
 
 ## Module 6: Troubleshooting and the Future of Networking
@@ -941,7 +941,7 @@ Travels long distances - usually over kilometers or miles. Built on cell concept
 ### Ping: Internet Control Message Protocol
 ICMP is mainly used by routers or remote hosts to communicate why transmission failed.
 
-![[attachments/Pasted image 20251008151025.png| 400]]
+![[Notebook/attachments/Pasted image 20251008151025.png| 400]]
 - **Type**: What type of msg is delivered - *destination unreachable or time exeeded.*
 - **Code**: Indicates more specific reason - *port unreachable*.
 - **Rest of the header**: Optionally used for something.
@@ -955,7 +955,7 @@ The payload for an ICMP packet exists entirely so that the recipient of the mess
 ### Traceroute
 A utility that lets you discover the path between two nodes, and gives you information about each hop along the way.
 
-![[attachments/Pasted image 20251008162241.png| 500]]
+![[Notebook/attachments/Pasted image 20251008162241.png| 500]]
 
 Linux/MacOS: `traceroute`, `mtr` (act as long running trace routes) and Windows: `tracert`, `pathping`.
 
@@ -1072,7 +1072,7 @@ Level 3 public DNS servers
 > **ICANN** the top-level organization manages the global DNS.
 
 Most businesses also run their own DNS server to resolve names for internal hosts, instead of IP, being able to name refering to a printer.
-![[attachments/Pasted image 20251009194710.png| 400]]
+![[Notebook/attachments/Pasted image 20251009194710.png| 400]]
 
 **Public DNS server**: Name servers specifically set up so that anyone can use them, for free.
 Google public DNS servers: `8.8.8.8` and `8.8.4.4`
@@ -1080,14 +1080,14 @@ Google public DNS servers: `8.8.8.8` and `8.8.4.4`
 Most public DNS servers are available globally through **anycast**.
 
 Always do your research before configuring the devices to use one DNS server. Hijacking outbound DNS requests with **faulty responses** is an easy way to **redirect** users to malicious sites.
-![[attachments/Pasted image 20251009194148.png| 600]]
+![[Notebook/attachments/Pasted image 20251009194148.png| 600]]
 
 ### DNS Registration and Expiration
 **Registrar**: An organization responsible for assigning individual domain names to other organizations or individuals.
-![[attachments/Pasted image 20251009195907.png| 500]]
+![[Notebook/attachments/Pasted image 20251009195907.png| 500]]
 
 The recipient registrar will generate a unique string of characters to prove that you own the domain and you're allowed to transfer it to someone else.
-![[attachments/Pasted image 20251009195941.png| 600]]
+![[Notebook/attachments/Pasted image 20251009195941.png| 600]]
 
 ### Hosts Files
 A flat file that contains, on each line, a network address followed by the host name it can be referred to as.
@@ -1102,7 +1102,7 @@ A **loopback** address always points to itself - A way of sending network traffi
 **Virtualization**: A single physical machine (host), could run many individual virtual instances (guests).
 **Hyprervisor**: A piece of software that runs and manages VMs, while also offering these guests a virtual operating platform that's indistinguishable from actual hardware.
 
-![[attachments/Pasted image 20251009211304.png| 450]]
+![[Notebook/attachments/Pasted image 20251009211304.png| 450]]
 
 **Public Cloud**: A large cluster of machines run by another company.
 **Private Cloud:** Used by a single large corparation and generally physically hosted on its own premises.
@@ -1152,11 +1152,11 @@ in IPv6 - 31 zeros with a one at the end:
 > Unlike IPv4, there was never any need to think about splitting it up because it is so huge.
 > Network engs might want to split it for administrative purpose, IPv6 subnetting uses the same CIDR notation.
 
-![[attachments/Pasted image 20251009232236.png| 400]]
+![[Notebook/attachments/Pasted image 20251009232236.png| 400]]
 
 ### IPv6 Headers
 
-![[attachments/Pasted image 20251009234805.png| 400]]
+![[Notebook/attachments/Pasted image 20251009234805.png| 400]]
 
 - **Version**: 4-bit, defines what IP version is in use.
 - **Class**: 8-bit, type of traffic contained within IP datagram, allows for different classes of traffic to receive different priorities.
@@ -1173,7 +1173,7 @@ in IPv6 - 31 zeros with a one at the end:
 **IPv6 Tunnels**: Servers take incoming IPv6 traffic and encapsulate it within traditional IPv4 datagram. 
 > They consist of IPv6 tunnel servers on either end of a connection.
 
-![[attachments/Pasted image 20251009235753.png| 500]]
+![[Notebook/attachments/Pasted image 20251009235753.png| 500]]
 
 **IPv6 Tunnel Broker** - Companies that provide IPv6 tunneling endpoints for you, so you don't have to introduce additional equipment to your network. (So no additional equipment for your network needed) 
 > It's still new and envolving, there're lots of competing protocols. The future of networking is the adoption to IPv6 as the main protocol at the Network Layer. One day will no tunnels will be need for specific IPv6 communications.
@@ -1182,7 +1182,7 @@ in IPv6 - 31 zeros with a one at the end:
 Tunnels are created using IPv6 servers on either end of a network connection. <mark style="background: #BBFABBA6;">A tunnel server at one end takes incoming IPv6 traffic</mark> and encapsulates it within a traditional IPv4 datagram.
 > **Encapsulation** - the process of transporting a data packet inside the payload of another packet. 
 
-![[attachments/Pasted image 20251010170123.png| 500]]
+![[Notebook/attachments/Pasted image 20251010170123.png| 500]]
 
 #### Three Types of Tunnels
 - **6in4/Manual Protocol** encapsulate IPv6 packets <mark style="background: #ABF7F7A6;">immediately inside an IPv4 packet</mark>, without using additional headers to configure the setup of the tunnel endpoints - Manually - Predictable and eaxy to debug. But, makes 6in4/manual protocl difficult to depoly if NAT is used on host.
@@ -1540,7 +1540,7 @@ C:\Users\miniMinn\Desktop\ NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
 ```
 
 **NTFS** permissions can be inherited.
-![[attachments/Pasted image 20251015145621.png| 500]]
+![[Notebook/attachments/Pasted image 20251015145621.png| 500]]
 
 ###### Modifying Permissions
 
@@ -1766,7 +1766,7 @@ $ sudo swapon /dev/sdb2
 
 ###### Files
 
-![[attachments/Pasted image 20251023122128.png| 400]]
+![[Notebook/attachments/Pasted image 20251023122128.png| 400]]
 
 ```bash
 ## Third files indicates the amount of hard links the file has - 0 means the file is completely removed from the computer
@@ -1811,7 +1811,7 @@ Enabling **fsck** on boot:
 - **Volume**: A single accessible storage area with a single file system; this can be across a single disk or multiple.
 - **Partition**: A logical division of a hard disk that can create unique spaces on a single drive. Generally used for allowing multiple operating systems.
 
-![[attachments/Pasted image 20251020170928.png| 400]]
+![[Notebook/attachments/Pasted image 20251020170928.png| 400]]
 **\*Example**: If the cluster size is 4kb and the file you're trying to store is 4.1kb, that file will take up 2 clusters - losing 3.9 kb of space for use on a single file.\*
 
 ```powershell
@@ -1848,7 +1848,7 @@ See paging details: _Control Panel > System > Advanced system settings > System 
 
 A component of **NTFS** is the Master File Table (**MFT**) - serves as the **central data structure** for storing metadata about all files and directories on the volume.
 
-| ![[attachments/Pasted image 20251023115805.png\| 400]] | ![[attachments/Pasted image 20251023120137.png\| 400]] |
+| ![[Notebook/attachments/Pasted image 20251023115805.png\| 400]] | ![[Notebook/attachments/Pasted image 20251023120137.png\| 400]] |
 | ------------------------------------------ | ------------------------------------------ |
 
 Meaning the OSs treats symbolic link just like the original files:
@@ -1875,7 +1875,7 @@ mklink /H file_1_hardlink file_1.txt
 
 > **Journaling** - Logging these changes NTFS creates a history of actions it's taken. The **recovery initiation** will use this logs.
 
-![[attachments/Pasted image 20251023125458.png| 200]]
+![[Notebook/attachments/Pasted image 20251023125458.png| 200]]
 
 ```powershell
 ## Checking disk to fix any problems with flag /F
@@ -2105,12 +2105,12 @@ Also called as **SysAdmin:**
 #### Servers Revisited
 
 A server can provide services to multiple users, and a client can use multiple services:
-![[attachments/image.png| 400]]
+![[Notebook/attachments/image.png| 400]]
 
 Different types of form factors for servers:
-![[attachments/image 1.png| 400]]
+![[Notebook/attachments/image 1.png| 400]]
 **KVM Switch -** Keyboard, video, and mouse to control multiple computers/servers from a single set of peripherals:
-![[attachments/image 2.png| 400]]
+![[Notebook/attachments/image 2.png| 400]]
 
 #### Organizational Policies
 
@@ -2220,7 +2220,7 @@ The more important your service is to your company’s operations, the more you�
 
 #### Types of IT Infrastructure Services
 
-![[attachments/image 3.png| 500]]
+![[Notebook/attachments/image 3.png| 500]]
 
 - **IaaS** (Amazon Web Services, Linode, Windows Azure, Google Compute Engine)
 - **NaaS**
@@ -2241,7 +2241,7 @@ $ ssh <username>@<ip_address>
 
 #### FTP, SFTP (Secure), and TFTP (Trivial)
 
-![[attachments/image 4.png| 500]]
+![[Notebook/attachments/image 4.png| 500]]
 
 #### NTP
 
@@ -2254,7 +2254,7 @@ Network Time Protocol is used to keep the clock synchronized on machines connect
 
 #### DNS for Web Servers
 
-![[attachments/image 5.png| 500]]
+![[Notebook/attachments/image 5.png| 500]]
 
 ```bash
 ## Hostnames in Linux
@@ -2339,7 +2339,7 @@ $ dig localhost instance-1.example
 - **POP3** (Post Office Protocol) - retrieving emails from server to **local** device.
 - **IMAP** (Internet Message Access Protocol) **-** keeps emails on server and synchronizes across multiple devices. \*\*\*\*
 - **SMTP** (Simple Mail Transfer Protocol) - sending between mail servers.
-  ![[attachments/image 6.png| 500]]
+  ![[Notebook/attachments/image 6.png| 500]]
 
 #### Spam Mitigation and Management Solutions
 
@@ -2363,7 +2363,7 @@ Verfied with **certificates.**
 
 **NFS** (Network File System) - a protocol that enables files to be shared over a network. (easiest to install on Linux server)
 
-![[attachments/image 7.png| 400]]
+![[Notebook/attachments/image 7.png| 400]]
 
 Use **Samba** service for Windows Machines. **SMB** (Server Message Block) on top of its TCP/IP protocol, that Samba implements.
 
@@ -2419,16 +2419,16 @@ Monitor and route network traffic flowing to and from a pool of physical/virtual
 - **Elastic Load Balancer (ELB) -** the use of more than on AZ.
 - **SSL/TLS** - network protocols for encrypted communication.
 
-![[attachments/image 8.png]]
+![[Notebook/attachments/image 8.png]]
 
 **HTTP Status Codes** that start with **4xx** indicate an issue on the **client-side. 5xx** indicate an issue on the **server-side. 2xx** tells successful.
 
 #### Typical Cloud Infrastructure Setups
 
 **Autoscaling** allows the service to increase or reduce capacity as needed, while the service owner only pays for the cost of the machines that are in use at any given time.
-![[attachments/image 9.png]]
-![[attachments/image 10.png]]
-![[attachments/image 11.png]]
+![[Notebook/attachments/image 9.png]]
+![[Notebook/attachments/image 10.png]]
+![[Notebook/attachments/image 11.png]]
 
 - **Software as a Service (SaaS) -** usable by browser or application instead of having to download software to device - through login. Stores user data online instead of user’s physical equipment. Typically uses a subscription model for its services. Hacking is concern since the full-service run in cloud.
 - **Platform as a Service (PaaS)** - offers hardware and software in the cloud to develop and deploy applications or cloud based services - makes buying, developing, configuring, managing, and install software/hardware unnecessary.
@@ -2449,7 +2449,7 @@ A central service that provides instructions to all of the different parts of my
 
 **AAA** - Centralized Authentication, Authorization, and Accounting.
 
-![[attachments/image 12.png]]
+![[Notebook/attachments/image 12.png]]
 
 > [!TIP] Role-Based Access Control (RBAC)
 > If you or another person change roles in the company, then all you have to do is change the groups that you are a part of, not the rights taht you have to directly access resources.
@@ -2477,7 +2477,7 @@ LDAP donotation is used for entries in directory services to describe attributes
 
 **Bind operation** - authenticates clients to the directory server.
 
-![[attachments/image 13.png]]
+![[Notebook/attachments/image 13.png]]
 
 - Anonymous
 - Simple
@@ -2549,14 +2549,14 @@ A set of policies and preferences that can be applied to a group of objects in t
 **Policies** - settings that are reapplied every few minutes, and aren’t meant to be changed even by the local administrators.
 **Group Policy Preference -** settings that, in many cases, are meant to be a template for settings.
 
-![[attachments/image 14.png| 500]]
+![[Notebook/attachments/image 14.png| 500]]
 **Windows Registry** - a hierarchical database of settings that Windows, and many Windows applications, use for storing configuration data.
 
 #### Group Policy Creation and Editing
 
 Windows software - **Group Policy Management Console (GCMP)** or `gpmc.msc` (open from Server Manager menu list).
 
-![[attachments/image 15.png| 400]]
+![[Notebook/attachments/image 15.png| 400]]
 
 #### Group Policy Inheritance and Precedence
 
@@ -2572,7 +2572,7 @@ One of the most common issues you might encounter is when a user isn’t able to
 Resolve-DNSName -Type SRV -Name _ldap._tcp.dc._msdc.example.com
 ```
 
-![[attachments/image 16.png]]
+![[Notebook/attachments/image 16.png]]
 
 For time relative difference issues, you can manually force a domain computer to re-sync by `w32tm /resync` .
 
@@ -2701,7 +2701,7 @@ The best way to be prepared for a data-loss event is to have a well-thought-out 
 
 #### Backing Up Your Data
 
-| ![[attachments/Pasted image 20260204115413.png]] | ![[attachments/Pasted image 20260204115440.png]] |
+| ![[Notebook/attachments/Pasted image 20260204115413.png]] | ![[Notebook/attachments/Pasted image 20260204115440.png]] |
 | ------------------------------------ | ------------------------------------ |
 
 **Rsync**: A file transfer utility that's designed to efficiently transfer and synchronize files between locations or computers. Rsync supports compression and can use SSH to securely transfer data over a network.
@@ -2720,7 +2720,7 @@ Compression saves backup space.
 
 #### User Backups
 
-![[attachments/Pasted image 20260207133935.png]]
+![[Notebook/attachments/Pasted image 20260207133935.png]]
 Backups for the clients is a bit more challenging as they will not be in the office all the time. Cloud solutions with syncing includes:
 
 - Google Drive
@@ -2754,9 +2754,9 @@ We create a **post-mortem** after an incident, an outage, or some event when som
 
 #### Writing a Post-Mortem
 
-![[attachments/Pasted image 20260207144011.png]]
+![[Notebook/attachments/Pasted image 20260207144011.png]]
 To go into more details:
-![[attachments/Pasted image 20260207144308.png]]
+![[Notebook/attachments/Pasted image 20260207144308.png]]
 
 #### Interview Role Play: Sys Admin
 
@@ -2961,7 +2961,7 @@ The algorithm that they use the same key to encrypt and decrypt messages.
 - **Block Cipher**: Takes data in, places it into a bucket or block of data that's a fixed size, then encodes that entire block as one unit.
 
 Example, it can be seen when inspecting the 802.11 frame of a web encrypted wireless packet:
-![[attachments/Pasted image 20260213131112.png]]
+![[Notebook/attachments/Pasted image 20260213131112.png]]
 
 #### Symmetric Encryption Algorithms
 
@@ -2992,7 +2992,7 @@ They uses different keys to encrypt and decrypt.
 - **Confidentiality**: since encrypted
 - **Authenticity**: granted by digital signatures
 - **Non-repudiation**: author of the message isn't able to dispute the origin.
-  ![[attachments/Pasted image 20260213135124.png]]
+  ![[Notebook/attachments/Pasted image 20260213135124.png]]
   Both shared their public keys, but private keys are kept secret. When Daryll sends message, it is encrypted by Suzanne's public key. When Suzanne receives the encrypted message, it is decrypted by her private key.
 
 #### Asymmetric vs. Symmetric Cryptography
@@ -3004,7 +3004,7 @@ They uses different keys to encrypt and decrypt.
 
 #### Asymmetric Encryption Algorithms
 
-![[attachments/Pasted image 20260213161021.png]]
+![[Notebook/attachments/Pasted image 20260213161021.png]]
 
 **Elliptic curve cryptography (ECC)**: A public-key encryption system that uses the algebraic structure of elliptic curves over finite fields to generate secure keys.
 
@@ -3013,7 +3013,7 @@ Both Diffie-Hellmen and DSA have elliptic curve variants, referred to as ECDH an
 #### Hashing
 
 (Or a hash function) A type of function or operation that takes in an arbitrary data input and maps it to an output of fixed size, called a hash or digest.
-![[attachments/Pasted image 20260219000648.png]]
+![[Notebook/attachments/Pasted image 20260219000648.png]]
 
 You feed in any amount of data into a hash function and the resulting output will always be the same size, but the output should be **unique to the input**, such that two different inputs should never yield the same output.  
 Hashing can also be used to identify duplicate data sets in databases or archives to speed up searching of tables or to remove duplicate data to save space.
@@ -3053,11 +3053,11 @@ A successful brute force attack, against even the most secure system imaginable,
 
 A rainbow table is just a pre-computed table of all possible password values, and their corresponding hashes - to trade computational power for disk space:
 
-![[attachments/Pasted image 20260219214932.png]]
+![[Notebook/attachments/Pasted image 20260219214932.png]]
 
 **Password salt**: Additional randomized data that's added into the hashing function to generate a has that's unique to the password and salt combination.
 
-![[attachments/Pasted image 20260219215053.png| 200]]
+![[Notebook/attachments/Pasted image 20260219215053.png| 200]]
 
 This means now for an attacker, is that they'd have to compute a rainbow table for each possible salt value. Early UNIX systems used fa 12 bit salt:
 
@@ -3077,14 +3077,14 @@ Clearly, it raises the bar high enough that a rainbow table attack wouldn't be p
 
 **PKI** is a system that defines the creation, storage and distribution of digital certificates (a file that proves that an entity owns a certain public key):
 
-![[attachments/Pasted image 20260219221126.png| 400]]
+![[Notebook/attachments/Pasted image 20260219221126.png| 400]]
 
 **CA** (Certificate Authority) is crucial component of a PKI system.  
 There's also an **RA** (Registration Authority) that's responsible for verifying the identities of any entities requesting certificates to be signed and stored with the CA.  
 A central repository is needed to securely store and index keys, and a certificate management system of some sort makes managing access to stored certificates and issuance of certificates easier.
 
 **SSL/TLS** is a certificate that a web server presents to a client as part of the initial secure setup:
-![[attachments/2026-02-19-231503_hyprshot.png| 400]]
+![[Notebook/attachments/2026-02-19-231503_hyprshot.png| 400]]
 
 **Self-signed certificate:** the name implies, these are certificates that are **bound to clients** and are used to **authenticate** the client to the server, allowing access control to an SSL/TLS service.  
 With their own internal CA issues and manages client certificates for their service.  
@@ -3107,7 +3107,7 @@ The X.509 standard is what defines the format of digital certificates.
 | **Certificate Signature Value**                       | The actual digital signature data.                                                                                           |
 
 A web of trust is where individuals, instead of certificate authorities, sign other individuals public keys:
-![[attachments/Pasted image 20260219235706.png| 400]]
+![[Notebook/attachments/Pasted image 20260219235706.png| 400]]
 
 #### Cryptography in Action
 
@@ -3117,7 +3117,7 @@ A web of trust is where individuals, instead of certificate authorities, sign ot
 2. The ability to authenticate both parties communicating, though typically only the server is authenticated by the client.
 3. The integrity of communications, meaning there are checks to ensure that messages aren't lost or altered in transit.
 
-![[attachments/Pasted image 20260221220415.png]]
+![[Notebook/attachments/Pasted image 20260221220415.png]]
 
 The **session key** is the shared symmetric encryption key used in TLS sessions to encrypt data being sent back and forth.
 
@@ -3128,10 +3128,10 @@ The **session key** is the shared symmetric encryption key used in TLS sessions 
 #### Securing Network Traffic
 
 **Virtual Private Network (VPN)**: A mechanism that allows you to remotely connect a host or network to an internal, private network, passing the data over a public channel, like the internet.  
-![[attachments/Pasted image 20260221221714.png]]
+![[Notebook/attachments/Pasted image 20260221221714.png]]
 
 **IPsec** works by encrypting an IP packet and encapsulating the encrypted packet inside an IPsec packet - then it gets routed to the VPN end-point where the packet is deencapsulated and decrypted then sent to the final destination:  
-![[attachments/Pasted image 20260221221933.png]]
+![[Notebook/attachments/Pasted image 20260221221933.png]]
 
 **IPsec** supports **Transport mode** and **Tunnel mode**:
 
@@ -3145,7 +3145,7 @@ OpenVPN can operate over either TCP or UDP, typically over port 1194. Supports u
 
 #### Cryptographic Hardware
 
-![[attachments/Pasted image 20260221230359.png]]
+![[Notebook/attachments/Pasted image 20260221230359.png]]
 
 A **Trusted Platform Module (TPM)** integrated into the hardware of a computer that's dedicated crypto processor.
 
@@ -3167,7 +3167,7 @@ Options for implementing FDE:
 - Filevault 2 (Apple)
 - dm-crypt (open-source)
 
-![[attachments/Pasted image 20260224211516.png]]
+![[Notebook/attachments/Pasted image 20260224211516.png]]
 
 #### Lab Summary: OpenSSL
 
@@ -3324,18 +3324,18 @@ A system where users are authenticated by presenting multiple peeces of informat
 - Something you are = Biometric ID
 
 An example RSA SecureID token:
-![[attachments/Pasted image 20260226151405.png| 400]]
+![[Notebook/attachments/Pasted image 20260226151405.png| 400]]
 
 Counter-based, incremented every time:
-![[attachments/Pasted image 20260226151637.png]]
+![[Notebook/attachments/Pasted image 20260226151637.png]]
 
 #### Multifactor Authentication Options
 
 **Biometric Authentication**: The process of using unique physiological characteristics of an individual to identify them.
 
-![[attachments/Pasted image 20260226152606.png| 400]]
+![[Notebook/attachments/Pasted image 20260226152606.png| 400]]
 
-![[attachments/Pasted image 20260226153035.png| 400]]
+![[Notebook/attachments/Pasted image 20260226153035.png| 400]]
 
 #### Certificates, Part Two
 
@@ -3347,7 +3347,7 @@ In order to issue client certificates, an organization must setup and maintain C
 
 **Remote Authentication Dial-In User Service** - A protocol that provides AAA services for users on a network.
 
-![[attachments/Pasted image 20260226155943.png]]
+![[Notebook/attachments/Pasted image 20260226155943.png]]
 
 #### Kerberos
 
@@ -3363,10 +3363,10 @@ The authentication tickets let users authenticate to services without requiring 
 
 An authentication concept that allows users to authenticate once to be granted access to a lot of different services and applications.
 
-![[attachments/Pasted image 20260227113948.png]]
+![[Notebook/attachments/Pasted image 20260227113948.png]]
 
 An example of an SSO system is the OpenID decentralized authentication system:
-![[attachments/Pasted image 20260227114146.png| 400]]
+![[Notebook/attachments/Pasted image 20260227114146.png| 400]]
 
 #### Authorization and Access Control Methods
 
@@ -3399,15 +3399,15 @@ An example of an SSO system is the OpenID decentralized authentication system:
 
 **OAuth** is an open standard that allows users to grant third-party websites and applications access to their information without sharing account credentials.
 
-![[attachments/Pasted image 20260227122800.png| 400]]
+![[Notebook/attachments/Pasted image 20260227122800.png| 400]]
 
 **OAuth** permissions can be used in phishing-style attacks to gain access to accounts, without requiring credentials to be compromised.
 
-![[attachments/Pasted image 20260227123128.png]]
+![[Notebook/attachments/Pasted image 20260227123128.png]]
 
 #### Access Control List (ACL)
 
-![[attachments/Pasted image 20260227123423.png| 400]]
+![[Notebook/attachments/Pasted image 20260227123423.png| 400]]
 
 Network ACLs can be defined for incoming and outgoing traffic. They can also be used to restrict external access to systems and limit outgoing traffic to enforce policies or to prevent unauthorized outbound data transfers.
 
@@ -3426,7 +3426,7 @@ Cisco's AAA system supports accounting of:
 
 Radius accounting kicks off with the network access server sending an **accounting request packet** to the accounting server that contains an event record to be logged:
 
-![[attachments/Pasted image 20260227124625.png| 400]]
+![[Notebook/attachments/Pasted image 20260227124625.png| 400]]
 
 ---
 
@@ -3445,36 +3445,36 @@ The process of securing a network by reducing its potential vulnerabilities thro
 **Splunk**  
 Popular and powerful logs analysis system - very flexible and extensible log aggregation and search system.
 
-![[attachments/Pasted image 20260227143143.png]]
+![[Notebook/attachments/Pasted image 20260227143143.png]]
 
 **Flood guards** - Provide protection against DoS
 
-![[attachments/Pasted image 20260227143555.png]]
+![[Notebook/attachments/Pasted image 20260227143555.png]]
 A common open-source flood guard protection tool is **Fail2Ban**.
 
 Network separation or VLANs is also a good concept for security:
 
-![[attachments/Pasted image 20260227143747.png| 400]]
+![[Notebook/attachments/Pasted image 20260227143747.png| 400]]
 
 #### Network Hardware Hardening
 
-![[attachments/Pasted image 20260227144024.png| 400]]
+![[Notebook/attachments/Pasted image 20260227144024.png| 400]]
 
 If an attacker can manage to deploy a rogue DHCP server on your network, they could hand out DHCP leases with whatever information they want.
 
 The enterprise switches offer a feature called **DHCP snooping**:
 
-![[attachments/Pasted image 20260227144257.png]]
+![[Notebook/attachments/Pasted image 20260227144257.png]]
 
 DHCP snooping also makes you designate either a trusted DHCP server IP, if it's operating as a DHCP helper, and forwarding DHCP requests to the server, or you can enable DHCP snooping trust on the up-linked port, where legitimate DHCP responses would now come from
 
 **Gratuitous ARP response** - effectively answering a query that no one made.
 
-![[attachments/Pasted image 20260227152654.png]]
+![[Notebook/attachments/Pasted image 20260227152654.png]]
 
 **EAP-TLS** is an authentication type supported by EAP that uses TLS to provide mutual authentication of both the client and the authenticating server.
 
-![[attachments/Pasted image 20260227153055.png]]
+![[Notebook/attachments/Pasted image 20260227153055.png]]
 
 #### IEEE 802.1X
 
@@ -3508,10 +3508,10 @@ Common reverse proxies:
 
 #### WEP Encryption and Why You Shouldn't Use It
 
-![[attachments/Pasted image 20260227160933.png]]
+![[Notebook/attachments/Pasted image 20260227160933.png]]
 
 **Open system** authentication:
-![[attachments/Pasted image 20260227161212.png]]
+![[Notebook/attachments/Pasted image 20260227161212.png]]
 
 #### Let's Get Rid of WEP!
 
@@ -3523,7 +3523,7 @@ Common reverse proxies:
 2. A sequence counter was implemented to prevent replay attacks by rejecting out of order packets.
 3. A 64-bit MIC or Message Integrity Check was introduced to prevent forging, tampering, or corruption of packets.
 
-![[attachments/Pasted image 20260227161926.png]]
+![[Notebook/attachments/Pasted image 20260227161926.png]]
 
 Under WPA, the **pre-shared key** is the Wi-Fi password you share with people when they come over and want to use your wireless network.
 
@@ -3531,7 +3531,7 @@ Under WPA, the **pre-shared key** is the Wi-Fi password you share with people wh
 
 **CCMP** (Counter Mode CBC-MAC Protocol)
 
-![[attachments/Pasted image 20260227162712.png]]
+![[Notebook/attachments/Pasted image 20260227162712.png]]
 
 **PTK (Pairwise Transient Key)** is generated using the PMK, AP nonce, Client nonce, AP MAC address and client MAC address. Actually made up of five individual keys, each with their own purpose.
 
@@ -3540,7 +3540,7 @@ Under WPA, the **pre-shared key** is the Wi-Fi password you share with people wh
 - And finally, there's temporal key, which is actually used to encrypt data.
   Since this type of traffic must be readable by all clients connected to an AP, this GTK is shared between all clients. It's updated and re-transmitted periodically, and when a client disassociates the AP.
 
-![[attachments/Pasted image 20260227163327.png| 400]]
+![[Notebook/attachments/Pasted image 20260227163327.png| 400]]
 
 #### Wireless Hardening
 
@@ -3570,13 +3570,13 @@ IDS or IPS systems operate by monitoring network traffic and analyzing it.
 
 **Network Intrusion Detection System (NIDS)**: The detection system would be deployed somewhere on a network where it can monitor traffic for a network segment or subnet.
 
-![[attachments/Pasted image 20260227191623.png| 400]]
+![[Notebook/attachments/Pasted image 20260227191623.png| 400]]
 
 **Signatures**  
 Unique characteristics of known malicious traffic.  
 They might be specific sequences of packets, or packets with certain value encoded in the specific header field.
 
-![[attachments/Pasted image 20260227192013.png| 400]]
+![[Notebook/attachments/Pasted image 20260227192013.png| 400]]
 
 #### Unified Threat Management (UTM)
 
@@ -3640,7 +3640,7 @@ Protect individual hosts from being compromised when they're used in untrusted, 
 
 A **host-based firewall** plays a big part in reducing what's accessible to an outside attacker.
 
-![[attachments/Pasted image 20260227230643.png| 400]]
+![[Notebook/attachments/Pasted image 20260227230643.png| 400]]
 
 If the users of the system have administrator rights, then they have the ability to change **firewall rules and configurations**.
 
@@ -3694,15 +3694,15 @@ Antivirus software will monitor and analyze things, like new files being created
 
 Binary whitelisting software operates off a white list. It's a list of known good and trusted software and only things that are on the list permitted to run. Everything else if blocked.
 
-![[attachments/Pasted image 20260228125945.png| 400]]
+![[Notebook/attachments/Pasted image 20260228125945.png| 400]]
 
 Software signing or coding signing:
 
-![[attachments/Pasted image 20260228130229.png| 400]]
+![[Notebook/attachments/Pasted image 20260228130229.png| 400]]
 
 #### Disk Encryption
 
-![[attachments/Pasted image 20260228131349.png| 400]]
+![[Notebook/attachments/Pasted image 20260228131349.png| 400]]
 
 **Secure Boot**: Uses public key cryptography to secure these encrypted elements of the boot process - does by integrated code signing and verification of the boot files.
 
@@ -3766,7 +3766,7 @@ Typically, any kind of user data is considered high value, especially if payment
 - OpenVAS
 - Qualys
 
-![[attachments/Pasted image 20260228202450.png| 400]]
+![[Notebook/attachments/Pasted image 20260228202450.png| 400]]
 
 **Penetration Testing**: The practice of attempting to break into a system or a network to verify the systems in place.
 

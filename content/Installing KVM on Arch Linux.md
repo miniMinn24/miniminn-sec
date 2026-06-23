@@ -12,7 +12,7 @@ category:
 
 **KVM** ဆိုတဲ့ Kernel-based Virtual Machine ကကျွန်တော်တို့ Arch Linux ပေါ်မှာပိုမြန်ဆန်တဲ့ Type-1 Hypervisor အဖြစ်အသုံးပြုလို့ရအောင် လုပ်ပေးပါတယ်။ သူကလုံးဝ Free & Open-source၊ x86 hardware သီးသန့်ဖြစ်ပါတယ်။ ဒါပေမယ့် Setup နည်းက Arch based distro တွေပေါ်မှာတခြားသာမန်နည်းတွေနဲ့မတူတော့ ဒီ Guide လေးမှာ နားလည်ရလွယ်အောင်ရေးသားလိုက်ပါတယ်။
 
-![[attachments/Pasted image 20260505150521.png]]
+![[Notebook/attachments/Pasted image 20260505150521.png]]
 
 ### My thoughts on KVM as a VBox user
 VBox က Arch Linux အတွက် Compatibility အတွက်ကောင်းပေမယ့် Performance issue တွေဆက်တိုက်ကြုံခဲ့ရင်းကနေ အခုတလော KVM ကိုစမ်းဖြစ်သွားတာ။ သူ့ရဲ့ Minimalist ပေါ့ပါးပုံ၊ Performance မြန်ပုံကြောင့် KVM ကိုတော်တော်လေးသဘောကျသွားလို့ ဒီ Guide လေးချက်ချင်းဆိုသလို ရေးလိုက်တာပေါ့။  
@@ -197,11 +197,11 @@ Terminal or Application Launcher တစ်ခုခုကနေဖြစ်ဖ�
 virt-manager
 ```
 
-![[attachments/Pasted image 20260505201439.png]]
+![[Notebook/attachments/Pasted image 20260505201439.png]]
 
 ပထမဆုံးစဖွင့်တဲ့အချိန်မှာ virt-manager က local QEMU/KVM hypervisor သွားချိတ်နေတာကို "Connecting..." လို့တွေ့ရပါလိမ့်မယ်။ ချိတ်ပြီးပြီဆိုတာနဲ့ အောက်ကအတိုင်း QEMU/KVM ကို list ထဲမှာပေါ်နေပါလိမ့်မယ်။ ဒါဆိုရင် VM တွေအေးဆေးဆောက်နိုင်ပါပြီ။
 
-![[attachments/Pasted image 20260505203746.png]]
+![[Notebook/attachments/Pasted image 20260505203746.png]]
 
 ဒါမှမဟုတ် "Not Connected" ပြနေလို့ရှိရင် libvirt daemon ကိုတစ်ချက်စစ်ကြည့်ပါ။ User ကိုယ်တိုင်ကလည်း libvirt group ထဲမှာရှိနေမှ ရမှာဖြစ်ပါတယ်။
 
@@ -217,37 +217,37 @@ $ mv -r Parrot-spin-htb-7.1_amd64.iso /var/lib/libvirt/images/
 
 1. Click **File > New Virtual Machine**:
 
-   ![[attachments/Pasted image 20260505205032.png]]
+   ![[Notebook/attachments/Pasted image 20260505205032.png]]
 
 2. Choose your **installation source - Local install media (ISO) > Forward**:
 
-   ![[attachments/Pasted image 20260505205221.png]]
-   ![[attachments/Pasted image 20260505210034.png]]
+   ![[Notebook/attachments/Pasted image 20260505205221.png]]
+   ![[Notebook/attachments/Pasted image 20260505210034.png]]
 
 3. Linux ISO file ကဘာ Distro အမျိုးအစားလည်း Detect မဖြစ်ဘူးဆိုတော့ ကိုယ်တိုင် Manually ရွေးလိုက်ပါတယ်။ Parrot OS က Debian based ဆိုတော့ **Debian 11** ထားလိုက်လည်းရပါတယ်။
 
-   ![[attachments/Pasted image 20260505210354.png]]
+   ![[Notebook/attachments/Pasted image 20260505210354.png]]
 
 4. Set memory and CPU allocation. **2048 MB RAM** and **2 vCPUs** ဆိုရင်အဆင်ပြေပါတယ်။
 
-   ![[attachments/Pasted image 20260505210813.png]]
+   ![[Notebook/attachments/Pasted image 20260505210813.png]]
 
 > ဒါပေမယ့် ဒီ Parrot OS HTB Edition က **minimum 4GB** ရှိမှ Installation လုပ်တဲ့အခါ Feature စုံမယ်လို့ပြောပါတယ်။ ဒါကြောင့်လောလောဆယ် 4 GB RAM ပေးထားလိုက်ပြီး Installation ပြီးမှ VM setting ထဲမှာ 2 GB သွားပြန်ပြောင်းလည်းအဆင်ပြေပါတယ်။
 
 5. Virtual disk အတွက် 20-40 GB တည်းနဲ့ Linux အတွက်အဆင်ပြေနိုင်ပါတယ်။ Windows ဆိုရင်တော့ 50+ GB ပေါ့။
 
-   ![[attachments/Pasted image 20260505211124.png]]
+   ![[Notebook/attachments/Pasted image 20260505211124.png]]
 
 6. အားလုံးပြီးပြီဆိုတော့ VM ပေါ်မှာ Installation စတင်နိုင်ပါပြီ။
 
-   ![[attachments/Pasted image 20260505211353.png]]
+   ![[Notebook/attachments/Pasted image 20260505211353.png]]
 
 ဒီကနေဆက်ပြီးတော့ ကိုယ်တိုင် Parrot OS တင်ပြီးသွားရင် Labs တွေလေ့ကျင့်ဖို့ပဲဖြစ်ဖြစ်၊ Malware analysis၊ Blue Team workflows တွေကို VirtualBox၊ VMware workstation တို့ထက်ပိုမြန်ဆန်တဲ့ KVM ရဲ့ Kernel level efficiency ကိုအသုံးချရင်းစိတ်ကြိုက်စမ်းနိုင်ပါပြီခင်ဗျာ။
 
-![[attachments/2026-05-02-203505_hyprshot.png]]
+![[Notebook/attachments/2026-05-02-203505_hyprshot.png]]
 
 
-KVM ထဲမှာ Windows တင်မယ့်သူများအတွက် Windows 10/11 တင်ပြီးရင်လုပ်ရမယ့် [[How to install Guest Drivers - For Windows in KVM]] ဝင်ဖတ်နိုင်ပါတယ်ခင်ဗျာ။ 
+KVM ထဲမှာ Windows တင်မယ့်သူများအတွက် Windows 10/11 တင်ပြီးရင်လုပ်ရမယ့် [[Notebook/How to install Guest Drivers - For Windows in KVM]] ဝင်ဖတ်နိုင်ပါတယ်ခင်ဗျာ။ 
 
 ---
 
