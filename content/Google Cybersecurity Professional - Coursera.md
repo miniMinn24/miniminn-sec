@@ -9,8 +9,10 @@ tags:
 author: miniMinn
 category:
   - note
+status:
+  - Writing in progress...
 ---
-> **View all the Google Cybersecurity labs and walkthroughs here:** [[Notebook/Activities & Labs]]
+> **View all the Google Cybersecurity labs and walkthroughs here:** [[Activities & Labs]]
 
 # Course 1 - Foundations of Security
 

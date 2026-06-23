@@ -8,7 +8,7 @@ category:
   - playbook
 author: miniMinn
 status:
-  - Continuous progress...
+  - Continuous project...
 ---
 # Powerful handy commands
 

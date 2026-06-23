@@ -10,7 +10,7 @@ author: miniMinn
 platform:
   - HackTheBox
 status:
-  - Writeup in progress...
+  - Writing in progress...
 ---
 
 **Table of Contents**
