@@ -48,6 +48,6 @@ views:
       - author
       - date
     sort:
-      - property: file.ctime
+      - property: date
         direction: DESC
     cardSize: 400

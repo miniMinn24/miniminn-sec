@@ -1258,3 +1258,24 @@ Companies have public and private information stored on web servers. When you us
 - **Closed-box testing** is when the tester has little to no access to internal systems—similar to a malicious hacker. This strategy is sometimes referred to as external, black-box, or zero knowledge penetration testing.
 - **Partial knowledge testing** is when the tester has limited access and knowledge of an internal system—for example, a customer service representative. This strategy is also known as gray-box testing.
 
+| Practicing an attacker mindset                | Defending attack vectors        |
+| --------------------------------------------- | ------------------------------- |
+| Identify the target                           | Educating users                 |
+| Determining how the target can be accessed    | Applying least privileges       |
+| Evaluate attack vectors that can be exploited | Using right controls and tools  |
+| Find the tools and methods of attack          | Building diverse security teams |
+
+## Module 4 - Threats to asset security
+
+### Stages of social engineering
+1. Prepare
+2. Establish trust
+3. Use persuasion tactics
+4. Disconnect form the target
+
+### Phishing security measures
+- Anti-phishing policies
+- Employee training resources
+- Email filters
+
+	
