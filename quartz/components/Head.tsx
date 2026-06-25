@@ -43,6 +43,7 @@ export default (() => {
 
     return (
       <head>
+        <meta name="google-site-verification" content="rUovsFH4CZ2o53gIwA-rdznt57BydWWMSSNrwBqM2jc" />
         <title>{title}</title>
         <meta charSet="utf-8" />
         {coreStylesheet && <link rel="preload" href={coreStylesheet} as="style" />}
