@@ -8,6 +8,7 @@ configuration:
     provider: plausible
   locale: en-US
   baseUrl: miniminn-sec.pages.dev
+  googleSiteVerification: "rUovsFH4CZ2o53gIwA-rdznt57BydWWMSSNrwBqM2jc"
   ignorePatterns:
     - private
     - templates
