@@ -1,14 +1,13 @@
 ---
 date: 2025-07-23
 tags:
-  - course
   - itsupport
-  - Linux
-  - windows
   - networking
+  - os
 category:
   - note
 author: miniMinn
+banner: "[[Pasted image 20260625172815.png]]"
 ---
 # Course 1 - IT Support Fundamentals
 

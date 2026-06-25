@@ -1,12 +1,13 @@
 ---
 tags:
   - math
-  - course
   - algorithm
+  - logic
 date: 2025-03-18
 category:
   - note
 author: miniMinn
+banner: "[[Pasted image 20260625173800.png]]"
 ---
 # Mathematics for Computer Science
 The key concepts of sequences, series, and the principle of mathematical induction taught by **Coursera**.

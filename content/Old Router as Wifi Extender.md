@@ -3,11 +3,11 @@ date: 2025-09-25
 tags:
   - networking
   - project
-  - nas
-  - casaos
+  - AP
 author: miniMinn
 category:
   - blog
+banner: "[[Pasted image 20250925210450.png]]"
 ---
 # Turning an Old Router into an Access Point: Extending My Home Wi-Fi
 

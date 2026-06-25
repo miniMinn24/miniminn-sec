@@ -1,8 +1,6 @@
 ---
 date: 2026-03-05
 tags:
-  - cybersecurity
-  - course
   - frameworks
   - riskassessment
   - SIEM
@@ -11,6 +9,7 @@ category:
   - note
 status:
   - Writing in progress...
+banner: "[[Pasted image 20260625172815.png]]"
 ---
 > **View all the Google Cybersecurity labs and walkthroughs here:** [[Activities & Labs]]
 

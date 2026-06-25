@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: https://miniminn-sec.pages.dev
+  baseUrl: miniminn-sec.pages.dev
   ignorePatterns:
     - private
     - templates

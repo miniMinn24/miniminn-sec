@@ -1,13 +1,13 @@
 ---
 tags:
   - python
-  - course
   - datascience
   - automation
 date: 2024-03-19
 category:
   - note
 author: miniMinn
+banner: "[[Pasted image 20260625174058.png]]"
 ---
 # 01.Python Data Structures
 

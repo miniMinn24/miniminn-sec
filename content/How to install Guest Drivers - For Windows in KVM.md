@@ -7,6 +7,7 @@ tags:
 author: miniMinn
 category:
   - blog
+banner: "[[Pasted image 20260514002201.png]]"
 ---
 ![[attachments/Pasted image 20260514002201.png]]
 

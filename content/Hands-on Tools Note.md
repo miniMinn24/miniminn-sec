@@ -1,14 +1,15 @@
 ---
 date: 2026-05-01
 tags:
-  - cybersecurity
-  - offensive
-  - nmap
+  - tools
+  - commands
+  - redteam
 category:
   - playbook
 author: miniMinn
 status:
   - Continuous project...
+banner: "[[Pasted image 20260625174407.png]]"
 ---
 # Powerful handy commands
 

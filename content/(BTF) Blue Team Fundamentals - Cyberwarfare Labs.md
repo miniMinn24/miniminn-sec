@@ -1,16 +1,14 @@
 ---
 date: 2026-02-22
 tags:
-  - course
-  - defensive
   - forensic
   - wazuh
   - investigation
 category:
   - note
 author: miniMinn
+banner: "[[Pasted image 20260625173618.png]]"
 ---
-
 > [!tip] Introduction
 > This is my **note summary** of labs activities that includes Web, Network and Forensic investigations.
 

@@ -7,6 +7,7 @@ tags:
 author: miniMinn
 category:
   - blog
+banner: "[[Pasted image 20260625162725.png]]"
 ---
 These notes are copied from this [article](https://linuxconfig.org/install-tor-proxy-on-ubuntu-20-04-linux). It was primarily focused on Ubuntu 20.04 Linux, but the step-by-step processes also worked on **Arch Linux**.
 

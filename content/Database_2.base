@@ -18,8 +18,9 @@ views:
     sort:
       - property: file.ctime
         direction: DESC
-    cardSize: 400
-    imageAspectRatio: 0.5
+    cardSize: 300
+    imageAspectRatio: 0.3
+    image: note.banner
   - type: cards
     name: 📓 Playbook
     filters:
@@ -34,8 +35,9 @@ views:
     sort:
       - property: file.ctime
         direction: DESC
-    cardSize: 400
-    imageAspectRatio: 0.25
+    cardSize: 300
+    imageAspectRatio: 0.3
+    image: note.banner
   - type: cards
     name: 🎓 Course Walkthroughs
     filters:
@@ -50,4 +52,6 @@ views:
     sort:
       - property: date
         direction: DESC
-    cardSize: 400
+    cardSize: 300
+    image: note.banner
+    imageAspectRatio: 0.3
