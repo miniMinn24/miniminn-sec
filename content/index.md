@@ -1,5 +1,5 @@
 ---
-title: "About Me: မိတ်ဆက် 🇲🇲"
+title: Welcome to my Workbench
 date: 2026-01-21
 ---
 
@@ -28,11 +28,11 @@ date: 2026-01-21
 
 # 💻 Sec Write-ups
 
-![[Database_1.base]]
+![[Writeups.base]]
 
 # ☕ Blogs & Notes
 
-![[Database_2.base]]
+![[Blogs & Notes.base]]
 
 ---
 You can reach me at miniminnmgmg24@gmail.com.

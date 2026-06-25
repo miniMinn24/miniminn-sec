@@ -50,14 +50,14 @@ html {
   padding-left: 2rem;
 }
 // side bar to remove padding when in mobile
-@media (max-width: 800px){
-  .left.sidebar {
-    padding: 5px 10px;
-  }
-  .recent-notes {
-    display: none;
-  }
-}
+// @media (max-width: 800px){
+//   .left.sidebar {
+//     padding: 5px 10px;
+//   }
+//   .recent-notes {
+//     display: none;
+//   }
+// }
 .explorer.nav-files-container {
   font-size: 0.85rem;
   font-family: "JetBrains Mono";
@@ -307,6 +307,52 @@ hr {
   margin: 0.4rem;
 }
 
+// DATABASE VIEW - BUTTONS
+
+.article-title {
+  margin-bottom: 0.5rem;
+}
+
+.bases-view-tabs button {
+  font-family: JetBrains Mono;
+  color: #636874;
+  border: 1px solid #2d3845;
+  border-radius: 0.4rem;
+  padding: 0.4rem 0.6rem;
+  text-decoration: none;
+}
+
+.bases-view-tabs button[data-view-index="0"].is-active {
+  font-family: JetBrains Mono;
+  color: #589df6 !important;
+  background: #0D1F36;
+  border: 1px solid #589df6;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+}
+
+.bases-view-tabs button[data-view-index="1"].is-active {
+  font-family: JetBrains Mono;
+  color: #58f6c9 !important;
+  background: #0d361c;
+  border: 1px solid #58f6c9;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+}
+
+.bases-view-tabs button[data-view-index="2"].is-active {
+  font-family: JetBrains Mono;
+  color: #f65858 !important;
+  background: #360d0d;
+  border: 1px solid #f65858;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+}
+
+
 // .internal.internal-link.alias,
 // .internal.internal-link {
 //   background: transparent;
@@ -341,6 +387,36 @@ footer > ul > li > a:hover {
   border: 1px solid #2d3845;
   border-radius: 0.4rem;
   padding: 0.4rem 0.6rem;
+  text-decoration: none;
+}
+
+.bases-page.bases-inline .bases-view-tabs button[data-view-index="0"].is-active {
+  font-family: JetBrains Mono;
+  color: #589df6 !important;
+  background: #0D1F36;
+  border: 1px solid #589df6;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+}
+
+.bases-page.bases-inline .bases-view-tabs button[data-view-index="1"].is-active {
+  font-family: JetBrains Mono;
+  color: #58f6c9 !important;
+  background: #0d361c;
+  border: 1px solid #58f6c9;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+}
+
+.bases-page.bases-inline .bases-view-tabs button[data-view-index="2"].is-active {
+  font-family: JetBrains Mono;
+  color: #f65858 !important;
+  background: #360d0d;
+  border: 1px solid #f65858;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.4rem;
   text-decoration: none;
 }
 
@@ -470,3 +546,55 @@ footer > ul > li > a:hover {
     opacity: 0.98;
   }
 }
+
+
+
+
+// SCROLL BAR | RIGHT SIDE BAR FIX
+
+/* Force scrollbar to always show on right sidebar */
+.right.sidebar {
+  overflow-y: auto !important;
+  scrollbar-gutter: stable; /* Prevents layout shift */
+}
+
+/* Optional: Style the scrollbar for better visibility */
+.right.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.right.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.right.sidebar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.right.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}   
+
+/* Prevent right sidebar widgets from shrinking */
+.right.sidebar > * {
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+/* Ensure TOC header keeps enough room */
+.toc {
+  min-width: 0;
+}
+
+.toc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+
+
+

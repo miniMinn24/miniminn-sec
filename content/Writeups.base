@@ -19,7 +19,7 @@ views:
     sort:
       - property: file.ctime
         direction: DESC
-    cardSize: 400
+    cardSize: 300
     imageAspectRatio: 0.25
   - type: cards
     name: 📗 HTB
@@ -36,7 +36,7 @@ views:
     sort:
       - property: file.ctime
         direction: DESC
-    cardSize: 400
+    cardSize: 300
     imageAspectRatio: 0.25
   - type: cards
     name: 📕 THM
@@ -53,5 +53,5 @@ views:
     sort:
       - property: file.ctime
         direction: DESC
-    cardSize: 400
+    cardSize: 300
     imageAspectRatio: 0.25

@@ -188,9 +188,10 @@ plugins:
     options:
       maxDepth: 2
       minEntries: 0
+      collapseByDefault: false
     layout:
       position: right
-      priority: 1000
+      priority: 20
   - source: github:quartz-community/backlinks
     enabled: false 
     layout:
@@ -243,10 +244,12 @@ plugins:
         repoId: R_kgDOS_-MKg
         category: General
         categoryId: DIC_kwDOS_-MKs4C_ipa
+        lightTheme: transparent_dark
+        darkTheme: transparent_dark
         lang: en
     layout:
       position: afterBody
-      priority: 10
+      priority: 130
   - source: github:quartz-community/footer
     enabled: true
     options:
@@ -259,8 +262,8 @@ plugins:
       showTags: true
       limit: 6
     layout:
-      position: left
-      priority: 500
+      position: right
+      priority: 25
   - source: github:quartz-community/spacer
     enabled: true
     options: {}
