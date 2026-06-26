@@ -1,8 +1,7 @@
 ---
-title: Welcome to my Workbench
+title: Welcome to Home Base
 date: 2026-01-21
 ---
-
 <div class="two-col">
   <div class="col-left">
     
@@ -24,17 +23,10 @@ date: 2026-01-21
 
 ---
 
-**As a part of my portfolio**, I'm self-hosting this website as my own knowledge base to document my path from today to proficient in Cybersecurity. I publish security analysis/CTF labs writeups, professional course walkthroughs, how-to guides and open-source project setups.  
+**As a part of my portfolio**, I'm self-hosting this website as my own knowledge base to document my path from today to proficient in Cybersecurity. I publish security analysis/CTF labs writeups, professional course walkthroughs, how-to guides and open-source project setups.
 
-# 💻 Sec Write-ups
+![[gif-ezgif.com-crop.gif|697]]
 
-![[Writeups.base]]
-
-# ☕ Blogs & Notes
-
-![[Blogs & Notes.base]]
-
----
 You can reach me at miniminnmgmg24@gmail.com.
 
 

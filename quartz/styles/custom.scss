@@ -57,6 +57,16 @@ html {
   .recent-notes {
     display: none;
   }
+
+  .quartz-custom-navbar.collapsed {
+    padding: 0;
+    margin: 0;
+    max-width: 4%;
+  }
+  .quartz-custom-navbar-list li {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
 }
 .explorer.nav-files-container {
   font-size: 0.85rem;
@@ -104,7 +114,7 @@ html {
 // PAGE title
 .page-title {
   font-family: 'JetBrains Mono', sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   letter-spacing: 0.1em;
   // background-color: #0d1117;
   //background: linear-gradient(93deg,rgba(22, 55, 105, 1) 0%, rgba(24, 26, 31, 1) 100%);
@@ -598,3 +608,18 @@ footer > ul > li > a:hover {
 
 
 
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img[alt]:after {
+  content: attr(alt);
+  display: block;
+  text-align: center;
+  font-size: 0.9em;
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
