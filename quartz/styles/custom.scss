@@ -50,14 +50,14 @@ html {
   padding-left: 2rem;
 }
 // side bar to remove padding when in mobile
-// @media (max-width: 800px){
-//   .left.sidebar {
-//     padding: 5px 10px;
-//   }
-//   .recent-notes {
-//     display: none;
-//   }
-// }
+@media (max-width: 800px){
+  .left.sidebar {
+    padding: 5px 10px;
+  }
+  .recent-notes {
+    display: none;
+  }
+}
 .explorer.nav-files-container {
   font-size: 0.85rem;
   font-family: "JetBrains Mono";
