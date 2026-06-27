@@ -108,14 +108,32 @@ Once executed, the payload will run multi-stage PowerShell attack chain on the v
 
 ![[Diagnostic - HTB Walkthrough-1782565131627.webp]]
 
+## 4. Extracting Flag
+
+As you may have noticed, we can see the hidden codes that might reveal the flag:  
+
+```powershell
+${f`ile} = ("{7}{1}{6}{8}{5}{3}{2}{4}{0}"-f'}.exe','B{msDt_4s_A_pr0','E','r...s','3Ms_b4D','l3','toC','HT','0l_h4nD')
+
+{7} --> HT
+{1} --> B{msDt_4s_A_pr0
+{6} --> toc
+{8} --> 0l_h4nD
+{5} --> l3
+{3} --> r...s
+{2} --> E
+{4} --> 3Ms_b4D
+{0} --> }.exe
+```
 
 
+# ⚔ MITRE ATT&CK | SOC view
 
-# 👨‍💻 Q&A
-
-### T-1.
-
-# ⚔ MITRE tactics mapping
+| TID       | Tactic         | Technique                                     |
+| --------- | -------------- | --------------------------------------------- |
+| T1566.001 | Initial access | Phishing: Spearphishing Attachment            |
+| T1059.001 | Execution      | Command and Scripting Interpreter: PowerShell |
+| T1203     | Execution      | Exploitation for Client Execution             |
 
 
 ```mermaid
@@ -149,6 +167,25 @@ G -.File Activity.-> L4["Filesystem Artifacts"]
 H -.Network Traffic.-> L5["PCAP / EDR Alerts"]
 ```
 
-# 🛡 Detection rules
+## 🛡 Remediation 
 
-# 💭 Lessons learned
+#### 1. Disabling MSDT URL Protocol
+
+> An alternate used before the **June 2022 cumulative Windows Updates** patch has been released.
+
+Run CMD prompt as administrator and disable MSDT's URL protocol:
+
+```powershell
+reg delete HKEY_CLASSES_ROOT\ms-msdt /f
+```
+
+#### 2. Attack Surface Reduction (ASR)
+For endpoints using Microsoft Defender, enabling the ASR rule to reject all Office application from creating child processes can prevent this attack.
+
+# 💭 Lessons learned from incident
+To be aware of this incident, I learned that
+- Expending network visibility (alert on any known development frameworks in network traffics).
+- Automating patching SLAs, training employees to be aware of emotion lures.
+- Creating ASR rule for defense-in-depth.
+- And automated IP-Based blocking (though DNS resolve is down, malicious IPs might still be active)
+can help detecting threats and prepare better defenses in SOC operations.
