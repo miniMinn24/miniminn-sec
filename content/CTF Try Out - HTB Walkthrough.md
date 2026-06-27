@@ -10,17 +10,10 @@ author: miniMinn
 platform:
   - HackTheBox
 status:
-  - Writing in progress...
+  - Discontinued.
+banner: "[[CTF Try Out - HTB Walkthrough-1782547548421.webp]]"
 ---
-
-**Table of Contents**
-
-1. [Hardware Challenges](#hardware-challenges)
-2. [ICS (Industrial Control System) Challenges](#ics-industrial-control-system-challenges)
-3. [Reversing Challenges](#reversing-challenges)
-4. [Web Challenges](#web-challenges)
-
----
+![[CTF Try Out - HTB Walkthrough-1782547548421.webp]]
 
 ## Introduction
 
