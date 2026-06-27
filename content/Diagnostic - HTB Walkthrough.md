@@ -182,10 +182,10 @@ reg delete HKEY_CLASSES_ROOT\ms-msdt /f
 #### 2. Attack Surface Reduction (ASR)
 For endpoints using Microsoft Defender, enabling the ASR rule to reject all Office application from creating child processes can prevent this attack.
 
-# 💭 Lessons learned from incident
+# 💭 Lessons learned
 To be aware of this incident, I learned that
 - Expending network visibility (alert on any known development frameworks in network traffics).
 - Automating patching SLAs, training employees to be aware of emotion lures.
 - Creating ASR rule for defense-in-depth.
-- And automated IP-Based blocking (though DNS resolve is down, malicious IPs might still be active)
+- And automated IP-Based blocking (though DNS resolve is down, malicious IPs might still be active)  
 can help detecting threats and prepare better defenses in SOC operations.
