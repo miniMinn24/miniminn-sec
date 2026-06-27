@@ -76,7 +76,7 @@ Archive:  diagnostic.doc
    creating: output/_rels/
    creating: output/docProps/
    creating: output/word/
-  inflating: output/[Content_Types].xml  
+  inflating: output/[Content_Types].xml
   ...
 ```
 
@@ -84,19 +84,29 @@ Before inspecting each XML manually, I uploaded `layoffs.doc` file on **VirusTot
 
 ![[Diagnostic - HTB Walkthrough-1782545023614.webp]]
 
-Looking at the [CVE-2022-30190](https://www.cvedetails.com/cve/CVE-2022-30190/), it's a RCE that takes advantage of **Microsoft Windows Support Diagnostic Tool** (MSDT) vuln, then run arbitrary code with the privileges of the calling application (Word, for this scenario):
+Looking at the [CVE-2022-30190](https://www.cvedetails.com/cve/CVE-2022-30190/) (**Follina**), it's a RCE that takes advantage of **Microsoft Windows Support Diagnostic Tool** (MSDT) vuln, then run arbitrary code with the privileges of the calling application (Word, for this scenario):
 
 ![[Diagnostic - HTB Walkthrough-1782545240178.webp]]
 
 ## 3. Examination
 
-I used a vulnerable sandbox to fully execute the malware on **Any.Run** for dynamic analysis:  
+I used a sandbox like **Any.Run** to open the doc for dynamic analysis:
 
 ![[Diagnostic - HTB Walkthrough-1782549404690.webp]]
 
-> Though it's not required, you can still rely on static analysis using **VirusTotal** or manually inspecting the XML files.  
+> *Though it's not necessary, you can still rely on static analysis using **VirusTotal** or manually inspecting the XML files.*
 
-During the execution, the malware tried to retrieve malicious file from `http://diagnostic.htb:30510/223_index_style_fancy.html!`. 
+First, the malware tried to retrieve malicious file from this URL `http://diagnostic.htb:30510/223_index_style_fancy.html!` (since it's in completely isolated VM and out of HTB network, it's unable to connect it).  
+
+This means there's an another malicious file on the attacker's host that we can try looking it up using `curl`:  
+
+![[Diagnostic - HTB Walkthrough-1782564273945.webp]]
+
+After opening the malicious doc file, this obfuscated (encoded `Base64`) payload will executed on victim's browser to launch MSDT protocol with specific parameters.  
+
+Once executed, the payload will run multi-stage PowerShell attack chain on the victim's machine. We can see the decode payload using **CyberChef**:  
+
+![[Diagnostic - HTB Walkthrough-1782565131627.webp]]
 
 
 
@@ -106,6 +116,38 @@ During the execution, the malware tried to retrieve malicious file from `http://
 ### T-1.
 
 # ⚔ MITRE tactics mapping
+
+
+```mermaid
+flowchart TD
+
+A["Victim opens malicious Word document"]
+--> B["Word retrieves remote HTML"]
+
+B --> C["Attacker Web Server"]
+
+C --> D["Malicious HTML"]
+
+D --> E["MSDT launched"]
+
+E --> F["PowerShell execution"]
+
+F --> G["Payload execution"]
+
+G --> H["Persistence or C2"]
+
+%% Evidence
+
+B -.HTTP/DNS Logs.-> L1["Proxy / Firewall Logs"]
+
+E -.Process Creation.-> L2["Windows Event Logs / Sysmon"]
+
+F -.Script Execution.-> L3["PowerShell Logs"]
+
+G -.File Activity.-> L4["Filesystem Artifacts"]
+
+H -.Network Traffic.-> L5["PCAP / EDR Alerts"]
+```
 
 # 🛡 Detection rules
 
