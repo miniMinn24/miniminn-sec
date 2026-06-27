@@ -20,7 +20,8 @@ views:
       - property: file.ctime
         direction: DESC
     cardSize: 300
-    imageAspectRatio: 0.25
+    imageAspectRatio: 0.3
+    image: note.banner
   - type: cards
     name: 📗 HTB
     filters:
@@ -37,7 +38,8 @@ views:
       - property: file.ctime
         direction: DESC
     cardSize: 300
-    imageAspectRatio: 0.25
+    imageAspectRatio: 0.3
+    image: note.banner
   - type: cards
     name: 📕 THM
     filters:
@@ -54,4 +56,5 @@ views:
       - property: file.ctime
         direction: DESC
     cardSize: 300
-    imageAspectRatio: 0.25
+    imageAspectRatio: 0.3
+    image: note.banner
