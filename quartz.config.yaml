@@ -244,7 +244,9 @@ plugins:
         repoId: R_kgDOS_-MKg
         category: General
         categoryId: DIC_kwDOS_-MKs4C_ipa
-        theme: dark_dimmed
+        light: dark
+        dark: dark
+        theme: dark
         lang: en
     layout:
       position: afterBody
