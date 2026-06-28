@@ -10,7 +10,10 @@ category:
 author: miniMinn
 platform:
   - Blue Team Labs Online
+banner: "[[index-1782627174854.webp]]"
 ---
+![[index-1782627174854.webp]]
+
 > **Challenge**: https://blueteamlabs.online/home/challenge/follina-f1a3452f34
 
 > [!warning]
