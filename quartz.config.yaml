@@ -326,7 +326,7 @@ plugins:
           pageRef: /writeups
     layout:
       position: left
-      priority: 58
+      priority: 1 #58
   - source: github:quartz-community/obsidian-plugin-excalidraw
     enabled: true
     options:
