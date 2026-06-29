@@ -9,6 +9,8 @@ author: miniMinn
 platform:
   - Blue Team Labs Online
 banner: "[[ATT&CK - BTLO Walkthrough-1782631831506.webp]]"
+status:
+  - Writing in progress...
 ---
 ![[ATT&CK - BTLO Walkthrough-1782631831506.webp]]
 
@@ -38,10 +40,3 @@ Under **Discovery** catalog, there's "Cloud Service Dashboard" tactic that the a
 ### T-2. You were analyzing a log and found uncommon data flow on port 4050. What APT group might this be?
 
 
-
-
-# ⚔ MITRE tactics mapping
-
-# 🛡 Detection rules
-
-# 💭 Lessons learned
