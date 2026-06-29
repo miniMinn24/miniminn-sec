@@ -318,12 +318,12 @@ plugins:
     enabled: true
     options:
       items:
-        - name: 👨‍💻 About
+        - name: "> 👨‍💻 About Me"
           pageRef: /index
-        - name: 📓 Blog
-          pageRef: /blogs
-        - name: 💻 Writeups
+        - name: "> 💻 Sec Writeups"
           pageRef: /writeups
+        - name: "> 📓 Blog & Notes"
+          pageRef: /blogs
     layout:
       position: left
       priority: 1 #58
