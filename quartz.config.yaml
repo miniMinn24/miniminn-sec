@@ -188,7 +188,7 @@ plugins:
     options:
       maxDepth: 2
       minEntries: 0
-      collapseByDefault: true
+      collapseByDefault: false
     layout:
       position: right
       priority: 20
