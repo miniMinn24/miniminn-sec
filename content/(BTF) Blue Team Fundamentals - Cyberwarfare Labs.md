@@ -9,24 +9,9 @@ category:
 author: miniMinn
 banner: "[[Pasted image 20260625173618.png]]"
 ---
+
 > [!tip] Introduction
 > This is my **note summary** of labs activities that includes Web, Network and Forensic investigations.
-
-**Table of Contents**
-
-- [Deploying the Local Lab with VirtualBox](#deploying-the-local-lab-with-virtualbox)
-  - [Step 1 - Creating a VM](#step-1---creating-a-vm)
-  - [Step 2 - Access to Server (Lab) Via browser](#step-2---access-to-server-lab-via-browser)
-- [Web Investigation](#web-investigation)
-  - [Exercise: 1.1 | SQL-Injection Activity detected](#exercise-11--sql-injection-activity-detected)
-  - [Exercise: 1.2 | Cross Site Scripting Activity detected](#exercise-12--cross-site-scripting-activity-detected)
-  - [Exercise: 1.3 | Remote File Inclusion Activity detected](#exercise-13--remote-file-inclusion-activity-detected)
-- [Network Investigation](#network-investigation)
-  - [Exercise: 1.4 | External Network Communication Detected](#exercise-14--external-network-communication-detected)
-- [Forensics Investigation](#forensics-investigation)
-  - [Exercise: 1.5 | Memory Dump Analysis](#exercise-15--memory-dump-analysis)
-
----
 
 # Deploying VirtualBox
 
@@ -308,7 +293,7 @@ ip.dst == 192.168.117.190 && tcp.srcport == 9001
 On further deep investigating the packet we identified multiple host command over the targeted web-server.
 
 | ![[attachments/Pasted image 20260223235323.png]] | ![[attachments/Pasted image 20260223235330.png]] |
-| ------------------------------------ | ------------------------------------ |
+| ------------------------------------------------ | ------------------------------------------------ |
 
 ---
 
