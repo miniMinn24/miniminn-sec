@@ -1,7 +1,7 @@
 ---
-title: 💻 Sec Write-ups
+title: 💻 Security Write-ups
 date: 2000-01-01
 ---
-I mostly focus on **defensive security** and **loves to see how others break stuffs**:
+My comprehensive writeups of **defensive security** labs and CTFs: 
 
 ![[Writeups_View.base]]

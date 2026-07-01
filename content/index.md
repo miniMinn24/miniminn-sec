@@ -25,6 +25,9 @@ date: 2026-01-21
 
 **As a part of my portfolio**, I'm self-hosting this website as my own knowledge base to document my path from today to proficient in Cybersecurity. I publish security analysis/CTF labs writeups, professional course walkthroughs, how-to guides and open-source project setups.
 
+- [[writeups | 💻 Security Writeups]]: I investigate, I struggle, I document and I progress.
+- [[blogs | ☕ Blogs & Notes]]: Sharing my experiences throughout my journey.
+
 ![[gif-ezgif.com-crop.gif|697]]
 
 You can reach me at miniminnmgmg24@gmail.com.
