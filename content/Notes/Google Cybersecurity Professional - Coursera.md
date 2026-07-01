@@ -1277,4 +1277,31 @@ Companies have public and private information stored on web servers. When you us
 - Employee training resources
 - Email filters
 
-	
+### SQL injection categories
+
+**In-band SQL Injection**  
+In-band, or classic, SQL injection is the most common type. An in-band injection is one that uses the same communication channel to launch the attack and gather the results.  
+
+**Out-of-band SQL Injection**  
+An out-of-band injection is one that uses a different communication channel  to launch the attack and gather the results.  
+
+**Inferential SQL Injection**  
+Inferential SQL injection occurs when an attacker is unable to directly see the results of their attack. Instead, they can interpret the results by analyzing the behavior of the system.  
+
+**Preventing Injection**  
+- **Prepared statements**: a coding technique that executes SQL statements before passing them on to a database
+- **Input sanitization**: programming that removes user input which could be interpreted as code.
+- **Input validation**: programming that ensures user input meets a system's expectations.
+
+### PASTA threat model framework
+**Process for Attack Simulation and Threat Analysis:**
+1. Define business goals and security objectives
+2. Define the technical scope
+3. Decompose the application
+4. Perform a threat analysis
+5. Perform a vulnerability analysis
+6. Conduct attack modeling
+7. Analyze risk and impact
+
+![[Google Cybersecurity Professional - Coursera-1782921923751.webp]]
+

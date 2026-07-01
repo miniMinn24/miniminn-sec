@@ -22,4 +22,3 @@ The assessment began with an aggressive, comprehensive network scan to identify 
 nmap -sV -sC -O -T4 --min-rate 5000 -p- 10.129.2.105
 ```
 
-
