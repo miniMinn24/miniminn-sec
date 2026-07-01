@@ -10,7 +10,10 @@ category:
 author: miniMinn
 platform:
   - Blue Team Labs Online
+banner: "[[Browser Forensics - Cryptominer - BTLO Walkthrough-1782905110226.webp]]"
 ---
+![[Browser Forensics - Cryptominer - BTLO Walkthrough-1782905110226.webp]]
+
 **BTLO Challenge**: https://blueteamlabs.online/home/challenge/browser-forensics-cryptominer-aa00f593cb
 
 > [!quote] Scenario

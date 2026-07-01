@@ -9,7 +9,9 @@ category:
 author: miniMinn
 platform:
   - Blue Team Labs Online
+banner: "[[The Planet's Prestige - BTLO Walkthrough-1782905157472.webp]]"
 ---
+![[The Planet's Prestige - BTLO Walkthrough-1782905157472.webp]]
 
 **Challenge:** https://blueteamlabs.online/home/challenge/the-planets-prestige-e5beb8e545
 

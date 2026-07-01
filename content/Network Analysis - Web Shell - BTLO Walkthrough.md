@@ -9,8 +9,11 @@ category:
   - writeup
 platform:
   - Blue Team Labs Online
+banner: "[[Network Analysis - Web Shell - BTLO Walkthrough-1782905235271.webp]]"
 ---
- **Challenge**: https://blueteamlabs.online/home/challenge/network-analysis-web-shell-d4d3a2821b
+![[Network Analysis - Web Shell - BTLO Walkthrough-1782905235271.webp]]
+
+**Challenge**: https://blueteamlabs.online/home/challenge/network-analysis-web-shell-d4d3a2821b
 
 > [!warning] Sandboxing Environment is RECOMMENDED.
 > Challenge ထဲမှာပါတဲ့ဖိုင်က တကယ့် **Malware** အစစ်ကို Analyse လုပ်ရတတ်တာကြောင့် ကိုယ်ပိုင် VM တစ်ခုထဲမှာ အန္တရာယ်ကင်းအောင်အသုံးပြုဖို့အသိပေးအပ်ပါတယ်။

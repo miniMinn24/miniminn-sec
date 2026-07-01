@@ -9,7 +9,10 @@ category:
 author: miniMinn
 platform:
   - Blue Team Labs Online
+banner: "[[Employee of the Year - BTLO Walkthrough-1782905133357.webp]]"
 ---
+![[Employee of the Year - BTLO Walkthrough-1782905133357.webp]]
+
 **Challenge**: https://blueteamlabs.online/home/challenge/employee-of-the-year-df16bc36f3
 
 > [!quote] Scenario

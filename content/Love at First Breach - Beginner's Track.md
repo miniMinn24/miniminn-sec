@@ -10,21 +10,11 @@ category:
 platform:
   - TryHackMe
 author: miniMinn
+banner: "[[Love at First Breach - Beginner's Track-1782906253652.webp]]"
 ---
+![[Love at First Breach - Beginner's Track-1782906228626.webp]]
+
 > **Special thanks** to [TryHackMe](https://tryhackme.com) and the community for hosting such fun, hands-on learning rooms and for the helpful hints when I got stuck  💖☕
-
-
-**Table of Contents**
-
-1. [[Easy] CupidBot](#easy-cupidbot)
-2. [[Easy] LoveLetter Locker](#easy-loveletter-locker)
-3. [[Easy] TryHeartMe](#easy-tryheartme)
-4. [[Easy] Hidden Deep Into my Heart](#easy-hidden-deep-into-my-heart)
-5. [[Easy] Speed Chat](#easy-speed-chat)
-6. [[Easy] Cupid's Matchmaker](#easy-cupids-matchmaker)
-7. [[Medium] Corp Website](#medium-corp-website)
-
----
 
 ## [Easy] CupidBot
 

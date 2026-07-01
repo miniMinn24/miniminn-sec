@@ -9,7 +9,10 @@ category:
 author: miniMinn
 platform:
   - Blue Team Labs Online
+banner: "[[Meta - BTLO Walkthrough-1782905052671.webp]]"
 ---
+![[Meta - BTLO Walkthrough-1782905052671.webp]]
+
 **BTLO Challenge**: https://blueteamlabs.online/home/challenge/meta-b976cec9e2
 
 > [!quote] Scenario

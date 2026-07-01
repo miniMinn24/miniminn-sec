@@ -9,7 +9,10 @@ category:
 author: miniMinn
 platform:
   - Blue Team Labs Online
+banner: "[[Reverse Engineering - A Classic Injection - BTLO-1782905024672.webp]]"
 ---
+![[Reverse Engineering - A Classic Injection - BTLO-1782905024672.webp]]
+
 **BTLO Challenge**: https://blueteamlabs.online/home/challenge/reverse-engineering-a-classic-injection-9791a9b784
 
 > [!quote] Scenario
