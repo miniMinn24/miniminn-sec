@@ -34,7 +34,7 @@ You can reach me at miniminnmgmg24@gmail.com.
 
 ---
 
-## Wanna play a mini-CTF game?
+#### Wanna play a mini-CTF game?
 
 Find the **name of my favorite animation series**. There's a file I created and wrote something about it in there. But, I lost it somewhere and couldn't find that note again. I believe it's around here, can you find it?
 
