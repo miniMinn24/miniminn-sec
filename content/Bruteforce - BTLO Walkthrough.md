@@ -77,10 +77,104 @@ Looking up the IP address, we can see that public IP is from **ISP: Vietnam Post
 
 ### T-7. What is the range of source ports that were used by the attacker to make these login requests? (LowestPort-HighestPort - Ex: 100-541)
 
+In the raw export of Windows Events Log txt file, we can see what source ports were associated with bruteforce attack:
+
+```bash
+> cat BTLO_Bruteforce_Challenge.txt | grep "Source Port:" | sort | (head -n 10; tail -n 10)
+	Source Port:		-
+	Source Port:		-
+	Source Port:		-
+	Source Port:		-
+	Source Port:		49162
+	Source Port:		49170
+	Source Port:		49177
+	Source Port:		49184
+	Source Port:		49192
+	Source Port:		49194
+	Source Port:		65483
+	Source Port:		65488
+	Source Port:		65496
+	Source Port:		65497
+	Source Port:		65508
+	Source Port:		65515
+	Source Port:		65516
+	Source Port:		65526
+	Source Port:		65529
+	Source Port:		65534
+```
+
+The ports shown in the raw txt file were in the random order. So, I used the command `sort`, then `(head -n 10; tail -n 10)` to see the first and last 10 lines of the source port to confirm the numbers.
 
 
 # ⚔ MITRE tactics mapping
 
-# 🛡 Detection rules
+The timeline illustrates the attack progression from the attacker's perspective. The attacker first targeted the exposed Remote Desktop Protocol (RDP) service and launched a brute-force attack by repeatedly attempting different password combinations, generating numerous failed logon events (Event ID 4625).  
 
-# 💭 Lessons learned
+After successfully discovering valid credentials (MITRE ATT&CK: T1110 – Brute Force), the attacker authenticated using the compromised account (T1078 – Valid Accounts) and established an interactive RDP session (T1021.001 – Remote Services: RDP).  
+
+At this stage, the attacker had obtained remote access to the system and could proceed with post-compromise activities such as privilege escalation, lateral movement, or data access.
+
+```mermaid
+timeline
+    title Brute Force Attack Timeline (MITRE ATT&CK)
+
+    section Reconnaissance
+        Target exposes Remote Desktop service (RDP)
+
+    section Credential Access
+        T1110 - Brute Force : Attacker repeatedly attempts password authentication
+        Windows Event ID 4625 : Multiple failed logon events generated
+
+    section Initial Access
+        T1078 - Valid Accounts : Correct credentials successfully guessed
+        Windows Event ID 4624 : Successful authentication recorded
+        Logon Type 10 : Interactive Remote Desktop session established
+
+    section Lateral / Post-Compromise
+        T1021.001 - Remote Services (RDP) : Attacker gains remote access
+        User session begins : Potential privilege escalation, persistence, or discovery
+```
+
+
+
+
+# 🛡 SOC workflow
+
+From a defender's perspective, the investigation begins by monitoring Windows Security logs for an unusually high number of failed logon events (Event ID 4625).  
+The analyst then correlates these events by source IP address, username, and timestamp to identify potential brute-force activity. If a successful logon event (Event ID 4624) is observed shortly after the failed attempts—particularly with Logon Type 10, which indicates an RDP session.  
+
+The activity can be confirmed as a successful brute-force attack. The incident is then escalated for containment by disabling or resetting the affected account, blocking the malicious source IP, and investigating the compromised host for any additional attacker activity.
+
+```mermaid
+flowchart LR
+
+A["Windows Security Logs"] --> B["Monitor Event ID 4625 (Failed Logons)"]
+
+B --> C{"Repeated failures<br/>from same IP?"}
+
+C -- No --> D["Continue Monitoring"]
+
+C -- Yes --> E["Identify Source IP<br/>Target Username"]
+
+E --> F["Search for Event ID 4624"]
+
+F --> G{"Successful login<br/>after failures?"}
+
+G -- No --> H["Possible Failed Brute Force"]
+
+G -- Yes --> I["Verify Logon Type = 10 (RDP)"]
+
+I --> J["Correlate Username<br/>Source IP<br/>Timestamp"]
+
+J --> K["Confirmed Brute Force"]
+
+K --> L["Create Security Incident"]
+
+L --> M["Contain Host"]
+
+M --> N["Disable / Reset Account"]
+
+N --> O["Block Source IP"]
+
+O --> P["Review for Additional<br/>Post-Compromise Activity"]
+```
