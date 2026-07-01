@@ -8,10 +8,10 @@ category:
 author: miniMinn
 platform:
   - Blue Team Labs Online
-banner: "[[Bruteforce - BTLO Walkthrough-1782753702635.webp]]"
+banner: "[[Bruteforce - BTLO Walkthrough-1782904901669.webp]]"
 ---
 
-![[Bruteforce - BTLO Walkthrough-1782753702635.webp]]
+![[Bruteforce - BTLO Walkthrough-1782904901669.webp]]
 
 # 📓 Overview
 
