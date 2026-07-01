@@ -3,7 +3,6 @@ date: 2026-01-22
 tags:
   - ctf
   - htb
-  - challenge
 category:
   - writeup
 author: miniMinn

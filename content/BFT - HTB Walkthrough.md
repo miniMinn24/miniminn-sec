@@ -1,9 +1,8 @@
 ---
 date: 2026-06-13
 tags:
-  - defensive
-  - challenge
   - logs
+  - forensic
 category:
   - writeup
 author: miniMinn

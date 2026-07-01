@@ -624,3 +624,20 @@ img[alt]:after {
   color: #ffffff;
   margin-top: 0.5rem;
 }
+
+// Line breaking fix
+.bases-card-title {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+h3 .internal {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}

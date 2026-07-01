@@ -1,9 +1,8 @@
 ---
 date: 2026-05-17
 tags:
-  - challenge
-  - defensive
   - forensic
+  - OSINT
 category:
   - writeup
 author: miniMinn

@@ -1,7 +1,6 @@
 ---
 date: 2026-06-08
 tags:
-  - defensive
   - logs
   - utmpdump
 category:

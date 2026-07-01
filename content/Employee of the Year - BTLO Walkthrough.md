@@ -1,9 +1,8 @@
 ---
 date: 2026-05-11
 tags:
-  - challenge
-  - defensive
   - recovery
+  - disk
 category:
   - writeup
 author: miniMinn

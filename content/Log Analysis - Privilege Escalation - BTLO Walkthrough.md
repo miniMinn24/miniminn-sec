@@ -1,9 +1,8 @@
 ---
 date: 2026-05-07
 tags:
-  - challenge
-  - defensive
   - logs
+  - bash
 category:
   - writeup
 author: miniMinn

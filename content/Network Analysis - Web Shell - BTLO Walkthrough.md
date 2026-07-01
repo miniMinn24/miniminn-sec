@@ -1,9 +1,8 @@
 ---
 date: 2026-05-06
 tags:
-  - challenge
-  - defensive
   - wireshark
+  - logs
 author: miniMinn
 category:
   - writeup

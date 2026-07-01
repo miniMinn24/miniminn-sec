@@ -1,10 +1,8 @@
 ---
 date: 2026-05-04
 tags:
-  - challenge
-  - defensive
-  - follina
-  - malware
+  - MSTD
+  - Follina
 category:
   - writeup
 author: miniMinn

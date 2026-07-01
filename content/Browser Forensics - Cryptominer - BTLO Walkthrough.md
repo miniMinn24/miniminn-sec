@@ -1,8 +1,6 @@
 ---
 date: 2026-05-14
 tags:
-  - challenge
-  - defensive
   - browser
   - forensic
 category:

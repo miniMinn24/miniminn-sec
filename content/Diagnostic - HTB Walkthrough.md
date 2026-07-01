@@ -1,6 +1,8 @@
 ---
 date: 2026-06-28
 tags:
+  - MSTD
+  - Follina
 category:
   - writeup
 author: miniMinn
