@@ -15,7 +15,7 @@ banner: "[[Diagnostic - HTB Walkthrough-1782531644360.webp]]"
 
 # 📓 Overview
 
-The "Diagnostic" lab is a #forensic challenge and rated as #easy difficulty. It's about investigating how the phishing links are directing to the same server, and compromising the victim's systems by using the Microsoft Windows Support Diagnostics Tool's (MSDT) flaw.
+The "Diagnostic" lab is a forensic challenge and rated as easy difficulty. It's about investigating how the phishing links are directing to the same server, and compromising the victim's systems by using the Microsoft Windows Support Diagnostics Tool's (MSDT) flaw.
 
 ### Tools used
 
