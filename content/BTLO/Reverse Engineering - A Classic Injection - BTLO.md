@@ -97,7 +97,7 @@ I setup ProcMon (sysinternals) and used a filter rule just to focus on analyseme
 
 ![[attachments/Pasted image 20260518190246.png]]
 
-Now it was time to execute the malware. Note that it needs to be waited for **3 minutes** to be executed and you'll have to enter the password from we did at [[Notebook/Reverse Engineering - A Classic Injection - BTLO#Q-3. After the sleep time, it prompts for user password, what is the correct password?|Q-3]]:
+Now it was time to execute the malware. Note that it needs to be waited for **3 minutes** to be executed and you'll have to enter the password from we did at [[Reverse Engineering - A Classic Injection - BTLO#Q-3. After the sleep time, it prompts for user password, what is the correct password?|Q-3]]:
 
 ![[attachments/Pasted image 20260518190905.png]]
 
