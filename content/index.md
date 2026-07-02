@@ -11,7 +11,7 @@ date: 2026-01-21
   
 <div class="col-right">
 
-<h2 style="font-family:'JetBrains Mono';color:#589df6;margin: 10px 0px 10px 0px;">Min M. [miniMinn]</h2>
+<h2 style="font-family:'JetBrains Mono';color:#589df6;margin: 10px 0px 10px 0px;">Min Maung M. [miniMinn]</h2>
 
 <span style="font-size: 0.9rem; line-height: 0; margin: 6px 0px;">Currently looking for a <b style='color:#fcfcfc;'>SOC analyst role</b> while learning hands-on daily in <b style='color:#fcfcfc;'>Digital Forensics & Incident Response (DFIR)</b>. Actively working on real-world assessments, CTF challenges, and security analysis labs. Find me on [Linkedin](https://www.linkedin.com/in/min-maung-maung-03352028a/).</span>
 
@@ -32,13 +32,13 @@ date: 2026-01-21
 
 **As a part of my portfolio**, I'm self-hosting this website as my own knowledge base to document my path from today to proficient in Cybersecurity. I publish security analysis/CTF labs writeups, professional course walkthroughs, how-to guides and open-source project setups.
 
-**Explorer:**
 - [[writeups | 💻 Security Writeups]]
 - [[blogs | ☕ Blogs & Notes]]
 
 ---
 
-# Certifications
+# Certificates
+
 
 
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="eb9bbbed-20e1-4c33-8bd2-40cc6c3a2fce" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>

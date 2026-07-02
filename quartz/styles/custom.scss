@@ -10,6 +10,7 @@ html {
 }
 
 h1 {
+  font-family: Orbitron, monospace;
   font-size: 1.4rem;
 }
 
@@ -126,7 +127,7 @@ h1 {
 
 // PAGE title
 .page-title {
-  font-family: Orbitron;
+  font-family: Orbitron, monospace;
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 0.1em;
