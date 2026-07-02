@@ -1,8 +1,16 @@
 @use "./variables.scss" as *;
-
 // put your custom CSS here!
+
 html {
   color-scheme: dark !important;
+}
+
+.article-title {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 1.4rem;
 }
 
 // CODE-BLOCK CUSTOMIZATION
@@ -53,10 +61,11 @@ html {
 @media (max-width: 800px){
   .left.sidebar {
     padding: 5px 10px;
+    min-width: 100%;
   }
-  .recent-notes {
-    display: none;
-  }
+  // .recent-notes {
+  //   display: none;
+  // }
 
   .quartz-custom-navbar.collapsed {
     padding: 0;
@@ -67,6 +76,9 @@ html {
   .quartz-custom-navbar-list li {
     font-size: 1rem;
     letter-spacing: 2px;
+  }
+  .quartz-custom-navbar {
+    display: none;
   }
 }
 .explorer.nav-files-container {
@@ -92,8 +104,8 @@ html {
 }
 
 .toc .toc-header h3 {
-  text-transform: uppercase;
-  font-family: Inter;
+  // text-transform: uppercase;
+  // font-family: Inter;
   color: #589df6;
 }
 
@@ -114,12 +126,13 @@ html {
 
 // PAGE title
 .page-title {
-  font-family: 'JetBrains Mono', sans-serif;
+  font-family: Orbitron;
+  text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 0.1em;
   // background-color: #0d1117;
   //background: linear-gradient(93deg,rgba(22, 55, 105, 1) 0%, rgba(24, 26, 31, 1) 100%);
-  padding: 0.2rem 0.5rem;
+  padding: 0 0.5rem;
   border-left: 2px solid #94979a;
   text-align: left;
 }
@@ -274,7 +287,7 @@ hr {
 // MARKDOWN - h1 border
 .markdown-preview-view.markdown-rendered h1 {
   border-left: 4px solid #3fb99a;
-  padding: 0.3rem 0 0.3rem 0.7rem;
+  padding: 0rem 0 0 0.7rem;
 }
 
 // MARKDOWN - In-line code | Disabled to use in tags instead
@@ -489,7 +502,6 @@ footer > ul > li > a:hover {
     max-width: 18%;
     padding-top: 1rem;
   }
-
   .col-right {
     flex: 1;
   }
@@ -640,4 +652,42 @@ h3 .internal {
   text-overflow: ellipsis;
   white-space: nowrap;
   max-width: 100%;
+}
+
+
+
+.home-labels {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.home-label-work {
+  // display: none;
+  background-color: #182923;
+  border: 1px solid #1e382b;
+  border-style: solid;
+  color: #58f6af;
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.8rem;
+}
+.home-label-education {
+  // display: none;
+  background-color: #272918;
+  border: 1px solid #38371e;
+  border-style: solid;
+  color: #f1f658;
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.8rem;
+}
+.home-label-cert {
+  // display: none;
+  background-color: #291818;
+  border: 1px solid #381e1e;
+  border-style: solid;
+  color: #f65858;
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.8rem;
 }

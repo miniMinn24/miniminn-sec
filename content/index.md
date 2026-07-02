@@ -1,5 +1,5 @@
 ---
-title: Welcome to Home Base
+title: Welcome to the Home Base
 date: 2026-01-21
 ---
 <div class="two-col">
@@ -11,33 +11,42 @@ date: 2026-01-21
   
 <div class="col-right">
 
-<h2 style="font-family:'JetBrains Mono';color:#589df6;margin: 10px 0px 10px 0px;">I'm miniMinn [မင်းမောင်]</h2>
+<h2 style="font-family:'JetBrains Mono';color:#589df6;margin: 10px 0px 10px 0px;">Min M. [miniMinn]</h2>
 
 <span style="font-size: 0.9rem; line-height: 0; margin: 6px 0px;">Currently looking for a <b style='color:#fcfcfc;'>SOC analyst role</b> while learning hands-on daily in <b style='color:#fcfcfc;'>Digital Forensics & Incident Response (DFIR)</b>. Actively working on real-world assessments, CTF challenges, and security analysis labs. Find me on [Linkedin](https://www.linkedin.com/in/min-maung-maung-03352028a/).</span>
 
   </div>
 </div>
 
+<div class="home-labels">
+<div class="home-label-work">• Available for work</div>
+<div class="home-label-education">NCC L5DCS</div>
+<div class="home-label-cert">Certified Google IT Support</div>
+</div>
 
 > *Zen–Obsession–Humility is the key to growth.*
 
 ---
 
+# Portfolio
+
 **As a part of my portfolio**, I'm self-hosting this website as my own knowledge base to document my path from today to proficient in Cybersecurity. I publish security analysis/CTF labs writeups, professional course walkthroughs, how-to guides and open-source project setups.
 
-- [[writeups | 💻 Security Writeups]]: I investigate, I struggle, I document and I progress.
-- [[blogs | ☕ Blogs & Notes]]: Sharing my experiences throughout my journey.
-
-![[gif-ezgif.com-crop.gif|697]]
-
-You can reach me at miniminnmgmg24@gmail.com.
+**Explorer:**
+- [[writeups | 💻 Security Writeups]]
+- [[blogs | ☕ Blogs & Notes]]
 
 ---
 
-#### Wanna play a mini-CTF game?
+# Certifications
 
-Find the **name of my favorite animation series**. There's a file I created and wrote something about it in there. But, I lost it somewhere and couldn't find that note again. I believe it's around here, can you find it?
 
-> [!info]- Hint
-> In a pool of files, URL is the only way.
- 
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="eb9bbbed-20e1-4c33-8bd2-40cc6c3a2fce" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="e248ed44-5712-4c9b-a035-283b1e822840" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="6f89b56a-5f7a-4bc6-ba0d-4a4d3276264e" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+
+---
+You can reach me at miniminnmgmg24@gmail.com.

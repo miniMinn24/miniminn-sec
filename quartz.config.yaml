@@ -17,7 +17,7 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: false
     typography:
-      header: Inter
+      header: Orbitron
       body: JetBrains Mono
       code: JetBrains Mono
     colors:
@@ -117,10 +117,10 @@ plugins:
     enabled: true
     options:
       fontOrigin: googleFonts
-      pageTitle: JetBrains Mono
-      page-title: Ubuntu
+      pageTitle: Orbitron
+      page-title: JetBrains Mono
       body: JetBrains Mono
-      header: Inter
+      header: JetBrains Mono
       code: JetBrains Mono
   - source: github:quartz-community/remove-draft
     enabled: true
@@ -192,6 +192,7 @@ plugins:
     layout:
       position: right
       priority: 20
+      condition: not-index
   - source: github:quartz-community/backlinks
     enabled: false 
     layout:
@@ -244,8 +245,6 @@ plugins:
         repoId: R_kgDOS_-MKg
         category: General
         categoryId: DIC_kwDOS_-MKs4C_ipa
-        light: dark
-        dark: dark
         theme: dark
         lang: en
     layout:
@@ -326,7 +325,7 @@ plugins:
           pageRef: /blogs
     layout:
       position: left
-      priority: 1 #58
+      priority: 58
   - source: github:quartz-community/obsidian-plugin-excalidraw
     enabled: true
     options:
