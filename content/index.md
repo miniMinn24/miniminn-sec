@@ -1,5 +1,5 @@
 ---
-title: Welcome to the Home Base
+title: Welcome to Home
 date: 2026-01-21
 ---
 <div class="two-col">
@@ -19,7 +19,7 @@ date: 2026-01-21
 </div>
 
 <div class="home-labels">
-<div class="home-label-work">• Available for work</div>
+<div class="home-label-work">● Available for work</div>
 <div class="home-label-education">NCC L5DCS</div>
 <div class="home-label-cert">Certified Google IT Support</div>
 </div>
@@ -35,10 +35,24 @@ date: 2026-01-21
 - [[writeups | 💻 Security Writeups]]
 - [[blogs | ☕ Blogs & Notes]]
 
+```
+┌──[ Skills Chart ]──────────────────────────────────────────────────────────┐
+|  (Updated - July 3, 2026)                                                  |
+|                                                                            |
+|  Forensics:     ████████░░  80%      Incident Response: ███████░░░  80%    |
+|  OSINT:         ████░░░░░░  40%      Malware Analysis:  ██░░░░░░░░  20%    |
+|  Documentation: ██████░░░░  60%      Reverse Eng:       █░░░░░░░░░  10%    |
+|                                                                            |
+├──[ Player ]────────────────────────────────────────────────────────────────┤
+|  WEAPON: Arch Linux  LVL: 2  EXP: Noob  |  Quests: "Expect the unexpected" |
+└────────────────────────────────────────────────────────────────────────────┘
+```
+
 ---
 
-# Certificates
+# Digital Badges
 
+Next goal: **Certified Google Cybersecurity Professional**.
 
 
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="eb9bbbed-20e1-4c33-8bd2-40cc6c3a2fce" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
@@ -50,3 +64,4 @@ date: 2026-01-21
 
 ---
 You can reach me at miniminnmgmg24@gmail.com.
+

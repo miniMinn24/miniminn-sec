@@ -6,11 +6,11 @@ html {
 }
 
 .article-title {
+  font-family: Orbitron, monospace;
   font-size: 1.6rem;
 }
 
 h1 {
-  font-family: Orbitron, monospace;
   font-size: 1.4rem;
 }
 
@@ -262,6 +262,20 @@ h1 {
   border-radius: 1000px;
 }
 
+.recent-notes h3 {
+  font-family: Orbitron, monospace;
+  text-transform: uppercase;
+  // border: 1px solid #2c5e76;
+  // border-style: dashed;
+  color: #589df6;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.8rem;
+}
+
+.recent-notes time {
+  font-size: 0.8rem;
+}
+
 // MARKDOWN FIX
 
 // blockquote p {  // Disabled because the background is also applied to other Callouts too.
@@ -270,6 +284,9 @@ h1 {
 
 .recent-notes .recent-ul .recent-li .section .desc h3 {
   border-left: 4px solid #589df6;
+  background: linear-gradient(93deg,rgba(88, 157, 246, 0.14) 0%, rgba(0, 0, 0, 0) 30%);
+  border-radius: 0.2rem;
+  text-transform: capitalize;
   padding-left: 0.8rem;
 }
 
@@ -692,3 +709,4 @@ h3 .internal {
   padding: 0.2rem 0.4rem;
   font-size: 0.8rem;
 }
+
