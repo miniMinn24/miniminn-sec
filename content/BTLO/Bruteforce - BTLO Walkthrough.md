@@ -13,16 +13,15 @@ banner: "[[Bruteforce - BTLO Walkthrough-1782753702635.webp]]"
 
 ![[Bruteforce - BTLO Walkthrough-1782753702635.webp]]
 
-# 📓 Overview
+# 1. Overview
 
 This challenge is about analyzing the **Windows Event Logs** to investigate **Remote Desktop Protocol (RDP)** bruteforce attempts. It's includes analyzing a large volume log of **Audit failures** to identify specific **Indicator of Compromises (IoCs)**.
 
-### Tools used
-
+**Tools used**
 - **Windows Events Log Viewer** to extract information about the bruteforce event.
 - **TimelineExplorer.exe** (Zimmerman-Tools) for analyzing attempted events on the host.
 
-# 💻 Initial analysis
+# 2. Initial analysis
 
 > [!quote]- Scenario
 > _Can you analyze logs from an attempted RDP bruteforce attack?_
@@ -37,7 +36,7 @@ In this challenge, we are provided with 3 evidence files:
 2. `BTLO_Bruteforce_Challenge.csv`: The log data structured in a tabular format. Each column has a specific log field (e.g., Event ID, Account Name, IP Address).
 3. `BTLO_Bruteforce_Challenge.evtx`: A native binary file format for **Windows Events Log Viewer**.
 
-# 👨‍💻 Q&A
+# 3. Q&A
 
 ### T-1. How many Audit Failure events are there? (Format: Count of Events)?
 
@@ -106,7 +105,7 @@ In the raw export of Windows Events Log txt file, we can see what source ports w
 The ports shown in the raw txt file were in the random order. So, I used the command `sort`, then `(head -n 10; tail -n 10)` to see the first and last 10 lines of the source port to confirm the numbers.
 
 
-# ⚔ MITRE tactics mapping
+# 4. MITRE tactics mapping
 
 The timeline illustrates the attack progression from the attacker's perspective. The attacker first targeted the exposed **Remote Desktop Protocol (RDP)** service and launched a **brute-force attack by repeatedly attempting** different password combinations, generating numerous **failed logon events (Event ID 4625)**.  
 
@@ -138,7 +137,7 @@ timeline
 
 
 
-# 🛡 SOC workflow
+# 5. SOC workflow
 
 From a defender's perspective, the investigation begins by monitoring **Windows Security logs** for an **unusually high number of failed logon events** (Event ID 4625).  
 The analyst then correlates these events by **source IP address, username, and timestamp** to identify potential brute-force activity. If a successful logon event (Event ID 4624) is observed shortly after the **failed attempts—particularly with Logon Type 10 (RDP session)** the activity can be confirmed as a successful brute-force attack.  

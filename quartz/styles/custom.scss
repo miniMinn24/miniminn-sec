@@ -6,8 +6,9 @@ html {
 }
 
 .article-title {
-  font-family: Orbitron, monospace;
   font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
 }
 
 h1 {
@@ -127,7 +128,6 @@ h1 {
 
 // PAGE title
 .page-title {
-  font-family: Orbitron, monospace;
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 0.1em;
@@ -262,19 +262,18 @@ h1 {
   border-radius: 1000px;
 }
 
-.recent-notes h3 {
-  font-family: Orbitron, monospace;
-  text-transform: uppercase;
-  // border: 1px solid #2c5e76;
-  // border-style: dashed;
-  color: #589df6;
-  padding: 0.2rem 0.4rem;
-  font-size: 0.8rem;
-}
+// .recent-notes h3 {
+//   text-transform: uppercase;
+//   // border: 1px solid #2c5e76;
+//   // border-style: dashed;
+//   color: #589df6;
+//   padding: 0.2rem 0.4rem;
+//   font-size: 0.8rem;
+// }
 
-.recent-notes time {
-  font-size: 0.8rem;
-}
+// .recent-notes time {
+//   font-size: 0.8rem;
+// }
 
 // MARKDOWN FIX
 
@@ -285,7 +284,7 @@ h1 {
 .recent-notes .recent-ul .recent-li .section .desc h3 {
   border-left: 4px solid #589df6;
   background: linear-gradient(93deg,rgba(88, 157, 246, 0.14) 0%, rgba(0, 0, 0, 0) 30%);
-  border-radius: 0.2rem;
+  // border-radius: 0.2rem;
   text-transform: capitalize;
   padding-left: 0.8rem;
 }
@@ -304,8 +303,12 @@ hr {
 
 // MARKDOWN - h1 border
 .markdown-preview-view.markdown-rendered h1 {
-  border-left: 4px solid #3fb99a;
-  padding: 0rem 0 0 0.7rem;
+  // border-left: 4px solid #3fb99a;
+  text-transform: uppercase;
+  color: #589df6;
+  padding-top: 18px;
+  border-top: 1px solid #2d3845; /* Add dashed line */
+  // padding: 0rem 0 0 0.7rem;
 }
 
 // MARKDOWN - In-line code | Disabled to use in tags instead
@@ -350,10 +353,6 @@ hr {
 }
 
 // DATABASE VIEW - BUTTONS
-
-.article-title {
-  margin-bottom: 0.5rem;
-}
 
 .bases-view-tabs button {
   font-family: JetBrains Mono;
@@ -675,6 +674,7 @@ h3 .internal {
 
 
 .home-labels {
+  font-family: JetBrains Mono, monospace;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;

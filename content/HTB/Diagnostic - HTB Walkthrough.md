@@ -13,7 +13,7 @@ banner: "[[Diagnostic - HTB Walkthrough-1782531644360.webp]]"
 
 ![[Diagnostic - HTB Walkthrough-1782531644360.webp]]
 
-# 📓 Overview
+# 1. Overview
 
 The "Diagnostic" lab is a forensic challenge and rated as easy difficulty. It's about investigating how the phishing links are directing to the same server, and compromising the victim's systems by using the Microsoft Windows Support Diagnostics Tool's (MSDT) flaw.
 
@@ -23,9 +23,9 @@ The "Diagnostic" lab is a forensic challenge and rated as easy difficulty. It's 
 - `curl` (Client URL) to fetch server data and information.
 - [CyberChef](https://gchq.github.io/CyberChef/) to decode obfuscated codes.
 
-# 💻 Forensic
+# 2. Forensic
 
-## 1. Initial analysis
+## Initial analysis
 
 > [!quote]- Challenge Scenario
 > Our SOC has identified numerous phishing emails coming in claiming to have a document about an upcoming round of layoffs in the company. The emails all contain a link to diagnostic.htb/layoffs.doc. The DNS for that domain has since stopped resolving, but the server is still hosting the malicious document (your docker). Take a look and figure out what's going on.
@@ -50,7 +50,7 @@ Aggressive OS guesses: Linux 4.15 - 5.19...
 
 So the results shows that it's a Python web-server **Werkzeug HTTP daemon 2.1.2** running on port `31308`. It possibly looks like a **development server** running for production use due to the presence of Werkzeug (a WSGI utility library for python).
 
-## 2. Evidence triage
+## Evidence triage
 
 The scenario mentions that all phishing emails direct link to `http://diagnostic.htb:31308/layoffs.doc`, which seems the attacker's hosting a suspicious file:
 
@@ -90,7 +90,7 @@ Looking at the [CVE-2022-30190](https://www.cvedetails.com/cve/CVE-2022-30190/) 
 
 ![[Diagnostic - HTB Walkthrough-1782545240178.webp]]
 
-## 3. Examination
+## Examination
 
 I used a sandbox like **Any.Run** to open the doc for dynamic analysis:
 
@@ -110,7 +110,7 @@ Once executed, the payload will run multi-stage PowerShell attack chain on the v
 
 ![[Diagnostic - HTB Walkthrough-1782565131627.webp]]
 
-## 4. Extracting Flag
+## Extracting Flag
 
 As you may have noticed, we can see the hidden codes that might reveal the flag:  
 
@@ -129,7 +129,7 @@ ${f`ile} = ("{7}{1}{6}{8}{5}{3}{2}{4}{0}"-f'}.exe','B{msDt_4s_A_pr0','E','r...s'
 ```
 
 
-# ⚔ MITRE ATT&CK | SOC view
+# 3. MITRE ATT&CK | SOC view
 
 | TID       | Tactic         | Technique                                     |
 | --------- | -------------- | --------------------------------------------- |
@@ -169,7 +169,7 @@ G -.File Activity.-> L4["Filesystem Artifacts"]
 H -.Network Traffic.-> L5["PCAP / EDR Alerts"]
 ```
 
-## 🛡 Remediation 
+## Remediation 
 
 #### 1. Disabling MSDT URL Protocol
 
@@ -184,7 +184,7 @@ reg delete HKEY_CLASSES_ROOT\ms-msdt /f
 #### 2. Attack Surface Reduction (ASR)
 For endpoints using Microsoft Defender, enabling the ASR rule to reject all Office application from creating child processes can prevent this attack.
 
-# 💭 Lessons learned
+# 5. Lessons learned
 To be aware of this incident, I learned that
 - Expending network visibility (alert on any known development frameworks in network traffics).
 - Automating patching SLAs, training employees to be aware of emotion lures.

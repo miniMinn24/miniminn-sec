@@ -11,12 +11,18 @@ date: 2026-01-21
   
 <div class="col-right">
 
-<h2 style="font-family:'JetBrains Mono';color:#589df6;margin: 10px 0px 10px 0px;">Min Maung M. [miniMinn]</h2>
+<h2 style="color:#fcfcfc;margin: 10px 0px 10px 0px;letter-spacing: 1px;">Min Maung M. <span style ="font-family: JetBrains Mono;color:#589df6;">[miniMinn]</span></h2>
 
-<span style="font-size: 0.9rem; line-height: 0; margin: 6px 0px;">Currently looking for a <b style='color:#fcfcfc;'>SOC analyst role</b> while learning hands-on daily in <b style='color:#fcfcfc;'>Digital Forensics & Incident Response (DFIR)</b>. Actively working on real-world assessments, CTF challenges, and security analysis labs. Find me on [Linkedin](https://www.linkedin.com/in/min-maung-maung-03352028a/).</span>
+<span style="font-size: 0.9rem; line-height: 0; margin: 6px 0px;">Currently looking for a <b style='color:#fcfcfc;'>SOC analyst role</b> while learning hands-on daily in <b style='color:#fcfcfc;'>Digital Forensics & Incident Response (DFIR)</b>. Actively working on security analysis labs, CTF challenges, and mini-projects. Find me on [Linkedin](https://www.linkedin.com/in/min-maung-maung-03352028a/).</span>
 
   </div>
 </div>
+
+<span style="font-size: 0.9rem;font-family: JetBrains Mono, monospace;">
+
+> *Zen–Obsession–Humility is the key to growth.*
+
+</span>
 
 <div class="home-labels">
 <div class="home-label-work">● Available for work</div>
@@ -24,35 +30,28 @@ date: 2026-01-21
 <div class="home-label-cert">Certified Google IT Support</div>
 </div>
 
-> *Zen–Obsession–Humility is the key to growth.*
 
----
-
-# Portfolio
+# About Website
 
 **As a part of my portfolio**, I'm self-hosting this website as my own knowledge base to document my path from today to proficient in Cybersecurity. I publish security analysis/CTF labs writeups, professional course walkthroughs, how-to guides and open-source project setups.
-
-- [[writeups | 💻 Security Writeups]]
-- [[blogs | ☕ Blogs & Notes]]
 
 ```
 ┌──[ Skills Chart ]──────────────────────────────────────────────────────────┐
 |  (Updated - July 3, 2026)                                                  |
 |                                                                            |
-|  Forensics:     ████████░░  80%      Incident Response: ███████░░░  80%    |
-|  OSINT:         ████░░░░░░  40%      Malware Analysis:  ██░░░░░░░░  20%    |
-|  Documentation: ██████░░░░  60%      Reverse Eng:       █░░░░░░░░░  10%    |
+|  Forensic:     ████████░░  80%    Incident Response:   ███████░░░  80%     |
+|  OSINT:        ████░░░░░░  40%    Malware Analysis:    ██░░░░░░░░  20%     |
+|  Documenting:  ██████░░░░  60%    Reverse Engineering: █░░░░░░░░░  10%     |
 |                                                                            |
 ├──[ Player ]────────────────────────────────────────────────────────────────┤
-|  WEAPON: Arch Linux  LVL: 2  EXP: Noob  |  Quests: "Expect the unexpected" |
+|  WEAPON: Arch Linux  LVL: 2  EXP: Noob  |  Quest: "Expect the unexpected." |
 └────────────────────────────────────────────────────────────────────────────┘
 ```
 
----
 
 # Digital Badges
 
-Next goal: `Certified Google Cybersecurity Professional`.
+My next cert: `Certified Google Cybersecurity Professional`
 
 
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="eb9bbbed-20e1-4c33-8bd2-40cc6c3a2fce" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>

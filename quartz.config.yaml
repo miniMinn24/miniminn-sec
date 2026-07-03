@@ -17,8 +17,8 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: false
     typography:
-      header: Orbitron
-      body: JetBrains Mono
+      header: Ubuntu
+      body: Inter
       code: JetBrains Mono
     colors:
       # lightMode:
@@ -117,10 +117,10 @@ plugins:
     enabled: true
     options:
       fontOrigin: googleFonts
-      pageTitle: Orbitron
-      page-title: JetBrains Mono
-      body: JetBrains Mono
-      header: JetBrains Mono
+      pageTitle: Inter
+      page-title: Inter
+      body: Inter
+      header: Ubuntu
       code: JetBrains Mono
   - source: github:quartz-community/remove-draft
     enabled: true

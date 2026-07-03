@@ -12,7 +12,7 @@ banner: "[[Brutus - HTB Walkthrough-1782545524334.webp]]"
 ---
 ![[Brutus - HTB Walkthrough-1782545524334.webp]]
 
-# 📓 Overview
+# 1. Overview
 
 Brutus is a sherlock challenge and rated as very easy level on HackTheBox. It focuses on analyzing Unix authentication logs. The challenge provides two key artifacts: auth.log and wtmp, which investigators must parse to reconstruct an attacker's activity on a Confluence server.
 
@@ -21,14 +21,14 @@ Brutus is a sherlock challenge and rated as very easy level on HackTheBox. It fo
 - **utmpdump** (util-linux) to convert binary accounting logs into ASCII text.
 - [MITRE ATT&CK](https://attack.mitre.org/) framework to identify attack techniques.
 
-# 💻 Initial Analysis
+# 2. Initial Analysis
 
 **HTB Lab**: https://app.hackthebox.com/sherlocks/Brutus?tab=play_sherlock
 
 > [!quote]- Sherlock Scenario
 > In this Sherlock, you will familiarize yourself with Unix auth.log and wtmp logs. We'll explore a scenario where a Confluence server was brute-forced via its SSH service. After gaining access to the server, the attacker performed additional activities, which we can track using auth.log. Although auth.log is primarily used for brute-force analysis, we will delve into the full potential of this artifact in our investigation, including aspects of privilege escalation, persistence, and even some visibility into command execution.
 
-# 👨‍💻 Q&A
+# 3. Q&A
 
 ### T-1. Analyze the auth.log. What is the IP address used by the attacker to carry out a brute force attack?
 
@@ -117,6 +117,6 @@ In line 375, we can see the attacker used sudo privileges to download a maliciou
 
 ![[attachments/Pasted image 20260608210140.png]]
 
-# 💭 Lessons learned
+# 4. Lessons learned
 
 This challenge taught me get familiar with logs analysis to detect potential malicious commands. Through the analysis, I learned how the attacker gained access through brute force attack, creating persistent access, and especially how logs can be invaluable for investigating any incidents.
