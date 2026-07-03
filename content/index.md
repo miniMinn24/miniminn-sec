@@ -52,7 +52,7 @@ date: 2026-01-21
 
 # Digital Badges
 
-Next goal: **Certified Google Cybersecurity Professional**.
+Next goal: `Certified Google Cybersecurity Professional`.
 
 
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="eb9bbbed-20e1-4c33-8bd2-40cc6c3a2fce" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
