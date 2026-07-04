@@ -51,6 +51,9 @@ date: 2026-01-21
 
 # Experiences
 
+```
+Coming soon!
+```
 
 # Digital Badges
 
