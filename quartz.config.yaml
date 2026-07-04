@@ -117,8 +117,8 @@ plugins:
     enabled: true
     options:
       fontOrigin: googleFonts
-      pageTitle: Inter
-      page-title: Inter
+      pageTitle: Orbitron 
+      page-title: Orbitron
       body: Inter
       header: Ubuntu
       code: JetBrains Mono
