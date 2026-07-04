@@ -715,6 +715,8 @@ h3 .internal {
 
 
 .breadcrumb-container {
-  transform: scale(0.8);
   opacity: 80%;
+}
+.breadcrumb-container p {
+  transform: scale(0.8);
 }
