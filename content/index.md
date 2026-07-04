@@ -49,6 +49,9 @@ date: 2026-01-21
 ```
 
 
+# Experiences
+
+
 # Digital Badges
 
 My next cert: `Certified Google Cybersecurity Professional`

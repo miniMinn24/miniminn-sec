@@ -129,6 +129,7 @@ h1 {
 // PAGE title
 .page-title {
   text-transform: uppercase;
+  font-family: Orbitron, sans-serif;
   font-size: 0.8rem;
   letter-spacing: 0.1em;
   // background-color: #0d1117;
@@ -710,3 +711,10 @@ h3 .internal {
   font-size: 0.8rem;
 }
 
+
+
+
+.breadcrumb-container {
+  transform: scale(0.8);
+  opacity: 80%;
+}
