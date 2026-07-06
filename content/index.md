@@ -35,13 +35,17 @@ date: 2026-01-21
 
 **As a part of my portfolio**, I'm self-hosting this website as my own knowledge base to document my path from today to proficient in Cybersecurity. I publish security analysis/CTF labs writeups, professional course walkthroughs, how-to guides and open-source project setups.
 
+Explore my contents:  
+- [[writeups | Security Writeups]]  
+- [[blogs | Blogs & Notes]]
+
 ```
 ┌──[ Skills Chart ]──────────────────────────────────────────────────────────┐
 |  (Updated - July 3, 2026)                                                  |
 |                                                                            |
-|  Forensic:     ████████░░  80%    IR:   ███████░░░  80%     |
-|  OSINT:        ████░░░░░░  40%    Mal Analysis:    ██░░░░░░░░  20%     |
-|  Documenting:  ██████░░░░  60%    RE: █░░░░░░░░░  10%     |
+|  Forensic:     ████████░░  80%    Incident Response:   ███████░░░  80%     |
+|  OSINT:        ████░░░░░░  40%    Malware Analysis:    ██░░░░░░░░  20%     |
+|  Documenting:  ██████░░░░  60%    Rev Engineering:     █░░░░░░░░░  10%     |
 |                                                                            |
 ├──[ Player ]────────────────────────────────────────────────────────────────┤
 |  WEAPON: Arch Linux  LVL: 2  EXP: Noob  |  Quest: "Expect the unexpected." |
