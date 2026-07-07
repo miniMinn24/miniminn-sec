@@ -9,7 +9,6 @@ configuration:
   locale: en-US
   baseUrl: miniminn-sec.pages.dev
   googleSiteVerification: "XetTZJ_vUTg-05_HQSv7bglYzOa1A94a69BUrJ4ip-k"
-  #googleSiteVerification: "rUovsFH4CZ2o53gIwA-rdznt57BydWWMSSNrwBqM2jc"
   ignorePatterns:
     - private
     - templates
