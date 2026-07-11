@@ -7,10 +7,10 @@ category:
 author: miniMinn
 platform:
   - Blue Team Labs Online
-password: ded5be6fad6cb2433e76f95e61acef30f6629f03bfc79ff878eb2cd1f8e618c5
-status:
-  - Machine Active • Temporarily Locked
+banner: "[[The Report - BTLO Walkthrough-1783796741142.webp]]"
 ---
+![[The Report - BTLO Walkthrough-1783796741142.webp]]
+
 # 1. Overview
 
 This challenge **The Report** involves analyzing a **Red Canary's 2022 Threat Detection Report** to answer specific tasks about the what cyber threats are observed in late 2021 and early 2022.
