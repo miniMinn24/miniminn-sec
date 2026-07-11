@@ -13,7 +13,7 @@ date: 2026-01-21
 
 <h2 style="color:#fcfcfc;margin: 10px 0px 10px 0px;letter-spacing: 1px;">Min Maung M. <span style ="font-family: JetBrains Mono;color:#589df6;">[miniMinn]</span></h2>
 
-<span style="font-size: 0.9rem; line-height: 0; margin: 6px 0px;">Currently looking for a <b style='color:#fcfcfc;'>SOC analyst role</b> while learning hands-on daily in <b style='color:#fcfcfc;'>Digital Forensics & Incident Response (DFIR)</b>. Actively working on security analysis labs, CTF challenges, and mini-projects. Find me on [Linkedin](https://www.linkedin.com/in/min-maung-maung-03352028a/).</span>
+<span style="font-size: 0.9rem; line-height: 0; margin: 6px 0px;">Currently working as an <b style='color:#fcfcfc;'>Associate SOC analyst</b> while learning hands-on daily in <b style='color:#fcfcfc;'>Digital Forensics & Incident Response (DFIR)</b>. Actively working on security analysis labs, CTF challenges, and mini-projects. Find me on [Linkedin](https://www.linkedin.com/in/min-maung-maung-03352028a/).</span>
 
   </div>
 </div>
@@ -25,7 +25,7 @@ date: 2026-01-21
 </span>
 
 <div class="home-labels">
-<div class="home-label-work">● Available for work</div>
+<div class="home-label-work">● Assoc. SOC Analyst</div>
 <div class="home-label-education">NCC L5DCS</div>
 <div class="home-label-cert">Certified Google IT Support</div>
 </div>
