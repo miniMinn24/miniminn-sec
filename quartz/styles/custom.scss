@@ -1,6 +1,55 @@
 @use "./variables.scss" as *;
 // put your custom CSS here!
 
+/* Light Mode */
+:root {
+  --sidebar-bg: #ededed;
+  --focused-text: #111111;
+  --sidebar-border: #e0e0e0;
+  --accent-color: #1f75e7;
+  --accent-bg-transparent: rgba(88, 156, 246, 0.1);
+  --blue: #1f75e7;
+  --blue-bg-transparent: rgba(88, 156, 246, 0.1);
+  --blue-bg-border: #0e4a70;
+  --yellow: #f1f658;
+  --yellow-bg-transparent: rgba(241, 246, 88, 0.1);
+  --yellow-bg-border: #38371e;
+  --red: #f65858;
+  --red-bg-transparent: rgba(246, 88, 88, 0.1);
+  --red-bg-border: #381e1e;
+  --green: #22c698;
+  --green-bg-transparent: rgba(88, 246, 201, 0.1);
+  --green-bg-border: #004f39;
+  --text-fade: #7b818e;
+  --toc-box: #e7effa;
+  --toc-box-border: #a9c1dc;
+}
+
+/* Dark Mode */
+[saved-theme="dark"] {
+  --sidebar-bg: #1a1a1a;
+  --focused-text: #f0f0f0;
+  --sidebar-border: #333333;
+  --accent-color: #589df6;
+  --accent-bg-transparent: rgba(88, 156, 246, 0.1);
+  --blue: #1f75e7;
+  --blue-bg-transparent: rgba(0, 110, 255, 0.1);
+  --blue-bg-border: #1a3d53;
+  --yellow: #f1f658;
+  --yellow-bg-transparent: rgba(241, 246, 88, 0.1);
+  --yellow-bg-border: #38371e;
+  --red: #f65858;
+  --red-bg-transparent: rgba(246, 88, 88, 0.1);
+  --red-bg-border: #381e1e;
+  --green: #58f6c9;
+  --green-bg-transparent: rgba(88, 246, 201, 0.1);
+  --green-bg-border: #004f39;
+  --searchbox: #222428;
+  --text-fade: #636874;
+  --toc-box: #161c24;
+  --toc-box-border: #1e2a38;
+}
+
 html {
   color-scheme: dark !important;
 }
@@ -54,7 +103,7 @@ h1 {
 //
 .left.sidebar {
   font-size: 0.9rem;
-  background-color: #181a1f;
+  background-color: var(--sidebar-bg);
   margin-right: 1rem;
   padding-right: 2rem;
   padding-left: 2rem;
@@ -95,25 +144,25 @@ h1 {
 }
 
 .toc {
-  background: #161c24;
-  border: 1px solid #1e2a38;
+  background: var(--toc-box);
+  border: 1px solid var(--toc-box-border);
   border-radius: 0.4rem;
   padding: 1rem;
 }
 
 .toc {
-  color: #636874;
+  color: var(--text-fade);
 }
 
 .toc .toc-header h3 {
   // text-transform: uppercase;
   // font-family: Inter;
-  color: #589df6;
+  color: var(--accent-color);
 }
 
 .toc-header {
   padding-bottom: 10px;
-  border-bottom: 1px solid #1e2a38;
+  border-bottom: 1px solid --toc-box-border;
 }
 
 .toc a {
@@ -143,15 +192,15 @@ h1 {
   color: #94979a;
 }
 
-// @media (max-width: 600px) {
-//   .page-title {
-//     display: none;
-//   }
-// }
+@media (max-width: 800px) {
+  .page-title {
+    display: none;
+  }
+}
 
 // SEARCH BUTTON
 .search-button {
-  background-color: #222428;
+  background-color: var(--searchbox);
 }
 
 // @media (max-width: 850px) { // Search button in mobile view is awkward so...
@@ -175,12 +224,8 @@ h1 {
   padding: 1rem;
 }
 
-.encrypted-page-form p {
-  color: #8c8c8c;
-}
-
 .encrypted-page-form b {
-  color: #d4d4d4;
+  color: var(--focused-text);
 }
 
 .encrypted-page-label.encrypted-page-label-secondary {
@@ -291,7 +336,7 @@ h1 {
 }
 
 .recent-notes .recent-ul .recent-li .section .desc a {
-  color: #d4d4d4;
+  color: var(--focused-text);
 }
 
 // MARKDOWN - HR
@@ -332,8 +377,8 @@ hr {
 
 // MARKDOWN - TAGs
 .internal.internal-link.tag-link {
-  color: #589df6;
-  background-color: #0D1F36;
+  color: var(--accent-color);
+  background-color: var(--accent-bg-transparent);
   // border: 1px solid #589df6;
   border-radius: 1000px;
   text-decoration: none;
@@ -343,8 +388,8 @@ hr {
 }
 
 .internal.tag-link {
-  color: #589df6;
-  background-color: #0D1F36;
+  color: var(--accent-color);
+  background-color: var(--accent-bg-transparent);
   // border: 1px solid #589df6;
   border-radius: 1000px;
   padding: 0.1rem 0.4rem;
@@ -366,9 +411,9 @@ hr {
 
 .bases-view-tabs button[data-view-index="0"].is-active {
   font-family: JetBrains Mono;
-  color: #589df6 !important;
+  color: var(--accent-color) !important;
   background: #0D1F36;
-  border: 1px solid #589df6;
+  border: 1px solid var(--accent-color);
   padding: 0.4rem 0.6rem;
   border-radius: 0.4rem;
   text-decoration: none;
@@ -403,30 +448,14 @@ hr {
 
 .internal.internal-link.alias:hover,
 .internal.internal-link:hover {
-  color: #589df6;
-}
-
-// MARKDOWN - FOOTER Links boxes
-footer > ul > li > a {
-  color: #636874;
-  border: 1px solid #2d3845;
-  border-radius: 0.4rem;
-  padding: 0.1rem 0.4rem;
-  text-decoration: none;
-}
-footer > ul > li > a:hover {
-  color: #589df6;
-  border: 1px solid #589df6;
-  border-radius: 0.4rem;
-  padding: 0.1rem 0.4rem;
-  text-decoration: none;
+  color: var(--accent-color);
 }
 
 // DATABASE CUSTOMIZATION
 .bases-page.bases-inline button {
   font-family: JetBrains Mono;
-  color: #636874;
-  border: 1px solid #2d3845;
+  // color: var(--text);
+  // border: 1px solid #2d3845;
   border-radius: 0.4rem;
   padding: 0.4rem 0.6rem;
   text-decoration: none;
@@ -434,9 +463,9 @@ footer > ul > li > a:hover {
 
 .bases-page.bases-inline .bases-view-tabs button[data-view-index="0"].is-active {
   font-family: JetBrains Mono;
-  color: #589df6 !important;
-  background: #0D1F36;
-  border: 1px solid #589df6;
+  color: var(--blue) !important;
+  background: var(--blue-bg-transparent);
+  border: 1px solid var(--blue);
   padding: 0.4rem 0.6rem;
   border-radius: 0.4rem;
   text-decoration: none;
@@ -444,9 +473,9 @@ footer > ul > li > a:hover {
 
 .bases-page.bases-inline .bases-view-tabs button[data-view-index="1"].is-active {
   font-family: JetBrains Mono;
-  color: #58f6c9 !important;
-  background: #0d361c;
-  border: 1px solid #58f6c9;
+  color: var(--green) !important;
+  background: var(--green-bg-transparent);
+  border: 1px solid var(--green);
   padding: 0.4rem 0.6rem;
   border-radius: 0.4rem;
   text-decoration: none;
@@ -454,18 +483,18 @@ footer > ul > li > a:hover {
 
 .bases-page.bases-inline .bases-view-tabs button[data-view-index="2"].is-active {
   font-family: JetBrains Mono;
-  color: #f65858 !important;
-  background: #360d0d;
-  border: 1px solid #f65858;
+  color: var(--red) !important;
+  background: var(--red-bg-transparent);
+  border: 1px solid var(--red);
   padding: 0.4rem 0.6rem;
   border-radius: 0.4rem;
   text-decoration: none;
 }
 
 .bases-page.bases-inline .bases-view-tabs .is-active {
-  color: #589df6 !important;
-  background: #0D1F36;
-  border: 1px solid #589df6;
+  color: var(--blue) !important;
+  background: var(--blue-bg-transparent);
+  border: 1px solid var(--accent);
   border-radius: 0.4rem;
 }
 
@@ -475,12 +504,12 @@ footer > ul > li > a:hover {
   // transition: 0.3s linear, 0.2s linear; 
 }
 .bases-card-body .bases-card-title {
-  border-left: 4px solid #58bff6;
+  border-left: 4px solid var(--accent-color);
   padding-left: 0.6rem;
 }
 .internal.internal-link.bases-card:hover {
-  border: 1px solid #589df6;
-  background: #0D1F36;
+  border: 1px solid var(--blue);
+  background: var(--blue-bg-transparent);
 }
 // MARKDOWN - MULTI COLUMN CUSTOM
 /* quartz/styles/custom.scss */
@@ -559,7 +588,7 @@ footer > ul > li > a:hover {
 
 .page-title a::after {
   content: "_";
-  color: #fcfcfc;
+  color: var(--focused-text);
   animation: blink 1s infinite;
 }
 
@@ -682,30 +711,27 @@ h3 .internal {
 }
 .home-label-work {
   // display: none;
-  background-color: #182329;
-  border: 1px solid #1e2e38;
-  border-style: solid;
-  color: #0099ff;
+  background-color: var(--blue-bg-transparent);
+  border: 1px solid var(--blue-bg-border);
+  color: var(--blue);
   border-radius: 0.4rem;
   padding: 0.2rem 0.4rem;
   font-size: 0.8rem;
 }
 .home-label-education {
   // display: none;
-  background-color: #272918;
-  border: 1px solid #38371e;
-  border-style: solid;
-  color: #f1f658;
+  background-color: var(--green-bg-transparent);
+  border: 1px solid var(--green-bg-border);
+  color: var(--green);
   border-radius: 0.4rem;
   padding: 0.2rem 0.4rem;
   font-size: 0.8rem;
 }
 .home-label-cert {
   // display: none;
-  background-color: #291818;
-  border: 1px solid #381e1e;
-  border-style: solid;
-  color: #f65858;
+  background-color: var(--red-bg-transparent);
+  border: 1px solid var(--red-bg-border);
+  color: var(--red);
   border-radius: 0.4rem;
   padding: 0.2rem 0.4rem;
   font-size: 0.8rem;
@@ -719,4 +745,19 @@ h3 .internal {
 }
 .breadcrumb-container .breadcrumb-element p {
   transform: scale(0.8);
+}
+
+
+
+
+b {
+  color: var(--focused-text)
+}
+
+.full-name {
+  color: var(--focused-text)
+}
+
+.username {
+  color: var(--accent-color)
 }
