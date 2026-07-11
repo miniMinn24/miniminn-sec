@@ -306,11 +306,11 @@ plugins:
     enabled: true
     options:
       items:
-        - name: "├── 🖿 About Me"
+        - name: "> About Me"
           pageRef: /index
-        - name: "├── 🖿 Sec Writeups"
+        - name: "> Sec Writeups"
           pageRef: /writeups
-        - name: "└── 🖿 Blog & Notes"
+        - name: "> Blog & Notes"
           pageRef: /blogs
     layout:
       position: left
