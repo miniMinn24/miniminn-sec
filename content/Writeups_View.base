@@ -2,7 +2,9 @@ filters:
   and:
     - file.ext == "md"
 formulas:
-  "": ""
+  sort_date: |+
+    file.ctime.format("YYYYMMDD")
+
 views:
   - type: cards
     name: 📘 BTLO
@@ -17,7 +19,7 @@ views:
       - author
       - date
     sort:
-      - property: file.ctime
+      - property: formula.sort_date
         direction: DESC
     cardSize: 300
     imageAspectRatio: 0.3
@@ -35,7 +37,7 @@ views:
       - author
       - date
     sort:
-      - property: file.ctime
+      - property: formula.sort_date
         direction: DESC
     cardSize: 300
     imageAspectRatio: 0.3
@@ -53,7 +55,7 @@ views:
       - author
       - date
     sort:
-      - property: file.ctime
+      - property: formula.sort_date
         direction: DESC
     cardSize: 300
     imageAspectRatio: 0.3

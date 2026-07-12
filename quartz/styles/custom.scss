@@ -10,16 +10,16 @@
   --accent-bg-transparent: rgba(88, 156, 246, 0.1);
   --blue: #1f75e7;
   --blue-bg-transparent: rgba(88, 156, 246, 0.1);
-  --blue-bg-border: #1e94dd;
+  --blue-bg-border: #1f75e7;
   --yellow: #f1f658;
   --yellow-bg-transparent: rgba(241, 246, 88, 0.1);
-  --yellow-bg-border: #c1bc33;
+  --yellow-bg-border: #f1f658;
   --red: #f65858;
   --red-bg-transparent: rgba(246, 88, 88, 0.1);
-  --red-bg-border: #c33f3f;
+  --red-bg-border: #f65858;
   --green: #22c698;
   --green-bg-transparent: rgba(88, 246, 201, 0.1);
-  --green-bg-border: #00c18b;
+  --green-bg-border: #22c698;
   --text-fade: #7b818e;
   --toc-box: #e7effa;
   --toc-box-border: #a9c1dc;
@@ -667,22 +667,24 @@ hr {
 
 
 
-
-
 img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 0 0 0;
 }
 
-img[alt]:after {
-  content: attr(alt);
-  display: block;
-  text-align: center;
-  font-size: 0.9em;
-  color: #ffffff;
-  margin-top: 0.5rem;
-}
+// img {
+//   display: block;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+// img[alt]:after {
+//   content: attr(alt);
+//   display: block;
+//   text-align: center;
+//   font-size: 0.9em;
+//   color: #ffffff;
+//   margin-top: 0.5rem;
+// }
 
 // Line breaking fix
 .bases-card-title {
@@ -759,5 +761,6 @@ b {
 }
 
 .username {
+  font-family: JetBrains Mono, monospace;
   color: var(--accent-color)
 }

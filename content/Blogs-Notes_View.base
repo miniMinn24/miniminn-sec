@@ -3,6 +3,8 @@ filters:
     - file.ext == "md"
 formulas:
   "": ""
+  sort_date: |
+    file.ctime.format("YYYYMMDD")
 views:
   - type: cards
     name: 🪶 Blogs
@@ -16,7 +18,7 @@ views:
       - author
       - date
     sort:
-      - property: file.ctime
+      - property: formula.sort_date
         direction: DESC
     cardSize: 300
     imageAspectRatio: 0.3
@@ -33,7 +35,7 @@ views:
       - author
       - date
     sort:
-      - property: file.ctime
+      - property: formula.sort_date
         direction: DESC
     cardSize: 300
     imageAspectRatio: 0.3
@@ -50,7 +52,7 @@ views:
       - author
       - date
     sort:
-      - property: date
+      - property: formula.sort_date
         direction: DESC
     cardSize: 300
     image: note.banner

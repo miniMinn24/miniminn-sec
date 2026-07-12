@@ -35,9 +35,9 @@ date: 2026-01-21
 
 **As a part of my portfolio**, I'm self-hosting this website as my own knowledge base to document my path from today to proficient in Cybersecurity. I publish security analysis/CTF labs writeups, professional course walkthroughs, how-to guides and open-source project setups.
 
-Explore my contents:  
-- [[writeups | Security Writeups]]  
-- [[blogs | Blogs & Notes]]
+**Explore my cotents:**  
+├── [[writeups|Security Writeups]]
+└── [[blogs|Blogs & Notes]]
 
 ```
 ┌──[ Skills Chart ]──────────────────────────────────────────────────────────┐
@@ -52,6 +52,28 @@ Explore my contents:
 └────────────────────────────────────────────────────────────────────────────┘
 ```
 
+
+# Projects
+
+I haven't done cybersecurity specific projects yet since I was busying with college assignment works, but I will make one soon!
+
+> **Portfolio | Interactive Knowledge Base (This one)**
+
+*Feb 16, 2026 - Continued*
+
+Maintained an publicly accessible 40+ cybersecurity lab writeups and contents, contributing to the security communities. Powered by open-source projects using Obsidian and Quartz.
+
+> **Home Lab Environment**
+
+*Oct 10, 2025 - Continued*
+
+Built my own Linux NAS as a home cloud, KVM virtualization for isolated security labs with continous experiments.
+
+> **[E-commerce Coffee Shop](https://miniminn24.github.io/Front-End-Web-Development/)**
+
+*Dec 29, 2025 - Feb 3, 2026*
+
+Designed an basic responsive front-end using HTML and CSS. JS for shopping logics and scalable data management with CSV files.
 
 # Experiences
 
@@ -69,6 +91,24 @@ My next cert: `Certified Google Cybersecurity Professional`
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="e248ed44-5712-4c9b-a035-283b1e822840" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="6f89b56a-5f7a-4bc6-ba0d-4a4d3276264e" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+# Education
+
+> **NCC Level 5-Diploma in Computing with Cybersecurity**
+> Network Defence Mechanisms, Incident Investigation, Assessment
+> *May, 2026 - Present*
+
+> **Diploma in Networking**
+> NE, CCNA, MikroTik
+> *Apr 2026 - Present*
+
+> **NCC Level-4 Diploma in Computing**
+> VB.NET, Web, OOAD, MySQL, CS Maths, Network Designs
+> *Aug, 2024 - Jan, 2026*
+
+> **NCC Level-3 Diploma in Computing**
+> IT Foundation, Python, Cultural Communications
+> *Jun, 2023- Oct, 2024*
 
 
 ---
