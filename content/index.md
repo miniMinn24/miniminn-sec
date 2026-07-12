@@ -31,7 +31,7 @@ date: 2026-01-21
 </div>
 
 
-# About Website
+# About Me
 
 **As a part of my portfolio**, I'm self-hosting this website as my own knowledge base to document my path from today to proficient in Cybersecurity. I publish security analysis/CTF labs writeups, professional course walkthroughs, how-to guides and open-source project setups.
 
@@ -57,7 +57,7 @@ date: 2026-01-21
 
 I haven't done cybersecurity specific projects yet and playing only CTFs since I was busying with college assignment works, but I will make one soon!
 
-> **Portfolio | Interactive Knowledge Base (This one)**
+> **Portfolio | Interactive Knowledge Base (This)**
 
 *Feb 16, 2026 - Continued*
 
@@ -83,7 +83,7 @@ Coming soon!
 
 # Digital Badges
 
-My next cert: `Certified Google Cybersecurity Professional`
+My next cert is `Certified Google Cybersecurity Professional`
 
 
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="eb9bbbed-20e1-4c33-8bd2-40cc6c3a2fce" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
