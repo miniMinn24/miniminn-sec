@@ -55,7 +55,7 @@ date: 2026-01-21
 
 # Projects
 
-I haven't done cybersecurity specific projects yet since I was busying with college assignment works, but I will make one soon!
+I haven't done cybersecurity specific projects yet and playing only CTFs since I was busying with college assignment works, but I will make one soon!
 
 > **Portfolio | Interactive Knowledge Base (This one)**
 
