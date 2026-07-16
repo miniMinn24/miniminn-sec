@@ -77,9 +77,11 @@ Designed an basic responsive front-end using HTML and CSS. JS for shopping logic
 
 # Experiences
 
-```
-Coming soon!
-```
+> **Kernellix**
+> └── Associate Cybersecurity Analyst · Full-time
+>     *July 2026 - Present*
+
+Yangon, Myanmar · Hybrid
 
 # Digital Badges
 
