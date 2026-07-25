@@ -7,6 +7,8 @@ category:
 author: miniMinn
 platform:
   - Blue Team Labs Online
+status:
+  - Writing in progress...
 ---
 # 1. Overview
 This challenge **The Report II** involves analyzing the **11 Strategies of a World Class Cybersecurity Operations Center** to answer specific tasks about day-to-day SOC operations.
